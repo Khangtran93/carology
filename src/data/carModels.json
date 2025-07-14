@@ -1,0 +1,842 @@
+[
+  {
+    "id": 1,
+    "brand": "Audi",
+    "model": "Model A"
+  },
+  {
+    "id": 2,
+    "brand": "Audi",
+    "model": "Model B"
+  },
+  {
+    "id": 3,
+    "brand": "Audi",
+    "model": "Model C"
+  },
+  {
+    "id": 4,
+    "brand": "Audi",
+    "model": "Model D"
+  },
+  {
+    "id": 5,
+    "brand": "Audi",
+    "model": "Model E"
+  },
+  {
+    "id": 6,
+    "brand": "Audi",
+    "model": "Model F"
+  },
+  {
+    "id": 7,
+    "brand": "BMW",
+    "model": "Model A"
+  },
+  {
+    "id": 8,
+    "brand": "BMW",
+    "model": "Model B"
+  },
+  {
+    "id": 9,
+    "brand": "BMW",
+    "model": "Model C"
+  },
+  {
+    "id": 10,
+    "brand": "BMW",
+    "model": "Model D"
+  },
+  {
+    "id": 11,
+    "brand": "BMW",
+    "model": "Model E"
+  },
+  {
+    "id": 12,
+    "brand": "BMW",
+    "model": "Model F"
+  },
+  {
+    "id": 13,
+    "brand": "BYD",
+    "model": "Model A"
+  },
+  {
+    "id": 14,
+    "brand": "BYD",
+    "model": "Model B"
+  },
+  {
+    "id": 15,
+    "brand": "BYD",
+    "model": "Model C"
+  },
+  {
+    "id": 16,
+    "brand": "BYD",
+    "model": "Model D"
+  },
+  {
+    "id": 17,
+    "brand": "BYD",
+    "model": "Model E"
+  },
+  {
+    "id": 18,
+    "brand": "BYD",
+    "model": "Model F"
+  },
+  {
+    "id": 19,
+    "brand": "Citroen",
+    "model": "Model A"
+  },
+  {
+    "id": 20,
+    "brand": "Citroen",
+    "model": "Model B"
+  },
+  {
+    "id": 21,
+    "brand": "Citroen",
+    "model": "Model C"
+  },
+  {
+    "id": 22,
+    "brand": "Citroen",
+    "model": "Model D"
+  },
+  {
+    "id": 23,
+    "brand": "Citroen",
+    "model": "Model E"
+  },
+  {
+    "id": 24,
+    "brand": "Citroen",
+    "model": "Model F"
+  },
+  {
+    "id": 25,
+    "brand": "Ford",
+    "model": "Model A"
+  },
+  {
+    "id": 26,
+    "brand": "Ford",
+    "model": "Model B"
+  },
+  {
+    "id": 27,
+    "brand": "Ford",
+    "model": "Model C"
+  },
+  {
+    "id": 28,
+    "brand": "Ford",
+    "model": "Model D"
+  },
+  {
+    "id": 29,
+    "brand": "Ford",
+    "model": "Model E"
+  },
+  {
+    "id": 30,
+    "brand": "Ford",
+    "model": "Model F"
+  },
+  {
+    "id": 31,
+    "brand": "Genesis",
+    "model": "Model A"
+  },
+  {
+    "id": 32,
+    "brand": "Genesis",
+    "model": "Model B"
+  },
+  {
+    "id": 33,
+    "brand": "Genesis",
+    "model": "Model C"
+  },
+  {
+    "id": 34,
+    "brand": "Genesis",
+    "model": "Model D"
+  },
+  {
+    "id": 35,
+    "brand": "Genesis",
+    "model": "Model E"
+  },
+  {
+    "id": 36,
+    "brand": "Genesis",
+    "model": "Model F"
+  },
+  {
+    "id": 37,
+    "brand": "GWM",
+    "model": "Model A"
+  },
+  {
+    "id": 38,
+    "brand": "GWM",
+    "model": "Model B"
+  },
+  {
+    "id": 39,
+    "brand": "GWM",
+    "model": "Model C"
+  },
+  {
+    "id": 40,
+    "brand": "GWM",
+    "model": "Model D"
+  },
+  {
+    "id": 41,
+    "brand": "GWM",
+    "model": "Model E"
+  },
+  {
+    "id": 42,
+    "brand": "GWM",
+    "model": "Model F"
+  },
+  {
+    "id": 43,
+    "brand": "Haval",
+    "model": "Model A"
+  },
+  {
+    "id": 44,
+    "brand": "Haval",
+    "model": "Model B"
+  },
+  {
+    "id": 45,
+    "brand": "Haval",
+    "model": "Model C"
+  },
+  {
+    "id": 46,
+    "brand": "Haval",
+    "model": "Model D"
+  },
+  {
+    "id": 47,
+    "brand": "Haval",
+    "model": "Model E"
+  },
+  {
+    "id": 48,
+    "brand": "Haval",
+    "model": "Model F"
+  },
+  {
+    "id": 49,
+    "brand": "Honda",
+    "model": "Model A"
+  },
+  {
+    "id": 50,
+    "brand": "Honda",
+    "model": "Model B"
+  },
+  {
+    "id": 51,
+    "brand": "Honda",
+    "model": "Model C"
+  },
+  {
+    "id": 52,
+    "brand": "Honda",
+    "model": "Model D"
+  },
+  {
+    "id": 53,
+    "brand": "Honda",
+    "model": "Model E"
+  },
+  {
+    "id": 54,
+    "brand": "Honda",
+    "model": "Model F"
+  },
+  {
+    "id": 55,
+    "brand": "Holden",
+    "model": "Model A"
+  },
+  {
+    "id": 56,
+    "brand": "Holden",
+    "model": "Model B"
+  },
+  {
+    "id": 57,
+    "brand": "Holden",
+    "model": "Model C"
+  },
+  {
+    "id": 58,
+    "brand": "Holden",
+    "model": "Model D"
+  },
+  {
+    "id": 59,
+    "brand": "Holden",
+    "model": "Model E"
+  },
+  {
+    "id": 60,
+    "brand": "Holden",
+    "model": "Model F"
+  },
+  {
+    "id": 61,
+    "brand": "Huyn dai",
+    "model": "Model A"
+  },
+  {
+    "id": 62,
+    "brand": "Huyn dai",
+    "model": "Model B"
+  },
+  {
+    "id": 63,
+    "brand": "Huyn dai",
+    "model": "Model C"
+  },
+  {
+    "id": 64,
+    "brand": "Huyn dai",
+    "model": "Model D"
+  },
+  {
+    "id": 65,
+    "brand": "Huyn dai",
+    "model": "Model E"
+  },
+  {
+    "id": 66,
+    "brand": "Huyn dai",
+    "model": "Model F"
+  },
+  {
+    "id": 67,
+    "brand": "Infiniti",
+    "model": "Model A"
+  },
+  {
+    "id": 68,
+    "brand": "Infiniti",
+    "model": "Model B"
+  },
+  {
+    "id": 69,
+    "brand": "Infiniti",
+    "model": "Model C"
+  },
+  {
+    "id": 70,
+    "brand": "Infiniti",
+    "model": "Model D"
+  },
+  {
+    "id": 71,
+    "brand": "Infiniti",
+    "model": "Model E"
+  },
+  {
+    "id": 72,
+    "brand": "Infiniti",
+    "model": "Model F"
+  },
+  {
+    "id": 73,
+    "brand": "Isuzu",
+    "model": "Model A"
+  },
+  {
+    "id": 74,
+    "brand": "Isuzu",
+    "model": "Model B"
+  },
+  {
+    "id": 75,
+    "brand": "Isuzu",
+    "model": "Model C"
+  },
+  {
+    "id": 76,
+    "brand": "Isuzu",
+    "model": "Model D"
+  },
+  {
+    "id": 77,
+    "brand": "Isuzu",
+    "model": "Model E"
+  },
+  {
+    "id": 78,
+    "brand": "Isuzu",
+    "model": "Model F"
+  },
+  {
+    "id": 79,
+    "brand": "Kia",
+    "model": "Model A"
+  },
+  {
+    "id": 80,
+    "brand": "Kia",
+    "model": "Model B"
+  },
+  {
+    "id": 81,
+    "brand": "Kia",
+    "model": "Model C"
+  },
+  {
+    "id": 82,
+    "brand": "Kia",
+    "model": "Model D"
+  },
+  {
+    "id": 83,
+    "brand": "Kia",
+    "model": "Model E"
+  },
+  {
+    "id": 84,
+    "brand": "Kia",
+    "model": "Model F"
+  },
+  {
+    "id": 85,
+    "brand": "Lexus",
+    "model": "Model A"
+  },
+  {
+    "id": 86,
+    "brand": "Lexus",
+    "model": "Model B"
+  },
+  {
+    "id": 87,
+    "brand": "Lexus",
+    "model": "Model C"
+  },
+  {
+    "id": 88,
+    "brand": "Lexus",
+    "model": "Model D"
+  },
+  {
+    "id": 89,
+    "brand": "Lexus",
+    "model": "Model E"
+  },
+  {
+    "id": 90,
+    "brand": "Lexus",
+    "model": "Model F"
+  },
+  {
+    "id": 91,
+    "brand": "Mazda",
+    "model": "Model A"
+  },
+  {
+    "id": 92,
+    "brand": "Mazda",
+    "model": "Model B"
+  },
+  {
+    "id": 93,
+    "brand": "Mazda",
+    "model": "Model C"
+  },
+  {
+    "id": 94,
+    "brand": "Mazda",
+    "model": "Model D"
+  },
+  {
+    "id": 95,
+    "brand": "Mazda",
+    "model": "Model E"
+  },
+  {
+    "id": 96,
+    "brand": "Mazda",
+    "model": "Model F"
+  },
+  {
+    "id": 97,
+    "brand": "Mercedes-Benz",
+    "model": "Model A"
+  },
+  {
+    "id": 98,
+    "brand": "Mercedes-Benz",
+    "model": "Model B"
+  },
+  {
+    "id": 99,
+    "brand": "Mercedes-Benz",
+    "model": "Model C"
+  },
+  {
+    "id": 100,
+    "brand": "Mercedes-Benz",
+    "model": "Model D"
+  },
+  {
+    "id": 101,
+    "brand": "Mercedes-Benz",
+    "model": "Model E"
+  },
+  {
+    "id": 102,
+    "brand": "Mercedes-Benz",
+    "model": "Model F"
+  },
+  {
+    "id": 103,
+    "brand": "Mitsubishi",
+    "model": "Model A"
+  },
+  {
+    "id": 104,
+    "brand": "Mitsubishi",
+    "model": "Model B"
+  },
+  {
+    "id": 105,
+    "brand": "Mitsubishi",
+    "model": "Model C"
+  },
+  {
+    "id": 106,
+    "brand": "Mitsubishi",
+    "model": "Model D"
+  },
+  {
+    "id": 107,
+    "brand": "Mitsubishi",
+    "model": "Model E"
+  },
+  {
+    "id": 108,
+    "brand": "Mitsubishi",
+    "model": "Model F"
+  },
+  {
+    "id": 109,
+    "brand": "MG",
+    "model": "Model A"
+  },
+  {
+    "id": 110,
+    "brand": "MG",
+    "model": "Model B"
+  },
+  {
+    "id": 111,
+    "brand": "MG",
+    "model": "Model C"
+  },
+  {
+    "id": 112,
+    "brand": "MG",
+    "model": "Model D"
+  },
+  {
+    "id": 113,
+    "brand": "MG",
+    "model": "Model E"
+  },
+  {
+    "id": 114,
+    "brand": "MG",
+    "model": "Model F"
+  },
+  {
+    "id": 115,
+    "brand": "Nissan",
+    "model": "Model A"
+  },
+  {
+    "id": 116,
+    "brand": "Nissan",
+    "model": "Model B"
+  },
+  {
+    "id": 117,
+    "brand": "Nissan",
+    "model": "Model C"
+  },
+  {
+    "id": 118,
+    "brand": "Nissan",
+    "model": "Model D"
+  },
+  {
+    "id": 119,
+    "brand": "Nissan",
+    "model": "Model E"
+  },
+  {
+    "id": 120,
+    "brand": "Nissan",
+    "model": "Model F"
+  },
+  {
+    "id": 121,
+    "brand": "Peugeot",
+    "model": "Model A"
+  },
+  {
+    "id": 122,
+    "brand": "Peugeot",
+    "model": "Model B"
+  },
+  {
+    "id": 123,
+    "brand": "Peugeot",
+    "model": "Model C"
+  },
+  {
+    "id": 124,
+    "brand": "Peugeot",
+    "model": "Model D"
+  },
+  {
+    "id": 125,
+    "brand": "Peugeot",
+    "model": "Model E"
+  },
+  {
+    "id": 126,
+    "brand": "Peugeot",
+    "model": "Model F"
+  },
+  {
+    "id": 127,
+    "brand": "Porsche",
+    "model": "Model A"
+  },
+  {
+    "id": 128,
+    "brand": "Porsche",
+    "model": "Model B"
+  },
+  {
+    "id": 129,
+    "brand": "Porsche",
+    "model": "Model C"
+  },
+  {
+    "id": 130,
+    "brand": "Porsche",
+    "model": "Model D"
+  },
+  {
+    "id": 131,
+    "brand": "Porsche",
+    "model": "Model E"
+  },
+  {
+    "id": 132,
+    "brand": "Porsche",
+    "model": "Model F"
+  },
+  {
+    "id": 133,
+    "brand": "Renault",
+    "model": "Model A"
+  },
+  {
+    "id": 134,
+    "brand": "Renault",
+    "model": "Model B"
+  },
+  {
+    "id": 135,
+    "brand": "Renault",
+    "model": "Model C"
+  },
+  {
+    "id": 136,
+    "brand": "Renault",
+    "model": "Model D"
+  },
+  {
+    "id": 137,
+    "brand": "Renault",
+    "model": "Model E"
+  },
+  {
+    "id": 138,
+    "brand": "Renault",
+    "model": "Model F"
+  },
+  {
+    "id": 139,
+    "brand": "Subaru",
+    "model": "Model A"
+  },
+  {
+    "id": 140,
+    "brand": "Subaru",
+    "model": "Model B"
+  },
+  {
+    "id": 141,
+    "brand": "Subaru",
+    "model": "Model C"
+  },
+  {
+    "id": 142,
+    "brand": "Subaru",
+    "model": "Model D"
+  },
+  {
+    "id": 143,
+    "brand": "Subaru",
+    "model": "Model E"
+  },
+  {
+    "id": 144,
+    "brand": "Subaru",
+    "model": "Model F"
+  },
+  {
+    "id": 145,
+    "brand": "Tesla",
+    "model": "Model A"
+  },
+  {
+    "id": 146,
+    "brand": "Tesla",
+    "model": "Model B"
+  },
+  {
+    "id": 147,
+    "brand": "Tesla",
+    "model": "Model C"
+  },
+  {
+    "id": 148,
+    "brand": "Tesla",
+    "model": "Model D"
+  },
+  {
+    "id": 149,
+    "brand": "Tesla",
+    "model": "Model E"
+  },
+  {
+    "id": 150,
+    "brand": "Tesla",
+    "model": "Model F"
+  },
+  {
+    "id": 151,
+    "brand": "Toyota",
+    "model": "Model A"
+  },
+  {
+    "id": 152,
+    "brand": "Toyota",
+    "model": "Model B"
+  },
+  {
+    "id": 153,
+    "brand": "Toyota",
+    "model": "Model C"
+  },
+  {
+    "id": 154,
+    "brand": "Toyota",
+    "model": "Model D"
+  },
+  {
+    "id": 155,
+    "brand": "Toyota",
+    "model": "Model E"
+  },
+  {
+    "id": 156,
+    "brand": "Toyota",
+    "model": "Model F"
+  },
+  {
+    "id": 157,
+    "brand": "Volvo",
+    "model": "Model A"
+  },
+  {
+    "id": 158,
+    "brand": "Volvo",
+    "model": "Model B"
+  },
+  {
+    "id": 159,
+    "brand": "Volvo",
+    "model": "Model C"
+  },
+  {
+    "id": 160,
+    "brand": "Volvo",
+    "model": "Model D"
+  },
+  {
+    "id": 161,
+    "brand": "Volvo",
+    "model": "Model E"
+  },
+  {
+    "id": 162,
+    "brand": "Volvo",
+    "model": "Model F"
+  },
+  {
+    "id": 163,
+    "brand": "VW",
+    "model": "Model A"
+  },
+  {
+    "id": 164,
+    "brand": "VW",
+    "model": "Model B"
+  },
+  {
+    "id": 165,
+    "brand": "VW",
+    "model": "Model C"
+  },
+  {
+    "id": 166,
+    "brand": "VW",
+    "model": "Model D"
+  },
+  {
+    "id": 167,
+    "brand": "VW",
+    "model": "Model E"
+  },
+  {
+    "id": 168,
+    "brand": "VW",
+    "model": "Model F"
+  }
+]
