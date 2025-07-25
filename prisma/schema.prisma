@@ -27,20 +27,32 @@ model User {
 model Brand {
   id String @id @default(uuid()) 
   name String @unique
-  models CarModel[]
+  brandModels BrandModel[]
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
 
+model BrandModel {
+  id String @id @default(uuid())
+  name String
+  brandId String
+  brand Brand @relation(fields: [brandId], references: [id])
+  carModels CarModel[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
 model CarModel {
   id String @id @default(uuid())
-  model String @unique
-  year Int
-  type CarType
-  trim String
-  engine String
-  brandId String 
-  brand Brand @relation(fields: [brandId], references: [id])
+  name String
+  year Int?
+  type CarType?
+  trim String?
+  engine String?
+  brandModelId String 
+  brandModel BrandModel @relation(fields: [brandModelId], references: [id])
+  complaints Complaint[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
 
 model Complaint {
@@ -49,6 +61,8 @@ model Complaint {
   content String
   userId String
   user User @relation(fields: [userId], references: [id])
+  carModelId String
+  carModel CarModel @relation(fields: [carModelId], references: [id])
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
