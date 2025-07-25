@@ -9,9 +9,9 @@ const NavBar = () => {
         CAROLOGY
       </Link>
       <div className='flex justify-between gap-10 text-2xl'>
-        <p>Home</p>
-        <p>About</p>
-        <p>Login</p>
+        <Link href="/"><p>Home</p></Link>
+        <Link href="/"><p>About</p></Link>
+        <Link href="/"><p>Login</p></Link>
       </div>
       
     </div>
