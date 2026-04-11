@@ -53,8 +53,8 @@ export default function SearchBar() {
 
   return (
     <div ref={containerRef} 
-    className="relative mx-auto p-12 border border-gray-200 max-w-[1300px] mb-12 bg-[linear-gradient(261.74deg,_#0b193f_-7.56%,_#1e47a2_106.91%)] rounded-2xl">
-       <div className=''>
+    className="relative mx-auto p-6 pb-12 border border-gray-200 max-w-[1300px] mb-12 bg-[linear-gradient(261.74deg,_#0b193f_-7.56%,_#1e47a2_106.91%)] rounded-2xl">
+       <div className='mb-8'>
          <h1 className='text-white text-xl'>Find out what people say about your car!</h1>
          <p className='text-gray-50 text-sm'>Thousands of reviews for various car models</p>
        </div>
@@ -63,7 +63,7 @@ export default function SearchBar() {
           Search
         </label>
         <input
-          className="w-full bg-white peer block rounded-md border border-gray-200 py-[9px] pl-10 text-sm outline-2 placeholder:text-gray-500 rounded-lg"
+          className="w-full bg-white peer block rounded-md py-[9px] pl-10 text-sm placeholder:text-gray-500 rounded-lg"
           type='text'
           value={query}
           placeholder="Search brands, models, complaints..."
