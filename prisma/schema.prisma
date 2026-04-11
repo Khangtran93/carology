@@ -17,11 +17,11 @@ datasource db {
 model User {
   id    String  @id @default(uuid())
   email String  @unique
-  name  String?
+  password String
+  name  String
   complaints Complaint[]
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
-
 }
 
 model Brand {
@@ -30,6 +30,7 @@ model Brand {
   brandModels BrandModel[]
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+  slug String @unique
 }
 
 model BrandModel {
@@ -40,6 +41,9 @@ model BrandModel {
   carModels CarModel[]
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+  slug String
+
+  @@unique([brandId, slug])
 }
 model CarModel {
   id String @id @default(uuid())
@@ -53,6 +57,9 @@ model CarModel {
   complaints Complaint[]
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+  slug String
+
+  @@unique([brandModelId, slug])
 }
 
 model Complaint {
