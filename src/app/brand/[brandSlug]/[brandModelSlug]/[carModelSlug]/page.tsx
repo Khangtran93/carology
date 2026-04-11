@@ -2,17 +2,20 @@ import React from 'react'
 import prisma from '@/../lib/prisma'
 import Link from 'next/link'
 
-type YearModelProps = {
-  params: {
-    modelYearId: string
-  }
-}
-
-async function YearModelPage({params}: YearModelProps) {
-  const {modelYearId} = await params
-  const carYearModel = await prisma.carModel.findUnique({
+async function Page({params}: {params: Promise<{brandSlug: string, brandModelSlug: string, carModelSlug: string}>}) {
+  const {brandSlug, brandModelSlug, carModelSlug} = await params
+  console.log("carModelSlug ", carModelSlug)
+ 
+  //Fetching car model year object with all complaints
+  const carYearModel = await prisma.carModel.findFirst({
     where: {
-      id: modelYearId
+      slug: carModelSlug,
+      brandModel: {
+        slug: brandModelSlug,
+        brand: {
+          slug: brandSlug
+        }
+      }    
     },
     include: {
       brandModel: {
@@ -28,6 +31,8 @@ async function YearModelPage({params}: YearModelProps) {
     }
   })
 
+  // console.log("carYearModel: ", carYearModel)
+
   if (!carYearModel) {
     return <div>Year Model not found</div>;
   }
@@ -41,7 +46,7 @@ async function YearModelPage({params}: YearModelProps) {
       {carYearModel.complaints.length == 0 ?
       <div>
         <h3 className='text-2xl font-semibold mb-4 text-center'>There are no complaints for this {carYearModel.brandModel.brand.name} {carYearModel?.name} {carYearModel.year}. 
-        <span className='underline'><Link href="/"> Add your complaint here.</Link></span></h3>
+        <span className='underline'><Link href={`/brand/${brandSlug}/${brandModelSlug}/${carModelSlug}/complaint`}> Add your complaint here.</Link></span></h3>
       </div>
        : 
        <ul className='mb-12'>
@@ -57,4 +62,4 @@ async function YearModelPage({params}: YearModelProps) {
   )
 }
 
-export default YearModelPage
+export default Page
