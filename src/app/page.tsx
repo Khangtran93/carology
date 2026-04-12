@@ -8,7 +8,7 @@ export default async function Home() {
   console.log(brands)
   return (
     <>
-    <Search placeholder="Search cars..."/>
+    <Search/>
      <div className="max-w-[1300px] mx-auto flex justify-between">
           <div className="flex flex-col max-w-[700px] justify-center">
             <h1 className="text-5xl font-bold mb-4">Discover the Best Cars for Your Next Journey</h1>
