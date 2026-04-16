@@ -5,9 +5,9 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='flex flex-col w-full bg-black text-white px-40 pt-12 pb-8'>
-      <div className='flex flex-row justify-between py-12'>
-        <div className='flex flex-col gap-y-4'>
+    <div className='w-full flex flex-col bg-black text-white px-12 md:px-40 pt-12 pb-8 '>
+      <div className='w-full flex flex-col md:flex-row justify-between gap-y-4 pb-6 md:pb-12'>
+        <div className='flex flex-col gap-y-2 md:gap-y-4'>
           <Link href='/' className={`${logoFont.className} text-3xl`}>CAROLOGY</Link>
           <h4>carology@support.au.com</h4>
           <h4>0123-456-789</h4>
@@ -27,7 +27,7 @@ const Footer = () => {
           <h4>Worst Vehicles</h4>
         </div>
       </div>
-      <div className='flex justify-between border-t border-gray-400 pt-8'>
+      <div className='flex flex-col gap-y-2 md:flex-row justify-between border-t border-gray-400 pt-4 md:pt-8 '>
         <div className='flex gap-x-4'>
           <Image src='/images/linkedin.png' alt='linkedin-icon' width={35} height={35}/>
           <Image src='/images/facebook.png' alt='facebook-icon' width={35} height={35}/>

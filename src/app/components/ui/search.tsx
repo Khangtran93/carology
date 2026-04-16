@@ -69,15 +69,13 @@ export default function SearchBar() {
           placeholder="Search brands, models, complaints..."
           onChange={handleChange}
         />
-        <MagnifyingGlassIcon className="absolute left-4 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-gray-500 peer-focus:text-gray-900" />
-      </div>
-
-      {loading && (
-        <div className="absolute right-3 top-3 text-gray-400 text-sm">Searching...</div>
+        {loading && (
+        <div className="absolute left-6 top-3 text-gray-400 text-sm">Searching...</div>
       )}
+        <MagnifyingGlassIcon className="absolute left-4 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-gray-500 peer-focus:text-gray-900" />
 
-      {isOpen && (
-        <div className="absolutez-50 mt-1 w-full mx-auto rounded-lg border border-gray-200 bg-white shadow-lg">
+        {isOpen && (
+        <div className="w-full top-full absolute z-50 mt-1 peer block mx-auto rounded-lg border border-gray-200 bg-white shadow-lg">
           
           {!hasResults && (
             <div className="px-4 py-3 text-sm text-gray-500">No results found</div>
@@ -132,6 +130,11 @@ export default function SearchBar() {
 
         </div>
       )}
+      </div>
+
+      
+
+     
     </div>
   )
 }
