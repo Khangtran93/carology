@@ -45,7 +45,6 @@ export async function createComplaint(prevState: ComplaintState, formData: FormD
         }
       }
   })
-    // return { message: 'Complaint created successfully.', errors: {} }
   } catch (error) {
     console.error(error)
     return { message: 'Failed to create complaint.', errors: {} }

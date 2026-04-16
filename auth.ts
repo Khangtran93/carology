@@ -5,12 +5,7 @@ import { z } from 'zod';
 import bcrypt from 'bcrypt';
 import { User } from '@/generated/prisma';
 import prisma from './lib/prisma';
-// import { createClient } from '@supabase/supabase-js';
 
-// const supabase = createClient(
-//   process.env.NEXT_PUBLIC_SUPABASE_URL!,
-//   process.env.SUPABASE_SERVICE_ROLE_KEY!
-// );
 async function getUser(email: string): Promise<User | undefined> {
   try {
     const user = await prisma.user.findUnique({
