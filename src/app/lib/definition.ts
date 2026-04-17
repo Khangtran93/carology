@@ -69,3 +69,19 @@ export type CarModelWithRelations = Prisma.CarModelGetPayload<{
       }
       message?: string | null
     }
+
+
+    export type BrandModelWithCarModels = Prisma.BrandModelGetPayload<{
+      include: {
+        brand: true
+        carModels: {
+          include: {
+            _count: {
+              select: {
+                complaints: true
+              }
+            }
+          }
+        }
+      }
+    }>

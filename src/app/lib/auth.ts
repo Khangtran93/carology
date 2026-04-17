@@ -28,7 +28,6 @@ export async function authenticate(
 }
 
 export async function createUser(prevState: FormState , formData: FormData) {
-  console.log('ACTION TRIGGERED')
   const validatedFields = SignupFormSchema.safeParse({
     name: formData.get('name'),
     email: formData.get('email'),

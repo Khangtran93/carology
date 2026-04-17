@@ -1,7 +1,7 @@
 import Image from "next/image";
 import prisma from "../../lib/prisma";
-import Link from "next/link";
 import Search from "./components/ui/search";
+import BrandList from "./components/ui/brand-list";
 
 export default async function Home() {
   const brands = await prisma.brand.findMany()
@@ -23,19 +23,20 @@ export default async function Home() {
         <h1 className="text-2xl md:text-5xl font-bold mb-4 text-center">Explore Vehicles</h1>
         <h2 className='text-md md:text-2xl font-semibold mb-4 text-center'>Browse all car brands and models to find your next ride</h2>
       </div>
+      <BrandList brands={brands}/>
 
       {/* <div className='mt-8 border border-gray-400 rounded-2xl mx-auto p-4 md:p-8 bg-gray-200'> */}
-        <ul className='md:mt-8 border border-gray-400 rounded-2xl p-6
+        {/* <ul className='md:mt-8 border border-gray-400 rounded-2xl p-6
         grid grid-cols-2 md:grid-cols-5 place-items-stretch md:min-h-max flex-wrap gap-x-8'>
         {brands.map((brand, index) => (
-            <li key={index} className='flex flex-row mt-4 text-lg font-bold items-center gap-x-2 md:pl-12 basis-1/2'>
+            <li key={index} className='flex flex-row mt-2 md:mt-4 text-lg font-bold items-center gap-x-2 md:pl-12 basis-1/2'>
               <Image src="/images/truck-wheel.png"alt="wheel-icon" width={18} height={18} className='max-h-[18px]'/>
               <Link href={`/brand/${brand.slug}`} className=''>
                 {brand.name}
               </Link>
             </li>
           ))}
-        </ul>
+        </ul> */}
       {/* </div> */}
     </div>
 

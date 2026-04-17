@@ -69,9 +69,11 @@ export default function SearchBar() {
           placeholder="Search brands, models, complaints..."
           onChange={handleChange}
         />
-        {loading && (
-        <div className="absolute left-6 top-3 text-gray-400 text-sm">Searching...</div>
-      )}
+      {loading && (
+          <div className="absolute right-1 top-3">
+            <div className="w-4 h-4 border-2 border-gray-300 border-t-gray-600 rounded-full animate-spin" />
+          </div>
+        )}
         <MagnifyingGlassIcon className="absolute left-4 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-gray-500 peer-focus:text-gray-900" />
 
         {isOpen && (
