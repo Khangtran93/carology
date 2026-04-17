@@ -3,7 +3,6 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { logoFont } from '@/app/fonts/fonts'
-import Button from '../Button/Button'
 import { signOutAction } from '@/app/lib/auth'
 
 export default function NavbarClient({ isLoggedIn }: { isLoggedIn: boolean }) {
@@ -29,7 +28,7 @@ export default function NavbarClient({ isLoggedIn }: { isLoggedIn: boolean }) {
             <>
               <Link href="/profile">Profile</Link>
               <form action={signOutAction}>
-                <Button label="Sign Out" />
+                <button className='p-0' type="submit">Sign Out</button>
               </form>
             </>
           ) : (
@@ -39,7 +38,7 @@ export default function NavbarClient({ isLoggedIn }: { isLoggedIn: boolean }) {
 
         {/* Hamburger */}
         <button
-          className={`${open && "bg-gray-500"} md:hidden text-3xl`}
+          className={`${open && ""} md:hidden text-3xl`}
           onClick={() => setOpen(prev => !prev)}
         >
           {open ? '✕' : '☰'}
@@ -48,10 +47,11 @@ export default function NavbarClient({ isLoggedIn }: { isLoggedIn: boolean }) {
       </div>
 
       {/* Mobile menu */}
-      {open? <div
+      {open ? 
+      <div
         className={`
           z-100 absolute top-full right-0 md:hidden flex flex-col gap-4 pt-4 px-6 pb-6 text-xl
-          transition-all duration-300 ml-auto bg-gray-500
+          transition-all duration-300 ml-auto bg-black rounded-b-lg shadow-xl
         `}
       >
         <Link href="/" onClick={() => setOpen(false)}>Home</Link>
@@ -61,7 +61,7 @@ export default function NavbarClient({ isLoggedIn }: { isLoggedIn: boolean }) {
           <>
             <Link href="/profile">Profile</Link>
             <form action={signOutAction}  onSubmit={() => setOpen(false)}>
-              <button type="submit">Sign Out</button>
+              <button className='p-0' type="submit">Sign Out</button>
             </form>
           </>
         ) : (
