@@ -3,7 +3,7 @@ import { createComplaint } from "@/app/lib/action";
 import { getBrandModels, getCarModels } from "@/app/lib/data";
 import { CarModelWithRelations, ComplaintState } from "@/app/lib/definition";
 import { Brand, BrandModel, CarModel } from "@/generated/prisma";
-import { useActionState, useState } from "react";
+import {  useActionState, useState } from "react";
 
 export default function CreateComplaintForm(
   { userId, brands, brandModels, carModels, carModel }: 
@@ -11,15 +11,20 @@ export default function CreateComplaintForm(
     const [currentBrandModels, setCurrentBrandModels] = useState<BrandModel[]>(brandModels)
     const [currentCarModels, setCurrentCarModels] = useState<CarModel[]>(carModels)
     const [currentCarModel, setCurrentCarModel] = useState<string | undefined>(carModel?.id)
+    const [isPending, setIsPending] = useState(false)
 
     const handleBrandChange = async (e: React.ChangeEvent<HTMLSelectElement>) => {
       // when a new brand is selected, fetch new brand models and populate
+      setIsPending(true)
+      console.log("isPending before: ", isPending)
+      await new Promise(resolve => setTimeout(resolve, 2000))
       const newBrandModels = await getBrandModels(e.target.value) 
       const newCarModels = await getCarModels(newBrandModels[0].id)
       setCurrentBrandModels(newBrandModels)
       setCurrentCarModels(newCarModels)
       setCurrentCarModel(newCarModels[0].id)
-      // setCurrenCarModel(undefined)
+      setIsPending(false)
+      console.log("isPending after: ", isPending)
     }
 
     const handleBrandModelChange = async (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -31,16 +36,10 @@ export default function CreateComplaintForm(
       setCurrentCarModel(e.target.value)
     }
 
+    
     const initialState: ComplaintState = {message: null, errors: {}}
     const [state, formAction] = useActionState(createComplaint, initialState)
-
-    // useEffect(() => {
-    //   console.log("carModel ", carModel)
-    //   console.log("currentBrandModels ", currentBrandModels)
-    //   console.log("currentCarModels ", currentCarModels)
-    //   console.log("currenCarModel ", currentCarModel)
-    // },[currentCarModel, currentBrandModels, currentCarModels, carModel])
-
+    {console.log("render isPending:", isPending)}
 return (
      <form action={formAction}>
       <div className="rounded-md bg-gray-50 p-4 md:p-6">
@@ -79,18 +78,23 @@ return (
               className="peer block w-full cursor-pointer rounded-md border border-gray-200 py-2 pl-10 text-sm outline-2 placeholder:text-gray-500"
               defaultValue={carModel?.brandModel.id}
               onChange={handleBrandModelChange}
-              disabled={currentBrandModels.length === 0} //disabled if brandModels is empty
+              disabled={currentBrandModels.length === 0 || isPending} //disabled if brandModels is empty
             >
+              
               <option value="" disabled>
                 Select a Brand Model
               </option>
-              {currentBrandModels?.map((brandModel) => (
-                <option key={brandModel.id} value={brandModel.id}>
-                  {brandModel.name}
-                </option>
-              ))}
+              {isPending ? (
+                    <option >Loading...</option>
+                  ) : (
+                    currentBrandModels?.map((brandModel) => (
+                      <option key={brandModel.id} value={brandModel.id}>
+                        {brandModel.name}
+                      </option>
+                    ))
+                  )}
             </select>
-            
+
           </div>
 
           <label htmlFor="carModel" className="mb-2 block text-sm font-medium">

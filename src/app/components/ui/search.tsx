@@ -53,7 +53,7 @@ export default function SearchBar() {
 
   return (
     <div ref={containerRef} 
-    className="relative mx-auto p-6 pb-12 border border-gray-200 max-w-[1300px] mb-12 bg-[linear-gradient(261.74deg,_#0b193f_-7.56%,_#1e47a2_106.91%)] rounded-2xl">
+    className="relative mx-auto p-6 pb-12 border border-gray-200 max-w-[1300px] mb-6 md:mb-12 bg-[linear-gradient(261.74deg,_#0b193f_-7.56%,_#1e47a2_106.91%)] rounded-2xl">
        <div className='mb-8'>
          <h1 className='text-white text-xl'>Find out what people say about your car!</h1>
          <p className='text-gray-50 text-sm'>Thousands of reviews for various car models</p>

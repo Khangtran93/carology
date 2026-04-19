@@ -2,6 +2,7 @@ import CreateComplaintForm from "@/app/components/forms/create-review-form"
 import { getCarModel, getBrandModels, getAllBrands, getCarModels } from "@/app/lib/data"
 import { BrandModel } from "@/generated/prisma"
 import { auth } from "../../../../../../../auth"
+import { Suspense } from "react"
 
 export default async function Page({params} : {params: Promise<{brandSlug: string, brandModelSlug: string, carModelSlug: string}>}) {
   const {brandSlug, brandModelSlug, carModelSlug} = await params
@@ -14,8 +15,8 @@ export default async function Page({params} : {params: Promise<{brandSlug: strin
 
   const carModels = await getCarModels(carModel?.brandModel.id)
   return (
-    
-    <CreateComplaintForm userId={session?.user?.id}  brands={brands} brandModels={brandModels} carModels={carModels} carModel={carModel} />
-
+    <Suspense>
+      <CreateComplaintForm userId={session?.user?.id}  brands={brands} brandModels={brandModels} carModels={carModels} carModel={carModel} />
+    </Suspense>
   )
 }
