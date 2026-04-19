@@ -60,28 +60,29 @@ export type CarModelWithRelations = Prisma.CarModelGetPayload<{
       }
     }>
 
-    export type ComplaintState = {
-      errors?: {
-        title?: string[]  | undefined,
-        content?: string[] | undefined,
-        userId?: string[] | undefined,
-        carModelId?: string[] | undefined
-      }
-      message?: string | null
-    }
+export type ComplaintState = {
+  errors?: {
+    title?: string[]  | undefined,
+    content?: string[] | undefined,
+    userId?: string[] | undefined,
+    carModelId?: string[] | undefined
+  }
+  message?: string | null
+}
 
 
-    export type BrandModelWithCarModels = Prisma.BrandModelGetPayload<{
+export type BrandModelWithCarModels = Prisma.BrandModelGetPayload<{
+  include: {
+    brand: true
+    carModels: {
       include: {
-        brand: true
-        carModels: {
-          include: {
-            _count: {
-              select: {
-                complaints: true
-              }
-            }
+        _count: {
+          select: {
+            complaints: true
           }
         }
       }
-    }>
+    }
+  }
+}>
+

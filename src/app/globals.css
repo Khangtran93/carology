@@ -25,3 +25,24 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.bar {
+  width: calc(var(--count) * 12px);
+  height: 10px;
+}
+
+.bar-skeleton {
+  width: calc(var(--count) * 1%);
+  height: 25px;
+}
+
+@media (min-width: 768px) {
+  .bar {
+    width: 70%;
+    height: calc(var(--count) * 12px);
+  }
+
+  .bar-skeleton {
+    width: 70%;
+    height: calc(var(--count) * 1%);
+  }
+}

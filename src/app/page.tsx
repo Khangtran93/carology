@@ -3,8 +3,12 @@ import prisma from "../../lib/prisma";
 import Search from "./components/ui/search";
 import BrandList from "./components/ui/brand-list";
 
-export default async function Home() {
-  const brands = await prisma.brand.findMany()
+export default async function Page() {
+  const brands = await prisma.brand.findMany({
+    orderBy: {
+      slug: "asc"
+    }
+  })
   return (
     <>
     <Search/>
@@ -18,32 +22,19 @@ export default async function Home() {
           </div>
       </div>
 
-      <div className='max-w-[1300px] mx-auto flex flex-col justify-between mt-12 md:mt-24'>
+      <div className='max-w-[1300px] mx-auto flex flex-col justify-between mt-6 md:mt-12'>
       <div className='mx-auto justify-center'>
         <h1 className="text-2xl md:text-5xl font-bold mb-4 text-center">Explore Vehicles</h1>
         <h2 className='text-md md:text-2xl font-semibold mb-4 text-center'>Browse all car brands and models to find your next ride</h2>
       </div>
       <BrandList brands={brands}/>
-
-      {/* <div className='mt-8 border border-gray-400 rounded-2xl mx-auto p-4 md:p-8 bg-gray-200'> */}
-        {/* <ul className='md:mt-8 border border-gray-400 rounded-2xl p-6
-        grid grid-cols-2 md:grid-cols-5 place-items-stretch md:min-h-max flex-wrap gap-x-8'>
-        {brands.map((brand, index) => (
-            <li key={index} className='flex flex-row mt-2 md:mt-4 text-lg font-bold items-center gap-x-2 md:pl-12 basis-1/2'>
-              <Image src="/images/truck-wheel.png"alt="wheel-icon" width={18} height={18} className='max-h-[18px]'/>
-              <Link href={`/brand/${brand.slug}`} className=''>
-                {brand.name}
-              </Link>
-            </li>
-          ))}
-        </ul> */}
-      {/* </div> */}
+      
     </div>
 
-      <div className='flex flex-col max-w-[1300px] mt-12 md:mt-24 md:mb-24 mx-auto justify-center'>
+      <div className='flex flex-col max-w-[1300px] mt-6 md:mt-12 mb-12 md:mb-24 mx-auto justify-center'>
           <div className='flex flex-col justify-center items-center'>
-            <h1 className='text-2xl md:text-5xl font-bold mb-4 text-center'>Best Vehicles</h1>
-            <h3 className='text-md md:text-2xl font-semibold mb-4 text-center'>Top-rated vehicles based on user reviews and overall performance</h3>
+            <h1 className='text-2xl md:text-5xl font-bold mb-2 md:mb-4 text-center'>Best Vehicles</h1>
+            <h3 className='text-md md:text-2xl font-semibold mb-2 md:mb-4 text-center'>Top-rated vehicles based on user reviews and overall performance</h3>
           </div>
            <div className="flex flex-col md:flex-row mt-4 md:mt-12 gap-x-24 md:justify-between">
                 <div>
