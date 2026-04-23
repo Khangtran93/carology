@@ -3,7 +3,7 @@ import prisma from "../../../../lib/prisma";
 
 
 export default async function CarModelChart({brandSlug, brandModelSlug}: {brandSlug: string | undefined, brandModelSlug: string | undefined}) {
-      await new Promise(resolve => setTimeout(resolve, 2000))
+      // await new Promise(resolve => setTimeout(resolve, 2000))
     const brandModel = await prisma.brandModel.findFirst({
       where: {
         slug: brandModelSlug,
