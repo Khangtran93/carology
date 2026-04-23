@@ -1,7 +1,6 @@
 import Link from "next/link"
 import prisma from '@/../lib/prisma'
 export default async function BrandModelList({brandSlug}: {brandSlug: string | undefined}) {
-  await new Promise(resolve => setTimeout(resolve, 2000))
   const brand = await prisma.brand.findUnique({
     where: {
       slug: brandSlug,

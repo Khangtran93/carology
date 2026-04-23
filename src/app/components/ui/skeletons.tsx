@@ -8,7 +8,6 @@ export function BrandModelListSkeleton() {
       <div className="h-8 w-full max-w-2xl bg-gray-200 animate-pulse rounded-md" />
       <div className="h-40 w-[100%] bg-gray-200 animate-pulse rounded-md" />
       
-      {/* <div className="h-4 w-3/4 max-w-xl bg-gray-200 animate-pulse rounded-md" /> */}
       <ul className='flex flex-col h-[300px] w-[100%] md:w-[70%] flex-wrap items-center mt-8'>
       {Array.from({ length: 10 }).map((_, i) => (
         <li key={i} className='w-[40%] md:w-[45%] m-2'>
@@ -43,6 +42,18 @@ export function CarModelChartSkeleton() {
 export function CarModelYearSkeleton() {
   return (
     <div className="bg-gray-200 animate-pulse md:w-[800px] aspect-[8/5] mx-auto rounded-xl mb-6"/>
+  )
+}
+
+export function CarModelSkeleton() {
+  return (
+    <div className='w-full flex flex-col mx-auto items-center'>
+      <div className="h-[28px] md:h-[40px] w-[40%] bg-gray-200 animate-pulse rounded-md mb-4" />
+      <div className="h-[28px] md:h-[40px] w-[60%] bg-gray-200 animate-pulse rounded-md mb-4" />
+        
+      <div className="w-full bg-gray-200 animate-pulse  md:max-w-[800px] aspect-[8/5] mx-auto rounded-xl mb-6"/>
+      <div className="h-[28px] md:h-[40px] w-[60%] bg-gray-200 animate-pulse rounded-md mb-6 md:mb-12" />
+    </div>
   )
 }
 

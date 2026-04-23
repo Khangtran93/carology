@@ -16,15 +16,12 @@ export default function CreateComplaintForm(
     const handleBrandChange = async (e: React.ChangeEvent<HTMLSelectElement>) => {
       // when a new brand is selected, fetch new brand models and populate
       setIsPending(true)
-      console.log("isPending before: ", isPending)
-      await new Promise(resolve => setTimeout(resolve, 2000))
       const newBrandModels = await getBrandModels(e.target.value) 
       const newCarModels = await getCarModels(newBrandModels[0].id)
       setCurrentBrandModels(newBrandModels)
       setCurrentCarModels(newCarModels)
       setCurrentCarModel(newCarModels[0].id)
       setIsPending(false)
-      console.log("isPending after: ", isPending)
     }
 
     const handleBrandModelChange = async (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -35,12 +32,10 @@ export default function CreateComplaintForm(
     const handleCarModelChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
       setCurrentCarModel(e.target.value)
     }
-
     
     const initialState: ComplaintState = {message: null, errors: {}}
     const [state, formAction] = useActionState(createComplaint, initialState)
-    {console.log("render isPending:", isPending)}
-return (
+  return (
      <form action={formAction}>
       <div className="rounded-md bg-gray-50 p-4 md:p-6">
         {/* Brand */}
@@ -105,7 +100,6 @@ return (
               id="carModel"
               name="carModelId"
               className="peer block w-full cursor-pointer rounded-md border border-gray-200 py-2 pl-10 text-sm outline-2 placeholder:text-gray-500"
-              // defaultValue={carModel.id}
               defaultValue={currentCarModel}
               onChange={handleCarModelChange}
             >
