@@ -7,8 +7,16 @@ const nextConfig: NextConfig = {
       {
         protocol: 'https',
         hostname: 'carimagesapi.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'editorial.pxcrush.net',
+      },
+      {
+        protocol: 'https',
+        hostname: '**'
       }
-    ]
+    ], 
   }
 };
 

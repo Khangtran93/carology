@@ -2,6 +2,8 @@ import Image from "next/image";
 import prisma from "../../lib/prisma";
 import Search from "./components/ui/search";
 import BrandList from "./components/ui/brand-list";
+import { Suspense } from "react";
+import NewsCarouselServer from "./components/ui/news-carousel-server";
 
 export default async function Page() {
   const brands = await prisma.brand.findMany({
@@ -12,7 +14,7 @@ export default async function Page() {
   return (
     <>
     <Search/>
-     <div className="max-w-[1300px] mx-auto flex flex-col md:flex-row justify-between">
+     {/* <div className="max-w-[1300px] mx-auto flex flex-col md:flex-row justify-between">
           <div className="flex flex-col max-w-[700px] justify-center mb-4 mx-auto text-pretty text-center md:text-left">
             <h1 className="text-2xl md:text-5xl font-bold mb-2 md:mb-4">Discover the Best Cars for Your Next Journey</h1>
             <h3 className="text-md md:text-2xl font-semibold">Unbiased reviews that cover performance, comfort, features, and more. Find the right car with expert insights and real-world testing</h3>
@@ -20,11 +22,15 @@ export default async function Page() {
           <div>
             <Image alt="car-img-hero-page" src="/images/car2.png" width={585} height={0} className="object-cover h-auto rounded-md"/>
           </div>
-      </div>
+      </div> */}
+
+      <Suspense fallback={<div>Loading...</div>}>
+        <NewsCarouselServer/>
+      </Suspense>
 
       <div className='max-w-[1300px] mx-auto flex flex-col justify-between mt-6 md:mt-12'>
       <div className='mx-auto justify-center'>
-        <h1 className="text-2xl md:text-5xl font-bold mb-4 text-center">Explore Vehicles</h1>
+        <h1 className="text-2xl md:text-5xl font-bold mb-2 md:mb-4 text-center">Explore Vehicles</h1>
         <h2 className='text-md md:text-2xl font-semibold mb-4 text-center'>Browse all car brands and models to find your next ride</h2>
       </div>
       <BrandList brands={brands}/>

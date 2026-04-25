@@ -46,3 +46,25 @@ body {
     height: calc(var(--count) * 1%);
   }
 }
+
+
+.embla__viewport {
+  overflow: hidden;
+  max-width: 1300px;
+}
+
+.embla__container {
+  display: flex;
+  touch-action: pan-y pinch-zoom;
+}
+
+.embla__slide {
+  flex: 0 0 100%; 
+  min-width: 0;
+}
+
+@media (min-width: 768px) {
+  .embla__slide {
+    flex: 0 0 100%; /* Each slide is 70% of the viewport width */
+  }
+}
