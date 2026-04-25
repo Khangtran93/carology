@@ -15,7 +15,7 @@
   "dependencies": {
     "@heroicons/react": "^2.2.0",
     "@next/font": "^14.2.15",
-    "@prisma/adapter-pg": "^6.11.1",
+    "@prisma/adapter-pg": "^6.6.0",
     "@prisma/client": "^6.6.0",
     "@swc/helpers": "^0.5.21",
     "bcrypt": "^6.0.0",
