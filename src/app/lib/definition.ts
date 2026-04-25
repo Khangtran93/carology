@@ -86,3 +86,20 @@ export type BrandModelWithCarModels = Prisma.BrandModelGetPayload<{
   }
 }>
 
+
+export type Article = {
+  uuid: string
+  title: string
+  thumbnail: string
+  url: string
+  incipit: string
+}
+
+export type ArticleSummary = {
+  uuid: string
+  title: string
+  published_at: string
+  publisher: string
+
+}
+
