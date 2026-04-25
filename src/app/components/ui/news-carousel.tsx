@@ -4,7 +4,7 @@ import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { useEffect, useId } from 'react'
+import React, { useId } from 'react'
 import {ChevronRightIcon, ChevronLeftIcon, ArrowUpRightIcon} from '@heroicons/react/24/outline';
 
 export default function NewsCarousel({newsArticles}: {newsArticles: Article[] | undefined}) {
@@ -14,11 +14,6 @@ export default function NewsCarousel({newsArticles}: {newsArticles: Article[] | 
   )
   const goToPrev = () => emblaApi?.scrollPrev()
   const goToNext = () => emblaApi?.scrollNext()
-
-  useEffect(() => {
-    if (!emblaApi) return
-    emblaApi.plugins().autoplay?.play()
-  }, [emblaApi])
 
   return (
     <>
