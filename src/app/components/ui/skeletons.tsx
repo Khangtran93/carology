@@ -57,3 +57,15 @@ export function CarModelSkeleton() {
   )
 }
 
+export function NewsCarouselSkeleton() {
+  return (
+    <div className="embla__viewport mx-auto">
+      <div className='embla_slide grid grid-cols-1 mx-auto md:grid-cols-2 gap-y-2 md:gap-y-0 md:gap-x-8 md:px-12 md:py-4'>
+        <div className="h-[200px] md:h-[400px] bg-gray-200 animate-pulse rounded-md mb-4" />
+        <div className="h-[200px] md:h-[400px] bg-gray-200 animate-pulse rounded-md mb-4" />
+      </div>
+    </div>
+  )
+
+}
+

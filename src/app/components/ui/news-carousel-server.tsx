@@ -4,6 +4,7 @@ import { Article } from "@/app/lib/definition";
 
 
 export default async function NewsCarouselServer() {
+  'use cache'
   const newsArticles: Article[] = await getCarouselArticles()
 
   return (
