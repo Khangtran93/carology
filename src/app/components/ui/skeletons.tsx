@@ -66,6 +66,19 @@ export function NewsCarouselSkeleton() {
       </div>
     </div>
   )
-
 }
 
+export function BrandListSkeleton() {
+  return (
+    <div className="flex flex-col items-center">
+    <ul className='md:mt-8 border border-gray-400 rounded-2xl p-6 w-full
+      grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 place-items-stretch md:min-h-max flex-wrap gap-x-4 md:gap-x-8'>
+       {Array.from({ length: 30 }).map((_, i) => (
+        <li key={i} className='w-[50%] md:w-[50%] mx-auto my-2'>
+          <div className='bg-gray-200 animate-pulse rounded-lg h-[28px] mx-auto'/>
+        </li>
+  ))}
+    </ul>
+  </div>
+  )
+}

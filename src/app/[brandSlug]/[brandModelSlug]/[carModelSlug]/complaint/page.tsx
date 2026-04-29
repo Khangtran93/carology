@@ -1,7 +1,7 @@
-import CreateComplaintForm from "@/app/components/forms/create-review-form"
+import CreateComplaintForm from "@/app/components/forms/create-complaint-form"
 import { getCarModel, getBrandModels, getAllBrands, getCarModels } from "@/app/lib/data"
 import { BrandModel } from "@/generated/prisma"
-import { auth } from "../../../../../../../auth"
+import { auth } from "../../../../../../auth"
 import { Suspense } from "react"
 
 export default async function Page({params} : {params: Promise<{brandSlug: string, brandModelSlug: string, carModelSlug: string}>}) {

@@ -1,33 +1,11 @@
 import Link from "next/link";
-import prisma from "../../../../lib/prisma"
 import CarModelImage from "./car-model-image";
+import { getCarModel } from "@/app/lib/data";
 
 export default async function CarModel({ brandSlug, brandModelSlug, carModelSlug } : {brandSlug: string, brandModelSlug: string, carModelSlug: string} ) {
 
   //Fetching car model year object with all complaints
-  const carYearModel = await prisma.carModel.findFirst({
-    where: {
-      slug: carModelSlug,
-      brandModel: {
-        slug: brandModelSlug,
-        brand: {
-          slug: brandSlug
-        }
-      }    
-    },
-    include: {
-      brandModel: {
-        include: {
-          brand: true
-        }
-      },
-      complaints: {
-        include: {
-          user: true
-        }
-      }
-    }
-  })
+  const carYearModel = await getCarModel(brandSlug, brandModelSlug, carModelSlug)
   // TODO: replace with car-model-not-found UI
   if (!carYearModel) {
     return <div>Year Model not found</div>;
@@ -58,7 +36,7 @@ export default async function CarModel({ brandSlug, brandModelSlug, carModelSlug
         </li> 
       ))}
       </ul>
-        <Link href={`/brand/${brandSlug}/${brandModelSlug}/${carModelSlug}/complaint`}
+        <Link href={`/${brandSlug}/${brandModelSlug}/${carModelSlug}/complaint`}
               className='bg-black text-white p-2 max-w-max rounded-lg ml-2 mb-6 inline-block'>
          Add Complaint
         </Link>

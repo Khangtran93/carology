@@ -1,14 +1,8 @@
 import Link from "next/link"
-import prisma from '@/../lib/prisma'
+import { getBrandModelsByBrandSlug } from "@/app/lib/data"
+
 export default async function BrandModelList({brandSlug}: {brandSlug: string | undefined}) {
-  const brand = await prisma.brand.findUnique({
-    where: {
-      slug: brandSlug,
-    },
-    include: {
-      brandModels: true, 
-    },
-  })
+  const brand = await getBrandModelsByBrandSlug(brandSlug)
   return (
     <>
     {brand ?
@@ -21,7 +15,7 @@ export default async function BrandModelList({brandSlug}: {brandSlug: string | u
       <ul className='flex flex-col h-[300px] w-[100%] md:w-[70%] flex-wrap items-center mt-2 md:mt-8'>
       {brand.brandModels.map((brandModel, index) => (
        <li key={index} className='p-2 bg-gray-200 text-black border border-gray-400 rounded-lg m-2 w-[40%] md:w-[45%]'>
-        <Link  href={`/brand/${brand.slug}/${brandModel.slug}`}  >          
+        <Link  href={`/${brand.slug}/${brandModel.slug}`}  >          
             {brandModel.name}         
         </Link>
         </li>
