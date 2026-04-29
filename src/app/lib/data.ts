@@ -1,9 +1,19 @@
 'use server'
+
+import { Brand } from "@/generated/prisma"
 import prisma from "../../../lib/prisma"
+import { unstable_cacheTag as cacheTag } from 'next/cache'
 
 export async function getAllBrands() {
+  'use cache'
+  cacheTag('brands')
   try {
-    const brands = await prisma.brand.findMany()
+    const brands: Brand[] = await prisma.brand.findMany({
+      orderBy: {
+        slug: "asc"
+      }
+    }
+    )
     return brands
   } catch(error) {
     console.error(error)
@@ -11,8 +21,8 @@ export async function getAllBrands() {
   }
 }
 export async function getBrandModels(brandId:string) {
-  console.log("getBrandModels")
-  console.log("brandId ", brandId)
+  'use cache'
+  cacheTag('brandModels')
   try {
     const brandModels = await prisma.brandModel.findMany({
       where: {
@@ -29,7 +39,31 @@ export async function getBrandModels(brandId:string) {
   }
 }
 
+export async function getBrandModelsByBrandSlug(brandSlug:string | undefined) {
+  'use cache'
+  cacheTag('_brandModels')
+  if (brandSlug) {
+    try {
+      const brandModels = await prisma.brand.findUnique({
+        where: {
+          slug: brandSlug,
+        },
+        include: {
+          brandModels: true, 
+        },
+      })
+
+      return brandModels
+    } catch (error) {
+      console.log(error)
+    }
+  }
+  
+}
+
 export async function getCarModel(brandSlug: string, brandModelSlug: string, carModelSlug: string) {
+  'use cache'
+  cacheTag('carModel')
   try {
     const carModel = await prisma.carModel.findFirst({
       where: {
@@ -62,6 +96,8 @@ export async function getCarModel(brandSlug: string, brandModelSlug: string, car
 }
 
 export async function getCarModels(brandModelId:string) {
+  'use cache'
+  cacheTag('carModels')
   try {
     const carModels = prisma.carModel.findMany({
       where: {
@@ -75,6 +111,39 @@ export async function getCarModels(brandModelId:string) {
   } catch(error) {
     console.error(error)
     throw new Error("Failed to fetch car models")
+  }
+}
+
+export async function getCarModelsBySlug(brandSlug: string, brandModelSlug: string) {
+  'use cache'
+  cacheTag('_carModels')
+  try {
+    const carModels = await prisma.brandModel.findFirst({
+      where: {
+        slug: brandModelSlug,
+        brand: {
+          slug: brandSlug
+        }
+      },
+      include: {
+        brand: true,
+        carModels: {
+          include: {
+            _count: {
+              select: {
+                complaints: true
+              }
+            }
+          },
+          orderBy: {
+            year: 'asc'
+          }
+        } // prefetch_related
+      }
+    })
+    return carModels
+  } catch (error) {
+    console.log(error)
   }
 }
 

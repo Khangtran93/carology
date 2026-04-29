@@ -1,34 +1,31 @@
-import Image from "next/image";
-import prisma from "../../lib/prisma";
 import Search from "./components/ui/search";
-import BrandList from "./components/ui/brand-list";
 import { Suspense } from "react";
 import NewsCarouselServer from "./components/ui/news-carousel-server";
-import { NewsCarouselSkeleton } from "./components/ui/skeletons";
+import { BrandListSkeleton, NewsCarouselSkeleton } from "./components/ui/skeletons";
+import BrandListServer from "./components/ui/brand-list-server";
 
 export default async function Page() {
-  const brands = await prisma.brand.findMany({
-    orderBy: {
-      slug: "asc"
-    }
-  })
   return (
     <>
-    <Search/>
+      <Search/>
+
+      <div className='max-w-[1300px] mx-auto flex flex-col justify-between mt-6 md:mt-6'>
+        <div className='mx-auto justify-center'>
+          <h1 className="text-2xl md:text-5xl font-bold mb-2 md:mb-4 text-center">Explore Vehicles</h1>
+          <h2 className='text-md md:text-2xl font-semibold mb-4 text-center text-gray-600'>Browse all car brands and models to find your next ride</h2>
+        </div>
+        <Suspense fallback={<BrandListSkeleton/>}>
+          <BrandListServer/>
+        </Suspense>
+      </div>
+      
       <Suspense fallback={<NewsCarouselSkeleton/>}>
         <NewsCarouselServer/>
       </Suspense>
 
-      <div className='max-w-[1300px] mx-auto flex flex-col justify-between mt-6 md:mt-6'>
-      <div className='mx-auto justify-center'>
-        <h1 className="text-2xl md:text-5xl font-bold mb-2 md:mb-4 text-center">Explore Vehicles</h1>
-        <h2 className='text-md md:text-2xl font-semibold mb-4 text-center text-gray-600'>Browse all car brands and models to find your next ride</h2>
-      </div>
-      <BrandList brands={brands}/>
       
-    </div>
 
-      <div className='flex flex-col max-w-[1300px] mt-6 md:mt-12 mb-12 md:mb-24 mx-auto justify-center'>
+      {/* <div className='flex flex-col max-w-[1300px] mt-6 md:mt-12 mb-12 md:mb-24 mx-auto justify-center'>
           <div className='flex flex-col justify-center items-center'>
             <h1 className='text-2xl md:text-5xl font-bold mb-2 md:mb-4 text-center'>Best Vehicles</h1>
             <h3 className='text-md md:text-2xl font-semibold mb-2 md:mb-4 text-center'>Top-rated vehicles based on user reviews and overall performance</h3>
@@ -77,7 +74,7 @@ export default async function Page() {
                     <Image alt="car-img-hero-page" src="/images/car2.png" width={480} height={0} className="object-cover h-auto rounded-md"/>
                   </div>
               </div>
-            </div>
+            </div> */}
     </>
 
   );

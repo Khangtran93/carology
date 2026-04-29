@@ -1,32 +1,10 @@
 import Link from "next/link";
-import prisma from "../../../../lib/prisma";
+import { getCarModelsBySlug } from "@/app/lib/data";
 
 
-export default async function CarModelChart({brandSlug, brandModelSlug}: {brandSlug: string | undefined, brandModelSlug: string | undefined}) {
+export default async function CarModelChart({brandSlug, brandModelSlug}: {brandSlug: string, brandModelSlug: string}) {
       // await new Promise(resolve => setTimeout(resolve, 2000))
-    const brandModel = await prisma.brandModel.findFirst({
-      where: {
-        slug: brandModelSlug,
-        brand: {
-          slug: brandSlug
-        }
-      },
-      include: {
-        brand: true,
-        carModels: {
-          include: {
-            _count: {
-              select: {
-                complaints: true
-              }
-            }
-          },
-          orderBy: {
-            year: 'asc'
-          }
-        } // prefetch_related
-      }
-    })
+    const brandModel = await getCarModelsBySlug(brandSlug, brandModelSlug)
   
   return (
     <>
