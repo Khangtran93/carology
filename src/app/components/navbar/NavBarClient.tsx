@@ -1,31 +1,20 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react'
+import { useState } from 'react'
 import Link from 'next/link'
 import { logoFont } from '@/app/fonts/fonts'
 import { signOutAction } from '@/app/lib/auth'
 
 export default function NavbarClient({ isLoggedIn }: { isLoggedIn: boolean }) {
   const [open, setOpen] = useState(false)
-  const ref = useRef<HTMLDivElement>(null)
 
-useEffect(() => {
-  function handleClickOutside(e: MouseEvent) {
-    if (ref.current && !ref.current.contains(e.target as Node)) {
-      setOpen(false)
-    }
-  }
-
-  document.addEventListener('mousedown', handleClickOutside)
-  return () => document.removeEventListener('mousedown', handleClickOutside)
-}, [])
   return (
     <div className={`relative w-full bg-black text-white ${logoFont.className}`}>
       <div className="flex justify-between items-center px-6 md:px-20 lg:px-40 py-4">
         <Link href="/" className="text-3xl">
           CAROLOGY
         </Link>
-        <div ref={ref} className="hidden md:flex items-center gap-x-6 text-2xl">
+        <div  className="hidden md:flex items-center gap-x-6 text-2xl">
           {/* <Link href="/">Home</Link> */}
           {/* <Link href="/about">About</Link> */}
           {isLoggedIn ? (
@@ -39,68 +28,39 @@ useEffect(() => {
         </div>
 
         {/* Hamburger */}
-        <button
+        <button 
           className={`${open && ""} md:hidden text-3xl`}
           onClick={() => setOpen(prev => !prev)}
         >
           {open ? '✕' : '☰'}
         </button>
-        
+        {open && (
+  <>
+    {/* Backdrop */}
+    <div 
+      className="fixed inset-0 z-40 md:hidden"
+      onClick={() => setOpen(false)}
+    />
+    
+    {/* Dropdown */}
+    <div className="z-50 absolute top-full right-0 md:hidden flex flex-col gap-4 pt-4 px-6 pb-6 text-xl bg-black rounded-bl-lg shadow-xl">
+      {isLoggedIn ? (
+        <>
+          <Link href="/profile">Profile</Link>
+          <form action={signOutAction}>
+            <button type="submit">Sign Out</button>
+          </form>
+        </>
+      ) : (
+        <Link href="/login">Login</Link>
+      )}
+    </div>
+  </>
+)}
       </div>
 
       {/* Mobile menu */}
-      {open ? 
-      <div
-        className={`
-          z-100 absolute top-full right-0 md:hidden flex flex-col gap-4 pt-4 px-6 pb-6 text-xl
-          transition-all duration-300 ml-auto bg-black rounded-bl-lg shadow-xl
-        `}
-      >
-        {/* <Link href="/" onClick={() => setOpen(false)}>Home</Link> */}
-        {/* <Link href="/about" onClick={() => setOpen(false)}>About</Link> */}
-
-        {isLoggedIn ? (
-          <>
-            <Link href="/profile">Profile</Link>
-            <form action={signOutAction}  onSubmit={() => setOpen(false)}>
-              <button className='p-0 cursor-pointer' type="submit">Sign Out</button>
-            </form>
-          </>
-        ) : (
-          <Link href="/login" onClick={() => setOpen(false)}>Login</Link>
-        )}
-      </div>: <div></div>}
-
-      {/* <div className={`relative w-full bg-black text-white flex justify-between px-6 md:px-20 lg:px-40 py-4 ${logoFont.className}`}>
-            <Link href="/" className="text-3xl">
-              CAROLOGY
-            </Link>
-            <div className='relative flex items-center pl-4'>
-              <button
-                className='text-3xl'
-                onClick={() => setOpen(prev => !prev)}>
-                {open ? '✕' : '☰'}
-              </button>
-              {open &&
-                <div className='
-                    absolute top-full
-                    md:w-screen
-                    md:w-auto md:min-w-[200px]
-                    md:right-0 left-0
-                    bg-black shadow-xl
-                    flex flex-col gap-4
-                    pt-4 px-4 pb-4 text-xl
-                    z-50'>
-                  {isLoggedIn ? (
-                    <form action={signOutAction} onSubmit={() => setOpen(false)}>
-                      <button className='p-0 whitespace-no-wrap cursor-pointer' type="submit">Sign Out</button>
-                    </form>
-                  ) : (
-                    <Link href="/login" onClick={() => setOpen(false)}>Login</Link>
-                  )}
-                </div>}
-            </div>
-          </div> */}
+      
     </div>
   )
 }
