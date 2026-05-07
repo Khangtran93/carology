@@ -23,7 +23,7 @@ export default async function CarModel({ brandSlug, brandModelSlug, carModelSlug
       {carYearModel.complaints.length == 0 ?
       <div>
         <h3 className='text-lg md:text-2xl font-semibold mb-4 text-center'>There are no complaints for this {carYearModel.brandModel.brand.name} {carYearModel?.name} {carYearModel.year}. 
-        <span className='underline'><Link href={`/brand/${brandSlug}/${brandModelSlug}/${carModelSlug}/complaint`}> Add your complaint here.</Link></span></h3>
+        <span className='underline hover:opacity-70'><Link href={`/${brandSlug}/${brandModelSlug}/${carModelSlug}/complaint`}> Add your complaint here.</Link></span></h3>
       </div>
        : 
        <div>
@@ -36,8 +36,9 @@ export default async function CarModel({ brandSlug, brandModelSlug, carModelSlug
         </li> 
       ))}
       </ul>
+      
         <Link href={`/${brandSlug}/${brandModelSlug}/${carModelSlug}/complaint`}
-              className='bg-black text-white p-2 max-w-max rounded-lg ml-2 mb-6 inline-block'>
+              className='bg-black text-white p-2 max-w-max rounded-lg ml-2 mb-6 inline-block hover:opacity-80'>
          Add Complaint
         </Link>
       </div>

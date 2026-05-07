@@ -5,6 +5,6 @@ export default async function BrandListServer() {
   const brands = await getAllBrands()
 
   return (
-    <BrandList brands={brands}/>
+      <BrandList brands={brands}/> 
   )
 }

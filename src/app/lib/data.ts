@@ -95,6 +95,7 @@ export async function getCarModel(brandSlug: string, brandModelSlug: string, car
   }
 }
 
+// get all car models with year using brandModelId
 export async function getCarModels(brandModelId:string) {
   'use cache'
   cacheTag('carModels')
@@ -113,7 +114,7 @@ export async function getCarModels(brandModelId:string) {
     throw new Error("Failed to fetch car models")
   }
 }
-
+// get car models with years and complaints
 export async function getCarModelsBySlug(brandSlug: string, brandModelSlug: string) {
   'use cache'
   cacheTag('_carModels')
@@ -138,9 +139,9 @@ export async function getCarModelsBySlug(brandSlug: string, brandModelSlug: stri
           orderBy: {
             year: 'asc'
           }
-        } // prefetch_related
+        } 
       }
-    })
+    }) 
     return carModels
   } catch (error) {
     console.log(error)
