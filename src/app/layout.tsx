@@ -3,6 +3,7 @@ import {inter} from '@/app/fonts/fonts'
 import "./globals.css";
 import NavBar from "./components/navbar/NavBar";
 import Footer from "./components/footer/Footer";
+import NextTopLoader from 'nextjs-toploader';
 
 export const metadata: Metadata = {
   title: "Carology",
@@ -19,6 +20,7 @@ export default function RootLayout({
       <body
         className={`${inter.className} antialiased flex flex-col min-h-screen`}
       >
+        <NextTopLoader showSpinner={false} />
         <NavBar/>
         <div className="flex-1 pt-6 md:pt-12 px-6">
           {children}

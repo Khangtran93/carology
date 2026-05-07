@@ -71,7 +71,7 @@ export type ComplaintState = {
 }
 
 
-export type BrandModelWithCarModels = Prisma.BrandModelGetPayload<{
+export type CarModelsIncludeComplaints = Prisma.BrandModelGetPayload<{
   include: {
     brand: true
     carModels: {
