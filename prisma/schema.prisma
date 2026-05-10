@@ -38,29 +38,32 @@ model BrandModel {
   id String @id @default(uuid())
   name String
   brandId String
-  brand Brand @relation(fields: [brandId], references: [id])
+  brand Brand @relation(fields: [brandId], references: [id], onDelete: Cascade)
   carModels CarModel[]
+  carType CarType?
+  specs Specs?
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
   slug String
 
   @@unique([brandId, slug])
+  @@index([carType])
 }
 model CarModel {
   id String @id @default(uuid())
   name String
   year Int?
-  type CarType?
-  trim String?
-  engine String?
   brandModelId String 
-  brandModel BrandModel @relation(fields: [brandModelId], references: [id])
+  brandModel BrandModel @relation(fields: [brandModelId], references: [id], onDelete: Cascade)
   complaints Complaint[]
+  images ModelImage[]
+  trims Trim[]
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
   slug String
 
   @@unique([brandModelId, slug])
+  @@index([brandModelId])
 }
 
 model Complaint {
@@ -70,16 +73,93 @@ model Complaint {
   userId String
   user User @relation(fields: [userId], references: [id])
   carModelId String
+  carModel CarModel @relation(fields: [carModelId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([carModelId])
+  @@index([userId])
+}
+
+model Trim {
+  id String @id @default(uuid())
+  name String
+  carModelId String
+  carModel CarModel @relation(fields: [carModelId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([carModelId])
+}
+
+model ModelImage {
+  id String @id @default(uuid())
+  url String
+  alt String
+  isPrimary Boolean
+
+    // Attribution (required for CC-BY-SA compliance)
+  photographer  String?
+  license       String?
+  sourceUrl     String?  // link back to Wikimedia page
+  
+  carModelId String
   carModel CarModel @relation(fields: [carModelId], references: [id])
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+
+  @@index([carModelId])
 }
 
+model Specs {
+  id            String   @id @default(uuid())
+  brandModelId    String   @unique
+  brandModel      BrandModel @relation(fields: [brandModelId], references: [id], onDelete: Cascade)
+  
+  // Engine
+  engineSize    Float?   // litres, e.g., 2.0
+  power         Int?     // kW
+  torque        Int?     // Nm
+  
+  // Fuel
+  fuelType      FuelType?
+  fuelEconomy   Float?   // L/100km combined
+  
+  // Drivetrain
+  transmission  String? 
+  drivetrain    Drivetrain?
+  
+  seats         Int?
+  bootCapacity  Int?    
+  
+  startingPrice Int?     // AUD before on-roads
+  
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+enum FuelType {
+  PETROL
+  DIESEL
+  HYBRID
+  PHEV
+  ELECTRIC
+}
+
+enum Drivetrain {
+  FWD
+  RWD
+  AWD
+  FOUR_WD  // "4WD" can't start with a number in Prisma enums
+}
 enum CarType {
   SEDAN
   COUPE
   HATCHBACK
   SUV
-  TRUCK
-  MINIVAN
+  UTE
+  VAN
+  PEOPLE_MOVER
+  CONVERTIBLE
+  WAGON
 }
