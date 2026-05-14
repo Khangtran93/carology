@@ -26,13 +26,18 @@ export const CarModelChartClient = ({ carModels} : {carModels: CarModelsIncludeC
   }, [carModels]);
 
   return (
-    <div className="relative w-full">
-      {overflow && <ChevronLeftIcon className='absolute left-0 top-[50%] w-8 h-8 embla__prev border-opacity hidden sm:block' onClick={() => scroll("left")}/>}
+    <div className="relative max-w-[1300px] mx-auto">
+      {overflow && <ChevronLeftIcon className='absolute left-0 top-[60%] w-8 h-8 embla__prev border-opacity hidden sm:block' onClick={() => scroll("left")}/>}
       
-      {overflow && <ChevronRightIcon className='absolute right-0 top-[50%] w-8 h-8 embla__prev border-opacity hidden sm:block' onClick={() => scroll("right")}/>}
+      {overflow && <ChevronRightIcon className='absolute right-0 top-[60%] w-8 h-8 embla__prev border-opacity hidden sm:block' onClick={() => scroll("right")}/>}
 
       {/* SCROLL AREA */}
       {/* className='w-full flex flex-col md:flex-row md:justify-center gap-x-4 m-4 md:m-12 md:min-h-[400px] border-2 border-gray-200 rounded-xl p-4' */}
+
+        <div className='mx-auto flex flex-col items-center'>
+          <h1 className='text-2xl md:text-5xl font-bold md:mb-4'>{carModels?.brand.name} {carModels?.name}</h1>
+          <h2 className='text-lg md:text-2xl font-semibold md:mb-4'>Year Comparsion</h2>
+        </div>
       <ul
         ref={scrollRef}
         className="
