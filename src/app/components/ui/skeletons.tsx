@@ -21,7 +21,11 @@ export function BrandModelListSkeleton() {
 
 export function CarModelChartSkeleton() {
   return (
-    <>
+    <div className="max-w-[1300px] flex flex-col mx-auto">
+      <div className="flex flex-col gap-y-2 mx-auto justify-center item-center">
+        <div className="w-[160px] h-[32px] md:w-[300px] md:h-[48px] bg-gray-200 animate-pulse"></div>
+        <div className="w-[150px] h-[28px] md:w-[200px] md:h-[px] bg-gray-200 animate-pulse mx-auto"></div>
+      </div>
       <ul className='w-full flex flex-col md:flex-row md:justify-center gap-x-4 gap-y-2 m-4 md:m-12 md:min-h-[400px] border-2 border-gray-200 rounded-xl p-4'>
         {Array.from({ length: 16 }).map((_, i) => {
             const randomDimension = Math.floor(Math.random() * 60) + 20
@@ -35,7 +39,7 @@ export function CarModelChartSkeleton() {
             )
           })}
       </ul>
-    </>
+    </div>
   )
 }
 
