@@ -1,19 +1,24 @@
-# .github/workflows/migrate.yml
-name: Migrate Database
+# .github/workflows/seed.yml
+name: Seed Database
 
 on:
-  workflow_dispatch:
+  workflow_dispatch: # manual trigger only
 
 jobs:
-  migrate:
+  seed:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+
       - uses: actions/setup-node@v3
         with:
           node-version: 18
+
       - run: npm install
-      - run: npx prisma migrate deploy
+
+      - run: npx prisma generate
+
+      - run: npx tsx prisma/seed.ts
         env:
           DATABASE_URL: ${{ secrets.DIRECT_URL }}
           DIRECT_URL: ${{ secrets.DIRECT_URL }}

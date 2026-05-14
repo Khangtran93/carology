@@ -1,10 +1,13 @@
 import NextAuth from 'next-auth';
 import { authConfig } from './src/auth.config';
+import { PrismaAdapter } from '@auth/prisma-adapter'
 import Credentials from 'next-auth/providers/credentials';
+import GoogleProvider from 'next-auth/providers/google';
 import { z } from 'zod';
 import bcrypt from 'bcrypt';
 import { User } from '@/generated/prisma';
 import prisma from './lib/prisma';
+
 
 async function getUser(email: string): Promise<User | undefined> {
   try {
@@ -18,9 +21,16 @@ async function getUser(email: string): Promise<User | undefined> {
   }
 
 }
-export const { auth, signIn, signOut } = NextAuth({
+export const { auth, signIn, signOut, handlers } = NextAuth({
   ...authConfig,
+  adapter: PrismaAdapter(prisma),
+  session: { strategy: 'jwt' },
   providers: [
+    GoogleProvider({
+      clientId: process.env.AUTH_GOOGLE_ID,
+      clientSecret: process.env.AUTH_GOOGLE_SECRET,
+      allowDangerousEmailAccountLinking: true,
+    }),
     Credentials({
       async authorize(credentials) {
         const parsedCredentials = z
@@ -29,10 +39,9 @@ export const { auth, signIn, signOut } = NextAuth({
         if (parsedCredentials.success) {
           const { email, password } = parsedCredentials.data;
           const user = await getUser(email);
-          if (!user) return null;
+          if (!user || !user.password) return null;
 
           const passwordsMatch = await bcrypt.compare(password, user.password);
-
           if (passwordsMatch) {
             // eslint-disable-next-line @typescript-eslint/no-unused-vars
             const {password: _, ...userWithoutPassword} = user

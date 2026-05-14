@@ -27,6 +27,11 @@ export async function authenticate(
   }
 }
 
+export async function authenticateGoogle(formData: FormData) {
+  const callbackUrl = (formData.get('redirectTo') as string) || '/'
+  await signIn('google', { redirectTo: callbackUrl })
+}
+
 export async function createUser(prevState: FormState , formData: FormData) {
   const validatedFields = SignupFormSchema.safeParse({
     name: formData.get('name'),

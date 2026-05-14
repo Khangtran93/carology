@@ -6,9 +6,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 }
 const Button: React.FC<ButtonProps> = ({label, className}) => {
   return (
-    <div className={`rounded-xl cursor-pointer bg-black p-2 text-white ${className}`}>
-      <button className='cursor-pointer'>{label}</button>
-    </div>
+      <button className={`rounded-xl cursor-pointer bg-slate-800 p-2 text-white cursor-pointer ${className}`}>{label}</button>
   )
 }
 

@@ -5,7 +5,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='w-full flex flex-col bg-black text-white px-12 md:px-40 pt-12 pb-8 '>
+    <div className='w-full flex flex-col bg-slate-950/80 text-white px-12 md:px-40 pt-12 pb-8 '>
       <div className='w-full flex flex-col md:flex-row justify-between gap-y-4 pb-6 md:pb-12'>
         <div className='flex flex-col gap-y-2 md:gap-y-4'>
           <Link href='/' className={`${logoFont.className} text-3xl`}>CAROLOGY</Link>
