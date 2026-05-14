@@ -63,7 +63,7 @@ export default function SearchBar() {
           Search
         </label>
         <input
-          className="w-full bg-white peer block rounded-md py-[9px] pl-10 text-sm placeholder:text-gray-500 rounded-lg"
+          className="w-full bg-white peer block rounded-md py-[9px] pl-8 md:pl-10 text-sm placeholder:text-gray-500 rounded-lg"
           type='text'
           value={query}
           placeholder="Search brands, models, complaints..."
@@ -74,7 +74,7 @@ export default function SearchBar() {
             <div className="w-4 h-4 border-2 border-gray-300 border-t-gray-600 rounded-full animate-spin" />
           </div>
         )}
-        <MagnifyingGlassIcon className="absolute left-4 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-gray-500 peer-focus:text-gray-900" />
+        <MagnifyingGlassIcon className="absolute left-2 md:left-4 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-gray-500 peer-focus:text-gray-900" />
 
         {isOpen && (
         <div className="w-full top-full absolute z-50 mt-1 peer block mx-auto rounded-lg border border-gray-200 bg-white shadow-lg">
@@ -89,7 +89,7 @@ export default function SearchBar() {
               {results?.brands.map((brand) => (
                 <Link
                   key={brand.id}
-                  href={`/brand/${brand.slug}`}
+                  href={`/${brand.slug}`}
                   onClick={() => setIsOpen(false)}
                   className="block px-4 py-2 text-sm hover:bg-gray-50"
                 >
@@ -104,7 +104,7 @@ export default function SearchBar() {
               {results?.carModels.map((model) => (
                 <Link
                   key={model.id}
-                  href={`/brand/${model.brandModel.brand.slug}/${model.brandModel.slug}/${model.slug}`}
+                  href={`/${model.brandModel.brand.slug}/${model.brandModel.slug}/${model.slug}`}
                   onClick={() => setIsOpen(false)}
                   className="block px-4 py-2 text-sm hover:bg-gray-50"
                 >
@@ -120,7 +120,7 @@ export default function SearchBar() {
               {results?.complaints.map((complaint) => (
                 <Link
                   key={complaint.id}
-                  href={`/brand/${complaint.carModel.brandModel.brand.slug}/${complaint.carModel.brandModel.slug}/${complaint.carModel.slug}`}
+                  href={`/${complaint.carModel.brandModel.brand.slug}/${complaint.carModel.brandModel.slug}/${complaint.carModel.slug}`}
                   onClick={() => setIsOpen(false)}
                   className="block px-4 py-2 text-sm hover:bg-gray-50"
                 >

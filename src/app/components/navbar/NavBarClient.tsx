@@ -9,7 +9,7 @@ export default function NavbarClient({ isLoggedIn }: { isLoggedIn: boolean }) {
   const [open, setOpen] = useState(false)
 
   return (
-    <div className={`relative w-full bg-black text-white ${logoFont.className}`}>
+    <div className={`sticky top-0 z-50 w-full bg-slate-950/80 backdrop-blur-md border-b border-slate-700/50 text-white ${logoFont.className}`}>
       <div className="flex justify-between items-center px-6 md:px-20 lg:px-40 py-4">
         <Link href="/" className="text-3xl">
           CAROLOGY
@@ -23,7 +23,7 @@ export default function NavbarClient({ isLoggedIn }: { isLoggedIn: boolean }) {
               <button className='p-0 cursor-pointer' type="submit" onClick={() => signOutAction()}>Sign Out</button>
             </>
           ) : (
-            <Link href="/login">Login</Link>
+            <Link href="/login" onClick={() => setOpen(false)}>Login</Link>
           )}
         </div>
 
@@ -35,32 +35,27 @@ export default function NavbarClient({ isLoggedIn }: { isLoggedIn: boolean }) {
           {open ? '✕' : '☰'}
         </button>
         {open && (
-  <>
-    {/* Backdrop */}
-    <div 
-      className="fixed inset-0 z-40 md:hidden"
-      onClick={() => setOpen(false)}
-    />
-    
-    {/* Dropdown */}
-    <div className="z-50 absolute top-full right-0 md:hidden flex flex-col gap-4 pt-4 px-6 pb-6 text-xl bg-black rounded-bl-lg shadow-xl">
-      {isLoggedIn ? (
         <>
-          <Link href="/profile">Profile</Link>
-          <form action={signOutAction}>
-            <button type="submit">Sign Out</button>
-          </form>
+    {/* Backdrop */}
+          <div 
+            className="fixed inset-0 z-40 md:hidden"
+            onClick={() => setOpen(false)}
+          />
+    
+          {/* Dropdown */}
+          <div className="z-50 absolute top-full right-0 md:hidden flex flex-col gap-4 pt-4 px-6 pb-6 text-xl bg-slate-900/80 backdrop-blur-md border-b border-slate-700/50 rounded-bl-lg shadow-xl">
+            {isLoggedIn ? (
+              <>
+                <Link href="/profile">Profile</Link>
+                <button onClick={() => { signOutAction(); setOpen(false) }}>Sign Out</button>
+              </>
+            ) : (
+              <Link href="/login" onClick={() => setOpen(false)}>Login</Link>
+              )}
+          </div>
         </>
-      ) : (
-        <Link href="/login">Login</Link>
-      )}
-    </div>
-  </>
-)}
-      </div>
-
-      {/* Mobile menu */}
-      
+        )}
+      </div>    
     </div>
   )
 }

@@ -1,0 +1,3282 @@
+[
+  {
+    "brand": "Toyota",
+    "model": "HiLux",
+    "specs": {
+      "engineSize": 2.8,
+      "power": 204,
+      "torque": 500,
+      "fuelType": "DIESEL",
+      "fuelEconomy": 8.5,
+      "transmission": "6-speed automatic",
+      "drivetrain": "FOUR_WD",
+      "seats": 5,
+      "bootCapacity": 1148,
+      "startingPrice": 28990
+    }
+  },
+  {
+    "brand": "Toyota",
+    "model": "RAV4",
+    "specs": {
+      "engineSize": 2.5,
+      "power": 203,
+      "torque": 243,
+      "fuelType": "PETROL",
+      "fuelEconomy": 8.2,
+      "transmission": "8-speed automatic",
+      "drivetrain": "AWD",
+      "seats": 5,
+      "bootCapacity": 580,
+      "startingPrice": 32990
+    }
+  },
+  {
+    "brand": "Toyota",
+    "model": "Corolla",
+    "specs": {
+      "engineSize": 1.8,
+      "power": 140,
+      "torque": 170,
+      "fuelType": "PETROL",
+      "fuelEconomy": 6.8,
+      "transmission": "CVT automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 419,
+      "startingPrice": 23990
+    }
+  },
+  {
+    "brand": "Toyota",
+    "model": "Camry",
+    "specs": {
+      "engineSize": 2.5,
+      "power": 203,
+      "torque": 243,
+      "fuelType": "PETROL",
+      "fuelEconomy": 7.5,
+      "transmission": "8-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 469,
+      "startingPrice": 32990
+    }
+  },
+  {
+    "brand": "Toyota",
+    "model": "Kluger",
+    "specs": {
+      "engineSize": 3.5,
+      "power": 290,
+      "torque": 263,
+      "fuelType": "PETROL",
+      "fuelEconomy": 9.8,
+      "transmission": "8-speed automatic",
+      "drivetrain": "AWD",
+      "seats": 7,
+      "bootCapacity": 450,
+      "startingPrice": 48990
+    }
+  },
+  {
+    "brand": "Toyota",
+    "model": "Yaris",
+    "specs": {
+      "engineSize": 1.5,
+      "power": 110,
+      "torque": 140,
+      "fuelType": "PETROL",
+      "fuelEconomy": 6.0,
+      "transmission": "CVT automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 336,
+      "startingPrice": 18990
+    }
+  },
+  {
+    "brand": "Toyota",
+    "model": "Prius",
+    "specs": {
+      "engineSize": 1.8,
+      "power": 122,
+      "torque": 163,
+      "fuelType": "HYBRID",
+      "fuelEconomy": 4.2,
+      "transmission": "CVT automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 404,
+      "startingPrice": 29990
+    }
+  },
+  {
+    "brand": "Ford",
+    "model": "Ranger",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 157,
+      "torque": 389,
+      "fuelType": "DIESEL",
+      "fuelEconomy": 7.8,
+      "transmission": "10-speed automatic",
+      "drivetrain": "FOUR_WD",
+      "seats": 5,
+      "bootCapacity": 1277,
+      "startingPrice": 27990
+    }
+  },
+  {
+    "brand": "Ford",
+    "model": "Everest",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 157,
+      "torque": 389,
+      "fuelType": "DIESEL",
+      "fuelEconomy": 8.5,
+      "transmission": "10-speed automatic",
+      "drivetrain": "FOUR_WD",
+      "seats": 7,
+      "bootCapacity": 607,
+      "startingPrice": 42990
+    }
+  },
+  {
+    "brand": "Ford",
+    "model": "Escape",
+    "specs": {
+      "engineSize": 1.5,
+      "power": 167,
+      "torque": 243,
+      "fuelType": "PETROL",
+      "fuelEconomy": 7.2,
+      "transmission": "8-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 487,
+      "startingPrice": 28990
+    }
+  },
+  {
+    "brand": "Mazda",
+    "model": "CX-5",
+    "specs": {
+      "engineSize": 2.5,
+      "power": 188,
+      "torque": 251,
+      "fuelType": "PETROL",
+      "fuelEconomy": 7.8,
+      "transmission": "6-speed automatic",
+      "drivetrain": "AWD",
+      "seats": 5,
+      "bootCapacity": 504,
+      "startingPrice": 32990
+    }
+  },
+  {
+    "brand": "Mazda",
+    "model": "Mazda3",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 150,
+      "torque": 200,
+      "fuelType": "PETROL",
+      "fuelEconomy": 6.8,
+      "transmission": "6-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 414,
+      "startingPrice": 24990
+    }
+  },
+  {
+    "brand": "Mazda",
+    "model": "BT-50",
+    "specs": {
+      "engineSize": 3.0,
+      "power": 188,
+      "torque": 450,
+      "fuelType": "DIESEL",
+      "fuelEconomy": 8.2,
+      "transmission": "6-speed automatic",
+      "drivetrain": "FOUR_WD",
+      "seats": 5,
+      "bootCapacity": 1110,
+      "startingPrice": 26990
+    }
+  },
+  {
+    "brand": "Mazda",
+    "model": "CX-9",
+    "specs": {
+      "engineSize": 3.7,
+      "power": 280,
+      "torque": 252,
+      "fuelType": "PETROL",
+      "fuelEconomy": 9.5,
+      "transmission": "6-speed automatic",
+      "drivetrain": "AWD",
+      "seats": 7,
+      "bootCapacity": 502,
+      "startingPrice": 42990
+    }
+  },
+  {
+    "brand": "Hyundai",
+    "model": "i30",
+    "specs": {
+      "engineSize": 1.6,
+      "power": 120,
+      "torque": 154,
+      "fuelType": "PETROL",
+      "fuelEconomy": 6.5,
+      "transmission": "6-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 409,
+      "startingPrice": 21990
+    }
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Tucson",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 165,
+      "torque": 211,
+      "fuelType": "PETROL",
+      "fuelEconomy": 7.8,
+      "transmission": "6-speed automatic",
+      "drivetrain": "AWD",
+      "seats": 5,
+      "bootCapacity": 545,
+      "startingPrice": 28990
+    }
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Santa Fe",
+    "specs": {
+      "engineSize": 2.2,
+      "power": 202,
+      "torque": 440,
+      "fuelType": "DIESEL",
+      "fuelEconomy": 8.3,
+      "transmission": "8-speed automatic",
+      "drivetrain": "AWD",
+      "seats": 7,
+      "bootCapacity": 714,
+      "startingPrice": 38990
+    }
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Kona",
+    "specs": {
+      "engineSize": 1.6,
+      "power": 123,
+      "torque": 167,
+      "fuelType": "PETROL",
+      "fuelEconomy": 6.8,
+      "transmission": "6-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 374,
+      "startingPrice": 24990
+    }
+  },
+  {
+    "brand": "Kia",
+    "model": "Sportage",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 165,
+      "torque": 211,
+      "fuelType": "PETROL",
+      "fuelEconomy": 7.8,
+      "transmission": "6-speed automatic",
+      "drivetrain": "AWD",
+      "seats": 5,
+      "bootCapacity": 541,
+      "startingPrice": 27990
+    }
+  },
+  {
+    "brand": "Kia",
+    "model": "Sorento",
+    "specs": {
+      "engineSize": 2.2,
+      "power": 202,
+      "torque": 440,
+      "fuelType": "DIESEL",
+      "fuelEconomy": 8.2,
+      "transmission": "8-speed automatic",
+      "drivetrain": "AWD",
+      "seats": 7,
+      "bootCapacity": 722,
+      "startingPrice": 36990
+    }
+  },
+  {
+    "brand": "Kia",
+    "model": "Cerato",
+    "specs": {
+      "engineSize": 1.6,
+      "power": 123,
+      "torque": 154,
+      "fuelType": "PETROL",
+      "fuelEconomy": 6.8,
+      "transmission": "6-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 410,
+      "startingPrice": 22990
+    }
+  },
+  {
+    "brand": "Nissan",
+    "model": "Navara",
+    "specs": {
+      "engineSize": 2.3,
+      "power": 163,
+      "torque": 403,
+      "fuelType": "DIESEL",
+      "fuelEconomy": 8.0,
+      "transmission": "7-speed automatic",
+      "drivetrain": "FOUR_WD",
+      "seats": 5,
+      "bootCapacity": 1223,
+      "startingPrice": 26990
+    }
+  },
+  {
+    "brand": "Nissan",
+    "model": "Qashqai",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 144,
+      "torque": 200,
+      "fuelType": "PETROL",
+      "fuelEconomy": 7.5,
+      "transmission": "CVT automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 422,
+      "startingPrice": 26990
+    }
+  },
+  {
+    "brand": "Nissan",
+    "model": "X-Trail",
+    "specs": {
+      "engineSize": 2.5,
+      "power": 171,
+      "torque": 233,
+      "fuelType": "PETROL",
+      "fuelEconomy": 8.2,
+      "transmission": "CVT automatic",
+      "drivetrain": "AWD",
+      "seats": 7,
+      "bootCapacity": 445,
+      "startingPrice": 32990
+    }
+  },
+  {
+    "brand": "Isuzu",
+    "model": "D-Max",
+    "specs": {
+      "engineSize": 1.9,
+      "power": 150,
+      "torque": 390,
+      "fuelType": "DIESEL",
+      "fuelEconomy": 7.6,
+      "transmission": "6-speed automatic",
+      "drivetrain": "FOUR_WD",
+      "seats": 5,
+      "bootCapacity": 1128,
+      "startingPrice": 25990
+    }
+  },
+  {
+    "brand": "Isuzu",
+    "model": "MU-X",
+    "specs": {
+      "engineSize": 1.9,
+      "power": 150,
+      "torque": 390,
+      "fuelType": "DIESEL",
+      "fuelEconomy": 8.1,
+      "transmission": "6-speed automatic",
+      "drivetrain": "FOUR_WD",
+      "seats": 7,
+      "bootCapacity": 449,
+      "startingPrice": 38990
+    }
+  },
+  {
+    "brand": "Holden",
+    "model": "Trax",
+    "specs": {
+      "engineSize": 1.4,
+      "power": 103,
+      "torque": 140,
+      "fuelType": "PETROL",
+      "fuelEconomy": 6.8,
+      "transmission": "6-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 370,
+      "startingPrice": 21990
+    }
+  },
+  {
+    "brand": "Holden",
+    "model": "Colorado",
+    "specs": {
+      "engineSize": 2.8,
+      "power": 165,
+      "torque": 450,
+      "fuelType": "DIESEL",
+      "fuelEconomy": 8.2,
+      "transmission": "6-speed automatic",
+      "drivetrain": "FOUR_WD",
+      "seats": 5,
+      "bootCapacity": 1090,
+      "startingPrice": 24990
+    }
+  },
+  {
+    "brand": "Subaru",
+    "model": "Outback",
+    "specs": {
+      "engineSize": 2.5,
+      "power": 182,
+      "torque": 252,
+      "fuelType": "PETROL",
+      "fuelEconomy": 8.5,
+      "transmission": "CVT automatic",
+      "drivetrain": "AWD",
+      "seats": 5,
+      "bootCapacity": 522,
+      "startingPrice": 35990
+    }
+  },
+  {
+    "brand": "Subaru",
+    "model": "Forester",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 145,
+      "torque": 188,
+      "fuelType": "PETROL",
+      "fuelEconomy": 7.8,
+      "transmission": "CVT automatic",
+      "drivetrain": "AWD",
+      "seats": 5,
+      "bootCapacity": 520,
+      "startingPrice": 32990
+    }
+  },
+  {
+    "brand": "Subaru",
+    "model": "XV",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 145,
+      "torque": 188,
+      "fuelType": "PETROL",
+      "fuelEconomy": 7.5,
+      "transmission": "CVT automatic",
+      "drivetrain": "AWD",
+      "seats": 5,
+      "bootCapacity": 407,
+      "startingPrice": 28990
+    }
+  },
+  {
+    "brand": "Volkswagen",
+    "model": "Golf",
+    "specs": {
+      "engineSize": 1.4,
+      "power": 130,
+      "torque": 200,
+      "fuelType": "PETROL",
+      "fuelEconomy": 6.2,
+      "transmission": "7-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 381,
+      "startingPrice": 28990
+    }
+  },
+  {
+    "brand": "Volkswagen",
+    "model": "Tiguan",
+    "specs": {
+      "engineSize": 1.4,
+      "power": 150,
+      "torque": 220,
+      "fuelType": "PETROL",
+      "fuelEconomy": 7.8,
+      "transmission": "7-speed automatic",
+      "drivetrain": "AWD",
+      "seats": 5,
+      "bootCapacity": 385,
+      "startingPrice": 35990
+    }
+  },
+  {
+    "brand": "Mitsubishi",
+    "model": "Outlander",
+    "specs": {
+      "engineSize": 2.4,
+      "power": 182,
+      "torque": 237,
+      "fuelType": "PETROL",
+      "fuelEconomy": 8.2,
+      "transmission": "8-speed automatic",
+      "drivetrain": "AWD",
+      "seats": 7,
+      "bootCapacity": 498,
+      "startingPrice": 32990
+    }
+  },
+  {
+    "brand": "Mitsubishi",
+    "model": "Triton",
+    "specs": {
+      "engineSize": 2.4,
+      "power": 181,
+      "torque": 430,
+      "fuelType": "DIESEL",
+      "fuelEconomy": 7.8,
+      "transmission": "8-speed automatic",
+      "drivetrain": "FOUR_WD",
+      "seats": 5,
+      "bootCapacity": 1068,
+      "startingPrice": 28990
+    }
+  },
+  {
+    "brand": "BMW",
+    "model": "3 Series",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 184,
+      "torque": 300,
+      "fuelType": "PETROL",
+      "fuelEconomy": 7.5,
+      "transmission": "8-speed automatic",
+      "drivetrain": "RWD",
+      "seats": 5,
+      "bootCapacity": 375,
+      "startingPrice": 49990
+    }
+  },
+  {
+    "brand": "BMW",
+    "model": "X3",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 184,
+      "torque": 300,
+      "fuelType": "PETROL",
+      "fuelEconomy": 8.2,
+      "transmission": "8-speed automatic",
+      "drivetrain": "AWD",
+      "seats": 5,
+      "bootCapacity": 545,
+      "startingPrice": 59990
+    }
+  },
+  {
+    "brand": "BMW",
+    "model": "5 Series",
+    "specs": {
+      "engineSize": 3.0,
+      "power": 340,
+      "torque": 450,
+      "fuelType": "PETROL",
+      "fuelEconomy": 8.5,
+      "transmission": "8-speed automatic",
+      "drivetrain": "RWD",
+      "seats": 5,
+      "bootCapacity": 520,
+      "startingPrice": 69990
+    }
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "model": "C-Class",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 204,
+      "torque": 320,
+      "fuelType": "PETROL",
+      "fuelEconomy": 7.8,
+      "transmission": "9-speed automatic",
+      "drivetrain": "RWD",
+      "seats": 5,
+      "bootCapacity": 370,
+      "startingPrice": 49990
+    }
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "model": "GLC",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 204,
+      "torque": 320,
+      "fuelType": "PETROL",
+      "fuelEconomy": 8.5,
+      "transmission": "9-speed automatic",
+      "drivetrain": "AWD",
+      "seats": 5,
+      "bootCapacity": 550,
+      "startingPrice": 59990
+    }
+  },
+  {
+    "brand": "Audi",
+    "model": "A3",
+    "specs": {
+      "engineSize": 1.5,
+      "power": 150,
+      "torque": 200,
+      "fuelType": "PETROL",
+      "fuelEconomy": 6.8,
+      "transmission": "7-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 380,
+      "startingPrice": 42990
+    }
+  },
+  {
+    "brand": "Audi",
+    "model": "A4",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 190,
+      "torque": 320,
+      "fuelType": "PETROL",
+      "fuelEconomy": 7.2,
+      "transmission": "7-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 460,
+      "startingPrice": 52990
+    }
+  },
+  {
+    "brand": "Audi",
+    "model": "Q3",
+    "specs": {
+      "engineSize": 1.5,
+      "power": 150,
+      "torque": 200,
+      "fuelType": "PETROL",
+      "fuelEconomy": 7.5,
+      "transmission": "7-speed automatic",
+      "drivetrain": "AWD",
+      "seats": 5,
+      "bootCapacity": 410,
+      "startingPrice": 48990
+    }
+  },
+  {
+    "brand": "Audi",
+    "model": "Q5",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 190,
+      "torque": 320,
+      "fuelType": "PETROL",
+      "fuelEconomy": 8.2,
+      "transmission": "7-speed automatic",
+      "drivetrain": "AWD",
+      "seats": 5,
+      "bootCapacity": 550,
+      "startingPrice": 62990
+    }
+  },
+  {
+    "brand": "Lexus",
+    "model": "IS",
+    "specs": {
+      "engineSize": 2.5,
+      "power": 203,
+      "torque": 243,
+      "fuelType": "PETROL",
+      "fuelEconomy": 7.8,
+      "transmission": "8-speed automatic",
+      "drivetrain": "RWD",
+      "seats": 5,
+      "bootCapacity": 455,
+      "startingPrice": 54990
+    }
+  },
+  {
+    "brand": "Lexus",
+    "model": "NX",
+    "specs": {
+      "engineSize": 2.5,
+      "power": 203,
+      "torque": 243,
+      "fuelType": "PETROL",
+      "fuelEconomy": 8.5,
+      "transmission": "8-speed automatic",
+      "drivetrain": "AWD",
+      "seats": 5,
+      "bootCapacity": 520,
+      "startingPrice": 52990
+    }
+  },
+  {
+    "brand": "Lexus",
+    "model": "RX",
+    "specs": {
+      "engineSize": 3.5,
+      "power": 290,
+      "torque": 263,
+      "fuelType": "PETROL",
+      "fuelEconomy": 9.2,
+      "transmission": "8-speed automatic",
+      "drivetrain": "AWD",
+      "seats": 7,
+      "bootCapacity": 470,
+      "startingPrice": 72990
+    }
+  },
+  {
+    "brand": "Tesla",
+    "model": "Model Y",
+    "specs": {
+      "engineSize": null,
+      "power": 462,
+      "torque": 660,
+      "fuelType": "ELECTRIC",
+      "fuelEconomy": null,
+      "transmission": "Single speed automatic",
+      "drivetrain": "AWD",
+      "seats": 5,
+      "bootCapacity": 487,
+      "startingPrice": 52990
+    }
+  },
+  {
+    "brand": "Tesla",
+    "model": "Model 3",
+    "specs": {
+      "engineSize": null,
+      "power": 400,
+      "torque": 540,
+      "fuelType": "ELECTRIC",
+      "fuelEconomy": null,
+      "transmission": "Single speed automatic",
+      "drivetrain": "RWD",
+      "seats": 5,
+      "bootCapacity": 390,
+      "startingPrice": 42990
+    }
+  },
+  {
+    "brand": "BYD",
+    "model": "Atto 3",
+    "specs": {
+      "engineSize": null,
+      "power": 300,
+      "torque": 420,
+      "fuelType": "ELECTRIC",
+      "fuelEconomy": null,
+      "transmission": "Single speed automatic",
+      "drivetrain": "AWD",
+      "seats": 5,
+      "bootCapacity": 450,
+      "startingPrice": 38990
+    }
+  },
+  {
+    "brand": "BYD",
+    "model": "Seal",
+    "specs": {
+      "engineSize": null,
+      "power": 380,
+      "torque": 540,
+      "fuelType": "ELECTRIC",
+      "fuelEconomy": null,
+      "transmission": "Single speed automatic",
+      "drivetrain": "RWD",
+      "seats": 5,
+      "bootCapacity": 400,
+      "startingPrice": 36990
+    }
+  },
+  {
+    "brand": "Mazda",
+    "model": "CX-3",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 110,
+      "torque": 195,
+      "fuelType": "PETROL",
+      "fuelEconomy": 6.7,
+      "transmission": "6-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 264,
+      "startingPrice": 26890
+    }
+  },
+  {
+    "brand": "Mazda",
+    "model": "CX-30",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 114,
+      "torque": 200,
+      "fuelType": "PETROL",
+      "fuelEconomy": 6.5,
+      "transmission": "6-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 317,
+      "startingPrice": 33150
+    }
+  },
+  {
+    "brand": "Mazda",
+    "model": "CX-60",
+    "specs": {
+      "engineSize": 3.3,
+      "power": 209,
+      "torque": 450,
+      "fuelType": "DIESEL",
+      "fuelEconomy": 5.4,
+      "transmission": "8-speed automatic",
+      "drivetrain": "AWD",
+      "seats": 5,
+      "bootCapacity": 477,
+      "startingPrice": 59800
+    }
+  },
+  {
+    "brand": "Mazda",
+    "model": "CX-8",
+    "specs": {
+      "engineSize": 2.5,
+      "power": 140,
+      "torque": 252,
+      "fuelType": "PETROL",
+      "fuelEconomy": 8.1,
+      "transmission": "6-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 7,
+      "bootCapacity": 209,
+      "startingPrice": 42570
+    }
+  },
+  {
+    "brand": "Mazda",
+    "model": "Mazda2",
+    "specs": {
+      "engineSize": 1.5,
+      "power": 81,
+      "torque": 142,
+      "fuelType": "PETROL",
+      "fuelEconomy": 5.4,
+      "transmission": "6-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 250,
+      "startingPrice": 22800
+    }
+  },
+  {
+    "brand": "Mazda",
+    "model": "MX-5",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 135,
+      "torque": 205,
+      "fuelType": "PETROL",
+      "fuelEconomy": 6.8,
+      "transmission": "6-speed manual",
+      "drivetrain": "RWD",
+      "seats": 2,
+      "bootCapacity": 130,
+      "startingPrice": 41260
+    }
+  },
+  {
+    "brand": "Toyota",
+    "model": "C-HR",
+    "specs": {
+      "engineSize": 1.8,
+      "power": 90,
+      "torque": 142,
+      "fuelType": "HYBRID",
+      "fuelEconomy": 4.1,
+      "transmission": "CVT automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 388,
+      "startingPrice": 36990
+    }
+  },
+  {
+    "brand": "Toyota",
+    "model": "Yaris Cross",
+    "specs": {
+      "engineSize": 1.5,
+      "power": 85,
+      "torque": 141,
+      "fuelType": "HYBRID",
+      "fuelEconomy": 3.8,
+      "transmission": "CVT automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 314,
+      "startingPrice": 30640
+    }
+  },
+  {
+    "brand": "Toyota",
+    "model": "Corolla Cross",
+    "specs": {
+      "engineSize": 1.8,
+      "power": 90,
+      "torque": 142,
+      "fuelType": "HYBRID",
+      "fuelEconomy": 4.3,
+      "transmission": "CVT automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 425,
+      "startingPrice": 33980
+    }
+  },
+  {
+    "brand": "Toyota",
+    "model": "Land Cruiser",
+    "specs": {
+      "engineSize": 3.3,
+      "power": 227,
+      "torque": 700,
+      "fuelType": "DIESEL",
+      "fuelEconomy": 8.9,
+      "transmission": "10-speed automatic",
+      "drivetrain": "FOUR_WD",
+      "seats": 7,
+      "bootCapacity": 1131,
+      "startingPrice": 99990
+    }
+  },
+  {
+    "brand": "Toyota",
+    "model": "LandCruiser Prado",
+    "specs": {
+      "engineSize": 2.8,
+      "power": 150,
+      "torque": 500,
+      "fuelType": "DIESEL",
+      "fuelEconomy": 7.6,
+      "transmission": "8-speed automatic",
+      "drivetrain": "FOUR_WD",
+      "seats": 7,
+      "bootCapacity": 974,
+      "startingPrice": 72500
+    }
+  },
+  {
+    "brand": "Toyota",
+    "model": "HiAce",
+    "specs": {
+      "engineSize": 2.8,
+      "power": 130,
+      "torque": 450,
+      "fuelType": "DIESEL",
+      "fuelEconomy": 8.2,
+      "transmission": "6-speed automatic",
+      "drivetrain": "RWD",
+      "seats": 5,
+      "bootCapacity": 6200,
+      "startingPrice": 47640
+    }
+  },
+  {
+    "brand": "Toyota",
+    "model": "Fortuner",
+    "specs": {
+      "engineSize": 2.8,
+      "power": 150,
+      "torque": 500,
+      "fuelType": "DIESEL",
+      "fuelEconomy": 7.6,
+      "transmission": "6-speed automatic",
+      "drivetrain": "FOUR_WD",
+      "seats": 7,
+      "bootCapacity": 296,
+      "startingPrice": 53775
+    }
+  },
+  {
+    "brand": "Toyota",
+    "model": "86",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 152,
+      "torque": 212,
+      "fuelType": "PETROL",
+      "fuelEconomy": 8.4,
+      "transmission": "6-speed manual",
+      "drivetrain": "RWD",
+      "seats": 4,
+      "bootCapacity": 243,
+      "startingPrice": 31990
+    }
+  },
+  {
+    "brand": "Toyota",
+    "model": "GR Yaris",
+    "specs": {
+      "engineSize": 1.6,
+      "power": 200,
+      "torque": 370,
+      "fuelType": "PETROL",
+      "fuelEconomy": 7.6,
+      "transmission": "6-speed manual",
+      "drivetrain": "AWD",
+      "seats": 4,
+      "bootCapacity": 174,
+      "startingPrice": 55490
+    }
+  },
+  {
+    "brand": "Toyota",
+    "model": "GR86",
+    "specs": {
+      "engineSize": 2.4,
+      "power": 174,
+      "torque": 250,
+      "fuelType": "PETROL",
+      "fuelEconomy": 8.8,
+      "transmission": "6-speed manual",
+      "drivetrain": "RWD",
+      "seats": 4,
+      "bootCapacity": 226,
+      "startingPrice": 43240
+    }
+  },
+  {
+    "brand": "Ford",
+    "model": "Focus",
+    "specs": {
+      "engineSize": 1.5,
+      "power": 134,
+      "torque": 240,
+      "fuelType": "PETROL",
+      "fuelEconomy": 6.4,
+      "transmission": "8-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 375,
+      "startingPrice": 28990
+    }
+  },
+  {
+    "brand": "Ford",
+    "model": "Mustang",
+    "specs": {
+      "engineSize": 5.0,
+      "power": 345,
+      "torque": 556,
+      "fuelType": "PETROL",
+      "fuelEconomy": 12.4,
+      "transmission": "10-speed automatic",
+      "drivetrain": "RWD",
+      "seats": 4,
+      "bootCapacity": 408,
+      "startingPrice": 78990
+    }
+  },
+  {
+    "brand": "Ford",
+    "model": "Puma",
+    "specs": {
+      "engineSize": 1.0,
+      "power": 92,
+      "torque": 170,
+      "fuelType": "PETROL",
+      "fuelEconomy": 5.3,
+      "transmission": "7-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 456,
+      "startingPrice": 31990
+    }
+  },
+  {
+    "brand": "Ford",
+    "model": "Territory",
+    "specs": {
+      "engineSize": 1.5,
+      "power": 124,
+      "torque": 248,
+      "fuelType": "PETROL",
+      "fuelEconomy": 7.5,
+      "transmission": "7-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 448,
+      "startingPrice": 39990
+    }
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Venue",
+    "specs": {
+      "engineSize": 1.6,
+      "power": 90,
+      "torque": 151,
+      "fuelType": "PETROL",
+      "fuelEconomy": 7.2,
+      "transmission": "6-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 355,
+      "startingPrice": 22750
+    }
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Staria",
+    "specs": {
+      "engineSize": 2.2,
+      "power": 130,
+      "torque": 430,
+      "fuelType": "DIESEL",
+      "fuelEconomy": 8.2,
+      "transmission": "8-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 8,
+      "bootCapacity": 831,
+      "startingPrice": 51000
+    }
+  },
+  {
+    "brand": "Hyundai",
+    "model": "IONIQ 5",
+    "specs": {
+      "engineSize": null,
+      "power": 168,
+      "torque": 350,
+      "fuelType": "ELECTRIC",
+      "fuelEconomy": null,
+      "transmission": "Single speed automatic",
+      "drivetrain": "RWD",
+      "seats": 5,
+      "bootCapacity": 527,
+      "startingPrice": 71500
+    }
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Elantra",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 117,
+      "torque": 191,
+      "fuelType": "PETROL",
+      "fuelEconomy": 6.1,
+      "transmission": "CVT automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 474,
+      "startingPrice": 27250
+    }
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Accent",
+    "specs": {
+      "engineSize": 1.6,
+      "power": 91,
+      "torque": 151,
+      "fuelType": "PETROL",
+      "fuelEconomy": 6.1,
+      "transmission": "6-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 389,
+      "startingPrice": 16990
+    }
+  },
+  {
+    "brand": "Kia",
+    "model": "Carnival",
+    "specs": {
+      "engineSize": 2.2,
+      "power": 148,
+      "torque": 440,
+      "fuelType": "DIESEL",
+      "fuelEconomy": 6.5,
+      "transmission": "8-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 8,
+      "bootCapacity": 627,
+      "startingPrice": 50150
+    }
+  },
+  {
+    "brand": "Kia",
+    "model": "Seltos",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 110,
+      "torque": 180,
+      "fuelType": "PETROL",
+      "fuelEconomy": 6.9,
+      "transmission": "CVT automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 433,
+      "startingPrice": 29950
+    }
+  },
+  {
+    "brand": "Kia",
+    "model": "Picanto",
+    "specs": {
+      "engineSize": 1.2,
+      "power": 62,
+      "torque": 122,
+      "fuelType": "PETROL",
+      "fuelEconomy": 5.8,
+      "transmission": "4-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 255,
+      "startingPrice": 18290
+    }
+  },
+  {
+    "brand": "Kia",
+    "model": "Rio",
+    "specs": {
+      "engineSize": 1.4,
+      "power": 74,
+      "torque": 133,
+      "fuelType": "PETROL",
+      "fuelEconomy": 6.0,
+      "transmission": "6-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 325,
+      "startingPrice": 21290
+    }
+  },
+  {
+    "brand": "Kia",
+    "model": "EV6",
+    "specs": {
+      "engineSize": null,
+      "power": 168,
+      "torque": 350,
+      "fuelType": "ELECTRIC",
+      "fuelEconomy": null,
+      "transmission": "Single speed automatic",
+      "drivetrain": "RWD",
+      "seats": 5,
+      "bootCapacity": 490,
+      "startingPrice": 72590
+    }
+  },
+  {
+    "brand": "Kia",
+    "model": "Stinger",
+    "specs": {
+      "engineSize": 3.3,
+      "power": 274,
+      "torque": 510,
+      "fuelType": "PETROL",
+      "fuelEconomy": 10.2,
+      "transmission": "8-speed automatic",
+      "drivetrain": "RWD",
+      "seats": 5,
+      "bootCapacity": 406,
+      "startingPrice": 64690
+    }
+  },
+  {
+    "brand": "Nissan",
+    "model": "Patrol",
+    "specs": {
+      "engineSize": 5.6,
+      "power": 298,
+      "torque": 560,
+      "fuelType": "PETROL",
+      "fuelEconomy": 14.4,
+      "transmission": "7-speed automatic",
+      "drivetrain": "FOUR_WD",
+      "seats": 8,
+      "bootCapacity": 467,
+      "startingPrice": 91300
+    }
+  },
+  {
+    "brand": "Nissan",
+    "model": "Juke",
+    "specs": {
+      "engineSize": 1.0,
+      "power": 84,
+      "torque": 180,
+      "fuelType": "PETROL",
+      "fuelEconomy": 5.8,
+      "transmission": "7-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 422,
+      "startingPrice": 30290
+    }
+  },
+  {
+    "brand": "Nissan",
+    "model": "Pathfinder",
+    "specs": {
+      "engineSize": 3.5,
+      "power": 217,
+      "torque": 351,
+      "fuelType": "PETROL",
+      "fuelEconomy": 10.5,
+      "transmission": "9-speed automatic",
+      "drivetrain": "AWD",
+      "seats": 7,
+      "bootCapacity": 470,
+      "startingPrice": 67985
+    }
+  },
+  {
+    "brand": "Nissan",
+    "model": "Leaf",
+    "specs": {
+      "engineSize": null,
+      "power": 110,
+      "torque": 320,
+      "fuelType": "ELECTRIC",
+      "fuelEconomy": null,
+      "transmission": "Single speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 405,
+      "startingPrice": 50990
+    }
+  },
+  {
+    "brand": "Mitsubishi",
+    "model": "ASX",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 110,
+      "torque": 197,
+      "fuelType": "PETROL",
+      "fuelEconomy": 7.8,
+      "transmission": "CVT automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 393,
+      "startingPrice": 25490
+    }
+  },
+  {
+    "brand": "Mitsubishi",
+    "model": "Eclipse Cross",
+    "specs": {
+      "engineSize": 1.5,
+      "power": 110,
+      "torque": 250,
+      "fuelType": "PETROL",
+      "fuelEconomy": 7.7,
+      "transmission": "CVT automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 405,
+      "startingPrice": 32740
+    }
+  },
+  {
+    "brand": "Mitsubishi",
+    "model": "Pajero Sport",
+    "specs": {
+      "engineSize": 2.4,
+      "power": 133,
+      "torque": 430,
+      "fuelType": "DIESEL",
+      "fuelEconomy": 8.0,
+      "transmission": "8-speed automatic",
+      "drivetrain": "FOUR_WD",
+      "seats": 7,
+      "bootCapacity": 502,
+      "startingPrice": 50290
+    }
+  },
+  {
+    "brand": "MG",
+    "model": "3",
+    "specs": {
+      "engineSize": 1.5,
+      "power": 81,
+      "torque": 142,
+      "fuelType": "PETROL",
+      "fuelEconomy": 6.7,
+      "transmission": "CVT automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 285,
+      "startingPrice": 18990
+    }
+  },
+  {
+    "brand": "MG",
+    "model": "ZS",
+    "specs": {
+      "engineSize": 1.5,
+      "power": 84,
+      "torque": 150,
+      "fuelType": "PETROL",
+      "fuelEconomy": 6.7,
+      "transmission": "CVT automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 359,
+      "startingPrice": 23990
+    }
+  },
+  {
+    "brand": "MG",
+    "model": "HS",
+    "specs": {
+      "engineSize": 1.5,
+      "power": 119,
+      "torque": 250,
+      "fuelType": "PETROL",
+      "fuelEconomy": 7.3,
+      "transmission": "7-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 463,
+      "startingPrice": 30990
+    }
+  },
+  {
+    "brand": "MG",
+    "model": "4",
+    "specs": {
+      "engineSize": null,
+      "power": 125,
+      "torque": 250,
+      "fuelType": "ELECTRIC",
+      "fuelEconomy": null,
+      "transmission": "Single speed automatic",
+      "drivetrain": "RWD",
+      "seats": 5,
+      "bootCapacity": 363,
+      "startingPrice": 39990
+    }
+  },
+  {
+    "brand": "GWM",
+    "model": "Cannon",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 120,
+      "torque": 400,
+      "fuelType": "DIESEL",
+      "fuelEconomy": 9.4,
+      "transmission": "8-speed automatic",
+      "drivetrain": "FOUR_WD",
+      "seats": 5,
+      "bootCapacity": 1054,
+      "startingPrice": 35990
+    }
+  },
+  {
+    "brand": "Haval",
+    "model": "Jolion",
+    "specs": {
+      "engineSize": 1.5,
+      "power": 110,
+      "torque": 220,
+      "fuelType": "PETROL",
+      "fuelEconomy": 7.6,
+      "transmission": "7-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 430,
+      "startingPrice": 26990
+    }
+  },
+  {
+    "brand": "Haval",
+    "model": "H6",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 150,
+      "torque": 320,
+      "fuelType": "PETROL",
+      "fuelEconomy": 8.4,
+      "transmission": "7-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 600,
+      "startingPrice": 33990
+    }
+  },
+  {
+    "brand": "Volkswagen",
+    "model": "Polo",
+    "specs": {
+      "engineSize": 1.0,
+      "power": 70,
+      "torque": 175,
+      "fuelType": "PETROL",
+      "fuelEconomy": 5.1,
+      "transmission": "7-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 351,
+      "startingPrice": 27290
+    }
+  },
+  {
+    "brand": "Volkswagen",
+    "model": "Amarok",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 154,
+      "torque": 500,
+      "fuelType": "DIESEL",
+      "fuelEconomy": 8.2,
+      "transmission": "10-speed automatic",
+      "drivetrain": "FOUR_WD",
+      "seats": 5,
+      "bootCapacity": 1228,
+      "startingPrice": 56290
+    }
+  },
+  {
+    "brand": "Volkswagen",
+    "model": "T-Cross",
+    "specs": {
+      "engineSize": 1.0,
+      "power": 85,
+      "torque": 200,
+      "fuelType": "PETROL",
+      "fuelEconomy": 5.4,
+      "transmission": "7-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 385,
+      "startingPrice": 31990
+    }
+  },
+  {
+    "brand": "Subaru",
+    "model": "Impreza",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 115,
+      "torque": 196,
+      "fuelType": "PETROL",
+      "fuelEconomy": 7.5,
+      "transmission": "CVT automatic",
+      "drivetrain": "AWD",
+      "seats": 5,
+      "bootCapacity": 385,
+      "startingPrice": 30990
+    }
+  },
+  {
+    "brand": "Subaru",
+    "model": "WRX",
+    "specs": {
+      "engineSize": 2.4,
+      "power": 202,
+      "torque": 350,
+      "fuelType": "PETROL",
+      "fuelEconomy": 9.9,
+      "transmission": "6-speed manual",
+      "drivetrain": "AWD",
+      "seats": 5,
+      "bootCapacity": 411,
+      "startingPrice": 51990
+    }
+  },
+  {
+    "brand": "Skoda",
+    "model": "Octavia",
+    "specs": {
+      "engineSize": 1.4,
+      "power": 110,
+      "torque": 250,
+      "fuelType": "PETROL",
+      "fuelEconomy": 6.0,
+      "transmission": "8-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 600,
+      "startingPrice": 36990
+    }
+  },
+  {
+    "brand": "BMW",
+    "model": "1 Series",
+    "specs": {
+      "engineSize": 1.5,
+      "power": 103,
+      "torque": 220,
+      "fuelType": "PETROL",
+      "fuelEconomy": 6.2,
+      "transmission": "7-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 380,
+      "startingPrice": 49990
+    }
+  },
+  {
+    "brand": "BMW",
+    "model": "2 Series",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 180,
+      "torque": 300,
+      "fuelType": "PETROL",
+      "fuelEconomy": 6.7,
+      "transmission": "8-speed automatic",
+      "drivetrain": "RWD",
+      "seats": 4,
+      "bootCapacity": 390,
+      "startingPrice": 64900
+    }
+  },
+  {
+    "brand": "BMW",
+    "model": "4 Series",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 135,
+      "torque": 300,
+      "fuelType": "PETROL",
+      "fuelEconomy": 6.5,
+      "transmission": "8-speed automatic",
+      "drivetrain": "RWD",
+      "seats": 4,
+      "bootCapacity": 440,
+      "startingPrice": 89900
+    }
+  },
+  {
+    "brand": "BMW",
+    "model": "X1",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 150,
+      "torque": 300,
+      "fuelType": "PETROL",
+      "fuelEconomy": 6.8,
+      "transmission": "7-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 540,
+      "startingPrice": 65900
+    }
+  },
+  {
+    "brand": "BMW",
+    "model": "X5",
+    "specs": {
+      "engineSize": 3.0,
+      "power": 250,
+      "torque": 540,
+      "fuelType": "DIESEL",
+      "fuelEconomy": 7.2,
+      "transmission": "8-speed automatic",
+      "drivetrain": "AWD",
+      "seats": 5,
+      "bootCapacity": 650,
+      "startingPrice": 132900
+    }
+  },
+  {
+    "brand": "BMW",
+    "model": "X7",
+    "specs": {
+      "engineSize": 3.0,
+      "power": 280,
+      "torque": 540,
+      "fuelType": "PETROL",
+      "fuelEconomy": 9.1,
+      "transmission": "8-speed automatic",
+      "drivetrain": "AWD",
+      "seats": 7,
+      "bootCapacity": 326,
+      "startingPrice": 174900
+    }
+  },
+  {
+    "brand": "BMW",
+    "model": "iX",
+    "specs": {
+      "engineSize": null,
+      "power": 240,
+      "torque": 630,
+      "fuelType": "ELECTRIC",
+      "fuelEconomy": null,
+      "transmission": "Single speed automatic",
+      "drivetrain": "AWD",
+      "seats": 5,
+      "bootCapacity": 500,
+      "startingPrice": 135900
+    }
+  },
+  {
+    "brand": "BMW",
+    "model": "i4",
+    "specs": {
+      "engineSize": null,
+      "power": 250,
+      "torque": 430,
+      "fuelType": "ELECTRIC",
+      "fuelEconomy": null,
+      "transmission": "Single speed automatic",
+      "drivetrain": "RWD",
+      "seats": 5,
+      "bootCapacity": 470,
+      "startingPrice": 99900
+    }
+  },
+  {
+    "brand": "BMW",
+    "model": "M3",
+    "specs": {
+      "engineSize": 3.0,
+      "power": 375,
+      "torque": 650,
+      "fuelType": "PETROL",
+      "fuelEconomy": 10.1,
+      "transmission": "8-speed automatic",
+      "drivetrain": "RWD",
+      "seats": 5,
+      "bootCapacity": 480,
+      "startingPrice": 167900
+    }
+  },
+  {
+    "brand": "BMW",
+    "model": "M4",
+    "specs": {
+      "engineSize": 3.0,
+      "power": 375,
+      "torque": 650,
+      "fuelType": "PETROL",
+      "fuelEconomy": 10.2,
+      "transmission": "8-speed automatic",
+      "drivetrain": "RWD",
+      "seats": 4,
+      "bootCapacity": 440,
+      "startingPrice": 169900
+    }
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "model": "A-Class",
+    "specs": {
+      "engineSize": 1.3,
+      "power": 100,
+      "torque": 200,
+      "fuelType": "PETROL",
+      "fuelEconomy": 5.7,
+      "transmission": "7-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 370,
+      "startingPrice": 53900
+    }
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "model": "CLA",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 165,
+      "torque": 320,
+      "fuelType": "PETROL",
+      "fuelEconomy": 6.8,
+      "transmission": "8-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 460,
+      "startingPrice": 67900
+    }
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "model": "E-Class",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 190,
+      "torque": 320,
+      "fuelType": "PETROL",
+      "fuelEconomy": 7.1,
+      "transmission": "9-speed automatic",
+      "drivetrain": "RWD",
+      "seats": 5,
+      "bootCapacity": 540,
+      "startingPrice": 124900
+    }
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "model": "S-Class",
+    "specs": {
+      "engineSize": 3.0,
+      "power": 270,
+      "torque": 500,
+      "fuelType": "PETROL",
+      "fuelEconomy": 8.4,
+      "transmission": "9-speed automatic",
+      "drivetrain": "AWD",
+      "seats": 5,
+      "bootCapacity": 550,
+      "startingPrice": 269900
+    }
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "model": "GLA",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 165,
+      "torque": 320,
+      "fuelType": "PETROL",
+      "fuelEconomy": 7.4,
+      "transmission": "8-speed automatic",
+      "drivetrain": "AWD",
+      "seats": 5,
+      "bootCapacity": 435,
+      "startingPrice": 67900
+    }
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "model": "GLE",
+    "specs": {
+      "engineSize": 3.0,
+      "power": 270,
+      "torque": 500,
+      "fuelType": "PETROL",
+      "fuelEconomy": 9.0,
+      "transmission": "9-speed automatic",
+      "drivetrain": "AWD",
+      "seats": 5,
+      "bootCapacity": 630,
+      "startingPrice": 142900
+    }
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "model": "G-Class",
+    "specs": {
+      "engineSize": 4.0,
+      "power": 430,
+      "torque": 610,
+      "fuelType": "PETROL",
+      "fuelEconomy": 13.1,
+      "transmission": "9-speed automatic",
+      "drivetrain": "FOUR_WD",
+      "seats": 5,
+      "bootCapacity": 667,
+      "startingPrice": 304900
+    }
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "model": "EQE",
+    "specs": {
+      "engineSize": null,
+      "power": 215,
+      "torque": 565,
+      "fuelType": "ELECTRIC",
+      "fuelEconomy": null,
+      "transmission": "Single speed automatic",
+      "drivetrain": "RWD",
+      "seats": 5,
+      "bootCapacity": 430,
+      "startingPrice": 134900
+    }
+  },
+  {
+    "brand": "Audi",
+    "model": "A1",
+    "specs": {
+      "engineSize": 1.5,
+      "power": 110,
+      "torque": 250,
+      "fuelType": "PETROL",
+      "fuelEconomy": 5.5,
+      "transmission": "7-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 335,
+      "startingPrice": 38900
+    }
+  },
+  {
+    "brand": "Audi",
+    "model": "A6",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 150,
+      "torque": 320,
+      "fuelType": "PETROL",
+      "fuelEconomy": 6.7,
+      "transmission": "7-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 530,
+      "startingPrice": 105900
+    }
+  },
+  {
+    "brand": "Audi",
+    "model": "Q2",
+    "specs": {
+      "engineSize": 1.5,
+      "power": 110,
+      "torque": 250,
+      "fuelType": "PETROL",
+      "fuelEconomy": 6.0,
+      "transmission": "7-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 405,
+      "startingPrice": 47000
+    }
+  },
+  {
+    "brand": "Audi",
+    "model": "Q7",
+    "specs": {
+      "engineSize": 3.0,
+      "power": 210,
+      "torque": 600,
+      "fuelType": "DIESEL",
+      "fuelEconomy": 7.5,
+      "transmission": "8-speed automatic",
+      "drivetrain": "AWD",
+      "seats": 7,
+      "bootCapacity": 770,
+      "startingPrice": 119500
+    }
+  },
+  {
+    "brand": "Audi",
+    "model": "Q8",
+    "specs": {
+      "engineSize": 3.0,
+      "power": 250,
+      "torque": 500,
+      "fuelType": "PETROL",
+      "fuelEconomy": 9.7,
+      "transmission": "8-speed automatic",
+      "drivetrain": "AWD",
+      "seats": 5,
+      "bootCapacity": 605,
+      "startingPrice": 153400
+    }
+  },
+  {
+    "brand": "Audi",
+    "model": "e-tron",
+    "specs": {
+      "engineSize": null,
+      "power": 230,
+      "torque": 540,
+      "fuelType": "ELECTRIC",
+      "fuelEconomy": null,
+      "transmission": "Single speed automatic",
+      "drivetrain": "AWD",
+      "seats": 5,
+      "bootCapacity": 555,
+      "startingPrice": 144900
+    }
+  },
+  {
+    "brand": "Audi",
+    "model": "Q4 e-tron",
+    "specs": {
+      "engineSize": null,
+      "power": 150,
+      "torque": 310,
+      "fuelType": "ELECTRIC",
+      "fuelEconomy": null,
+      "transmission": "Single speed automatic",
+      "drivetrain": "RWD",
+      "seats": 5,
+      "bootCapacity": 520,
+      "startingPrice": 84900
+    }
+  },
+  {
+    "brand": "Audi",
+    "model": "RS3",
+    "specs": {
+      "engineSize": 2.5,
+      "power": 294,
+      "torque": 500,
+      "fuelType": "PETROL",
+      "fuelEconomy": 8.5,
+      "transmission": "7-speed automatic",
+      "drivetrain": "AWD",
+      "seats": 5,
+      "bootCapacity": 282,
+      "startingPrice": 91400
+    }
+  },
+  {
+    "brand": "Lexus",
+    "model": "ES",
+    "specs": {
+      "engineSize": 2.5,
+      "power": 131,
+      "torque": 221,
+      "fuelType": "HYBRID",
+      "fuelEconomy": 4.6,
+      "transmission": "CVT automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 454,
+      "startingPrice": 65500
+    }
+  },
+  {
+    "brand": "Lexus",
+    "model": "UX",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 135,
+      "torque": 188,
+      "fuelType": "HYBRID",
+      "fuelEconomy": 4.5,
+      "transmission": "CVT automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 305,
+      "startingPrice": 60800
+    }
+  },
+  {
+    "brand": "Lexus",
+    "model": "LX",
+    "specs": {
+      "engineSize": 3.3,
+      "power": 227,
+      "torque": 700,
+      "fuelType": "DIESEL",
+      "fuelEconomy": 8.9,
+      "transmission": "10-speed automatic",
+      "drivetrain": "FOUR_WD",
+      "seats": 7,
+      "bootCapacity": 1011,
+      "startingPrice": 158400
+    }
+  },
+  {
+    "brand": "Lexus",
+    "model": "LC",
+    "specs": {
+      "engineSize": 5.0,
+      "power": 351,
+      "torque": 540,
+      "fuelType": "PETROL",
+      "fuelEconomy": 11.6,
+      "transmission": "10-speed automatic",
+      "drivetrain": "RWD",
+      "seats": 4,
+      "bootCapacity": 197,
+      "startingPrice": 199680
+    }
+  },
+  {
+    "brand": "Genesis",
+    "model": "G70",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 180,
+      "torque": 353,
+      "fuelType": "PETROL",
+      "fuelEconomy": 9.6,
+      "transmission": "8-speed automatic",
+      "drivetrain": "RWD",
+      "seats": 5,
+      "bootCapacity": 330,
+      "startingPrice": 73500
+    }
+  },
+  {
+    "brand": "Genesis",
+    "model": "G80",
+    "specs": {
+      "engineSize": 2.5,
+      "power": 224,
+      "torque": 422,
+      "fuelType": "PETROL",
+      "fuelEconomy": 9.7,
+      "transmission": "8-speed automatic",
+      "drivetrain": "RWD",
+      "seats": 5,
+      "bootCapacity": 424,
+      "startingPrice": 109800
+    }
+  },
+  {
+    "brand": "Genesis",
+    "model": "GV70",
+    "specs": {
+      "engineSize": 2.5,
+      "power": 224,
+      "torque": 422,
+      "fuelType": "PETROL",
+      "fuelEconomy": 9.9,
+      "transmission": "8-speed automatic",
+      "drivetrain": "AWD",
+      "seats": 5,
+      "bootCapacity": 542,
+      "startingPrice": 88800
+    }
+  },
+  {
+    "brand": "Genesis",
+    "model": "GV80",
+    "specs": {
+      "engineSize": 3.0,
+      "power": 204,
+      "torque": 588,
+      "fuelType": "DIESEL",
+      "fuelEconomy": 8.8,
+      "transmission": "8-speed automatic",
+      "drivetrain": "AWD",
+      "seats": 7,
+      "bootCapacity": 727,
+      "startingPrice": 110000
+    }
+  },
+  {
+    "brand": "Porsche",
+    "model": "911",
+    "specs": {
+      "engineSize": 3.0,
+      "power": 283,
+      "torque": 450,
+      "fuelType": "PETROL",
+      "fuelEconomy": 9.5,
+      "transmission": "8-speed automatic",
+      "drivetrain": "RWD",
+      "seats": 4,
+      "bootCapacity": 132,
+      "startingPrice": 269800
+    }
+  },
+  {
+    "brand": "Porsche",
+    "model": "Cayenne",
+    "specs": {
+      "engineSize": 3.0,
+      "power": 260,
+      "torque": 500,
+      "fuelType": "PETROL",
+      "fuelEconomy": 10.1,
+      "transmission": "8-speed automatic",
+      "drivetrain": "AWD",
+      "seats": 5,
+      "bootCapacity": 698,
+      "startingPrice": 138400
+    }
+  },
+  {
+    "brand": "Porsche",
+    "model": "Macan",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 195,
+      "torque": 400,
+      "fuelType": "PETROL",
+      "fuelEconomy": 9.5,
+      "transmission": "7-speed automatic",
+      "drivetrain": "AWD",
+      "seats": 5,
+      "bootCapacity": 488,
+      "startingPrice": 105100
+    }
+  },
+  {
+    "brand": "Porsche",
+    "model": "Taycan",
+    "specs": {
+      "engineSize": null,
+      "power": 240,
+      "torque": 345,
+      "fuelType": "ELECTRIC",
+      "fuelEconomy": null,
+      "transmission": "2-speed automatic",
+      "drivetrain": "RWD",
+      "seats": 4,
+      "bootCapacity": 366,
+      "startingPrice": 173400
+    }
+  },
+  {
+    "brand": "Porsche",
+    "model": "Panamera",
+    "specs": {
+      "engineSize": 2.9,
+      "power": 260,
+      "torque": 450,
+      "fuelType": "PETROL",
+      "fuelEconomy": 9.4,
+      "transmission": "8-speed automatic",
+      "drivetrain": "RWD",
+      "seats": 4,
+      "bootCapacity": 495,
+      "startingPrice": 268000
+    }
+  },
+  {
+    "brand": "Volvo",
+    "model": "XC40",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 145,
+      "torque": 300,
+      "fuelType": "PETROL",
+      "fuelEconomy": 7.7,
+      "transmission": "8-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 460,
+      "startingPrice": 53990
+    }
+  },
+  {
+    "brand": "Volvo",
+    "model": "XC60",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 184,
+      "torque": 350,
+      "fuelType": "PETROL",
+      "fuelEconomy": 8.0,
+      "transmission": "8-speed automatic",
+      "drivetrain": "AWD",
+      "seats": 5,
+      "bootCapacity": 483,
+      "startingPrice": 71990
+    }
+  },
+  {
+    "brand": "Volvo",
+    "model": "XC90",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 184,
+      "torque": 350,
+      "fuelType": "PETROL",
+      "fuelEconomy": 8.5,
+      "transmission": "8-speed automatic",
+      "drivetrain": "AWD",
+      "seats": 7,
+      "bootCapacity": 451,
+      "startingPrice": 99990
+    }
+  },
+  {
+    "brand": "Volvo",
+    "model": "EX30",
+    "specs": {
+      "engineSize": null,
+      "power": 200,
+      "torque": 343,
+      "fuelType": "ELECTRIC",
+      "fuelEconomy": null,
+      "transmission": "Single speed automatic",
+      "drivetrain": "RWD",
+      "seats": 5,
+      "bootCapacity": 318,
+      "startingPrice": 59990
+    }
+  },
+  {
+    "brand": "Volvo",
+    "model": "S60",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 187,
+      "torque": 350,
+      "fuelType": "PETROL",
+      "fuelEconomy": 7.4,
+      "transmission": "8-speed automatic",
+      "drivetrain": "AWD",
+      "seats": 5,
+      "bootCapacity": 442,
+      "startingPrice": 65990
+    }
+  },
+  {
+    "brand": "Polestar",
+    "model": "Polestar 2",
+    "specs": {
+      "engineSize": null,
+      "power": 200,
+      "torque": 330,
+      "fuelType": "ELECTRIC",
+      "fuelEconomy": null,
+      "transmission": "Single speed automatic",
+      "drivetrain": "RWD",
+      "seats": 5,
+      "bootCapacity": 405,
+      "startingPrice": 67400
+    }
+  },
+  {
+    "brand": "Polestar",
+    "model": "Polestar 3",
+    "specs": {
+      "engineSize": null,
+      "power": 360,
+      "torque": 840,
+      "fuelType": "ELECTRIC",
+      "fuelEconomy": null,
+      "transmission": "Single speed automatic",
+      "drivetrain": "AWD",
+      "seats": 5,
+      "bootCapacity": 484,
+      "startingPrice": 132720
+    }
+  },
+  {
+    "brand": "Polestar",
+    "model": "Polestar 4",
+    "specs": {
+      "engineSize": null,
+      "power": 200,
+      "torque": 343,
+      "fuelType": "ELECTRIC",
+      "fuelEconomy": null,
+      "transmission": "Single speed automatic",
+      "drivetrain": "RWD",
+      "seats": 5,
+      "bootCapacity": 526,
+      "startingPrice": 78500
+    }
+  },
+  {
+    "brand": "Tesla",
+    "model": "Model S",
+    "specs": {
+      "engineSize": null,
+      "power": 493,
+      "torque": 700,
+      "fuelType": "ELECTRIC",
+      "fuelEconomy": null,
+      "transmission": "Single speed automatic",
+      "drivetrain": "AWD",
+      "seats": 5,
+      "bootCapacity": 793,
+      "startingPrice": 124900
+    }
+  },
+  {
+    "brand": "Tesla",
+    "model": "Model X",
+    "specs": {
+      "engineSize": null,
+      "power": 493,
+      "torque": 700,
+      "fuelType": "ELECTRIC",
+      "fuelEconomy": null,
+      "transmission": "Single speed automatic",
+      "drivetrain": "AWD",
+      "seats": 6,
+      "bootCapacity": 2492,
+      "startingPrice": 149900
+    }
+  },
+  {
+    "brand": "BYD",
+    "model": "Dolphin",
+    "specs": {
+      "engineSize": null,
+      "power": 130,
+      "torque": 290,
+      "fuelType": "ELECTRIC",
+      "fuelEconomy": null,
+      "transmission": "Single speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 345,
+      "startingPrice": 29990
+    }
+  },
+  {
+    "brand": "BYD",
+    "model": "Sealion 6",
+    "specs": {
+      "engineSize": 1.5,
+      "power": 160,
+      "torque": 300,
+      "fuelType": "PHEV",
+      "fuelEconomy": 1.1,
+      "transmission": "Single speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 425,
+      "startingPrice": 42990
+    }
+  },
+  {
+    "brand": "BYD",
+    "model": "Shark 6",
+    "specs": {
+      "engineSize": 1.5,
+      "power": 321,
+      "torque": 650,
+      "fuelType": "PHEV",
+      "fuelEconomy": 2.0,
+      "transmission": "Single speed automatic",
+      "drivetrain": "AWD",
+      "seats": 5,
+      "bootCapacity": 1450,
+      "startingPrice": 57900
+    }
+  },
+  {
+    "brand": "Honda",
+    "model": "Civic",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 135,
+      "torque": 232,
+      "fuelType": "HYBRID",
+      "fuelEconomy": 4.2,
+      "transmission": "CVT automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 409,
+      "startingPrice": 49900
+    }
+  },
+  {
+    "brand": "Honda",
+    "model": "Accord",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 153,
+      "torque": 335,
+      "fuelType": "HYBRID",
+      "fuelEconomy": 4.3,
+      "transmission": "CVT automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 470,
+      "startingPrice": 64900
+    }
+  },
+  {
+    "brand": "Honda",
+    "model": "CR-V",
+    "specs": {
+      "engineSize": 1.5,
+      "power": 140,
+      "torque": 240,
+      "fuelType": "PETROL",
+      "fuelEconomy": 7.4,
+      "transmission": "CVT automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 581,
+      "startingPrice": 41900
+    }
+  },
+  {
+    "brand": "Honda",
+    "model": "HR-V",
+    "specs": {
+      "engineSize": 1.5,
+      "power": 89,
+      "torque": 253,
+      "fuelType": "HYBRID",
+      "fuelEconomy": 4.3,
+      "transmission": "CVT automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 304,
+      "startingPrice": 36900
+    }
+  },
+  {
+    "brand": "Honda",
+    "model": "Jazz",
+    "specs": {
+      "engineSize": 1.5,
+      "power": 88,
+      "torque": 145,
+      "fuelType": "PETROL",
+      "fuelEconomy": 5.8,
+      "transmission": "CVT automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 354,
+      "startingPrice": 22490
+    }
+  },
+  {
+    "brand": "Honda",
+    "model": "Odyssey",
+    "specs": {
+      "engineSize": 2.4,
+      "power": 129,
+      "torque": 225,
+      "fuelType": "PETROL",
+      "fuelEconomy": 7.8,
+      "transmission": "CVT automatic",
+      "drivetrain": "FWD",
+      "seats": 7,
+      "bootCapacity": 330,
+      "startingPrice": 50990
+    }
+  },
+  {
+    "brand": "Honda",
+    "model": "ZR-V",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 135,
+      "torque": 315,
+      "fuelType": "HYBRID",
+      "fuelEconomy": 5.0,
+      "transmission": "CVT automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 380,
+      "startingPrice": 40200
+    }
+  },
+  {
+    "brand": "Suzuki",
+    "model": "Swift",
+    "specs": {
+      "engineSize": 1.2,
+      "power": 61,
+      "torque": 112,
+      "fuelType": "HYBRID",
+      "fuelEconomy": 4.0,
+      "transmission": "CVT automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 265,
+      "startingPrice": 24490
+    }
+  },
+  {
+    "brand": "Suzuki",
+    "model": "Jimny",
+    "specs": {
+      "engineSize": 1.5,
+      "power": 75,
+      "torque": 130,
+      "fuelType": "PETROL",
+      "fuelEconomy": 6.4,
+      "transmission": "4-speed automatic",
+      "drivetrain": "FOUR_WD",
+      "seats": 4,
+      "bootCapacity": 113,
+      "startingPrice": 31990
+    }
+  },
+  {
+    "brand": "Suzuki",
+    "model": "Vitara",
+    "specs": {
+      "engineSize": 1.4,
+      "power": 103,
+      "torque": 220,
+      "fuelType": "PETROL",
+      "fuelEconomy": 6.2,
+      "transmission": "6-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 375,
+      "startingPrice": 30990
+    }
+  },
+  {
+    "brand": "Suzuki",
+    "model": "Baleno",
+    "specs": {
+      "engineSize": 1.4,
+      "power": 68,
+      "torque": 130,
+      "fuelType": "PETROL",
+      "fuelEconomy": 5.4,
+      "transmission": "4-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 355,
+      "startingPrice": 21990
+    }
+  },
+  {
+    "brand": "Suzuki",
+    "model": "S-Cross",
+    "specs": {
+      "engineSize": 1.4,
+      "power": 95,
+      "torque": 235,
+      "fuelType": "HYBRID",
+      "fuelEconomy": 5.5,
+      "transmission": "6-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 430,
+      "startingPrice": 35990
+    }
+  },
+  {
+    "brand": "Suzuki",
+    "model": "Ignis",
+    "specs": {
+      "engineSize": 1.2,
+      "power": 66,
+      "torque": 120,
+      "fuelType": "PETROL",
+      "fuelEconomy": 4.9,
+      "transmission": "CVT automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 271,
+      "startingPrice": 22490
+    }
+  },
+  {
+    "brand": "Renault",
+    "model": "Captur",
+    "specs": {
+      "engineSize": 1.3,
+      "power": 113,
+      "torque": 270,
+      "fuelType": "PETROL",
+      "fuelEconomy": 6.6,
+      "transmission": "7-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 422,
+      "startingPrice": 35990
+    }
+  },
+  {
+    "brand": "Renault",
+    "model": "Koleos",
+    "specs": {
+      "engineSize": 2.5,
+      "power": 126,
+      "torque": 226,
+      "fuelType": "PETROL",
+      "fuelEconomy": 8.1,
+      "transmission": "CVT automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 458,
+      "startingPrice": 36490
+    }
+  },
+  {
+    "brand": "Renault",
+    "model": "Megane",
+    "specs": {
+      "engineSize": 1.3,
+      "power": 103,
+      "torque": 240,
+      "fuelType": "PETROL",
+      "fuelEconomy": 6.0,
+      "transmission": "7-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 384,
+      "startingPrice": 32990
+    }
+  },
+  {
+    "brand": "Renault",
+    "model": "Arkana",
+    "specs": {
+      "engineSize": 1.3,
+      "power": 113,
+      "torque": 270,
+      "fuelType": "PETROL",
+      "fuelEconomy": 6.5,
+      "transmission": "7-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 480,
+      "startingPrice": 38990
+    }
+  },
+  {
+    "brand": "Renault",
+    "model": "Trafic",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 125,
+      "torque": 380,
+      "fuelType": "DIESEL",
+      "fuelEconomy": 7.5,
+      "transmission": "6-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 3,
+      "bootCapacity": 8400,
+      "startingPrice": 49990
+    }
+  },
+  {
+    "brand": "Peugeot",
+    "model": "208",
+    "specs": {
+      "engineSize": 1.2,
+      "power": 96,
+      "torque": 230,
+      "fuelType": "PETROL",
+      "fuelEconomy": 5.4,
+      "transmission": "8-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 311,
+      "startingPrice": 30990
+    }
+  },
+  {
+    "brand": "Peugeot",
+    "model": "2008",
+    "specs": {
+      "engineSize": 1.2,
+      "power": 96,
+      "torque": 230,
+      "fuelType": "PETROL",
+      "fuelEconomy": 5.6,
+      "transmission": "8-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 434,
+      "startingPrice": 38990
+    }
+  },
+  {
+    "brand": "Peugeot",
+    "model": "3008",
+    "specs": {
+      "engineSize": 1.6,
+      "power": 133,
+      "torque": 250,
+      "fuelType": "PETROL",
+      "fuelEconomy": 7.0,
+      "transmission": "8-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 591,
+      "startingPrice": 48990
+    }
+  },
+  {
+    "brand": "Peugeot",
+    "model": "5008",
+    "specs": {
+      "engineSize": 1.6,
+      "power": 133,
+      "torque": 250,
+      "fuelType": "PETROL",
+      "fuelEconomy": 7.4,
+      "transmission": "8-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 7,
+      "bootCapacity": 720,
+      "startingPrice": 56990
+    }
+  },
+  {
+    "brand": "Peugeot",
+    "model": "308",
+    "specs": {
+      "engineSize": 1.6,
+      "power": 133,
+      "torque": 250,
+      "fuelType": "PETROL",
+      "fuelEconomy": 6.0,
+      "transmission": "8-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 412,
+      "startingPrice": 39990
+    }
+  },
+  {
+    "brand": "Citroen",
+    "model": "C3",
+    "specs": {
+      "engineSize": 1.2,
+      "power": 81,
+      "torque": 205,
+      "fuelType": "PETROL",
+      "fuelEconomy": 5.6,
+      "transmission": "6-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 300,
+      "startingPrice": 23990
+    }
+  },
+  {
+    "brand": "Citroen",
+    "model": "C4",
+    "specs": {
+      "engineSize": 1.2,
+      "power": 96,
+      "torque": 230,
+      "fuelType": "PETROL",
+      "fuelEconomy": 5.7,
+      "transmission": "8-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 380,
+      "startingPrice": 31990
+    }
+  },
+  {
+    "brand": "Citroen",
+    "model": "C5 Aircross",
+    "specs": {
+      "engineSize": 1.6,
+      "power": 133,
+      "torque": 250,
+      "fuelType": "PETROL",
+      "fuelEconomy": 7.0,
+      "transmission": "8-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 580,
+      "startingPrice": 45990
+    }
+  },
+  {
+    "brand": "Skoda",
+    "model": "Kodiaq",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 140,
+      "torque": 320,
+      "fuelType": "PETROL",
+      "fuelEconomy": 7.4,
+      "transmission": "7-speed automatic",
+      "drivetrain": "AWD",
+      "seats": 7,
+      "bootCapacity": 770,
+      "startingPrice": 50490
+    }
+  },
+  {
+    "brand": "Skoda",
+    "model": "Karoq",
+    "specs": {
+      "engineSize": 1.4,
+      "power": 110,
+      "torque": 250,
+      "fuelType": "PETROL",
+      "fuelEconomy": 6.5,
+      "transmission": "8-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 521,
+      "startingPrice": 39990
+    }
+  },
+  {
+    "brand": "Skoda",
+    "model": "Kamiq",
+    "specs": {
+      "engineSize": 1.5,
+      "power": 110,
+      "torque": 250,
+      "fuelType": "PETROL",
+      "fuelEconomy": 5.9,
+      "transmission": "7-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 400,
+      "startingPrice": 33490
+    }
+  },
+  {
+    "brand": "Skoda",
+    "model": "Superb",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 162,
+      "torque": 350,
+      "fuelType": "PETROL",
+      "fuelEconomy": 7.1,
+      "transmission": "7-speed automatic",
+      "drivetrain": "AWD",
+      "seats": 5,
+      "bootCapacity": 625,
+      "startingPrice": 56990
+    }
+  },
+  {
+    "brand": "Skoda",
+    "model": "Fabia",
+    "specs": {
+      "engineSize": 1.0,
+      "power": 70,
+      "torque": 175,
+      "fuelType": "PETROL",
+      "fuelEconomy": 5.3,
+      "transmission": "7-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 380,
+      "startingPrice": 28490
+    }
+  },
+  {
+    "brand": "Subaru",
+    "model": "BRZ",
+    "specs": {
+      "engineSize": 2.4,
+      "power": 174,
+      "torque": 250,
+      "fuelType": "PETROL",
+      "fuelEconomy": 8.8,
+      "transmission": "6-speed manual",
+      "drivetrain": "RWD",
+      "seats": 4,
+      "bootCapacity": 226,
+      "startingPrice": 41990
+    }
+  },
+  {
+    "brand": "Subaru",
+    "model": "Crosstrek",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 115,
+      "torque": 196,
+      "fuelType": "PETROL",
+      "fuelEconomy": 7.2,
+      "transmission": "CVT automatic",
+      "drivetrain": "AWD",
+      "seats": 5,
+      "bootCapacity": 315,
+      "startingPrice": 34990
+    }
+  },
+  {
+    "brand": "Subaru",
+    "model": "Solterra",
+    "specs": {
+      "engineSize": null,
+      "power": 160,
+      "torque": 337,
+      "fuelType": "ELECTRIC",
+      "fuelEconomy": null,
+      "transmission": "Single speed automatic",
+      "drivetrain": "AWD",
+      "seats": 5,
+      "bootCapacity": 452,
+      "startingPrice": 69990
+    }
+  },
+  {
+    "brand": "Volkswagen",
+    "model": "Multivan",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 150,
+      "torque": 320,
+      "fuelType": "PETROL",
+      "fuelEconomy": 7.7,
+      "transmission": "7-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 7,
+      "bootCapacity": 469,
+      "startingPrice": 73990
+    }
+  },
+  {
+    "brand": "Volkswagen",
+    "model": "Caddy",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 75,
+      "torque": 280,
+      "fuelType": "DIESEL",
+      "fuelEconomy": 6.0,
+      "transmission": "6-speed manual",
+      "drivetrain": "FWD",
+      "seats": 2,
+      "bootCapacity": 3100,
+      "startingPrice": 43990
+    }
+  },
+  {
+    "brand": "Volkswagen",
+    "model": "ID.4",
+    "specs": {
+      "engineSize": null,
+      "power": 210,
+      "torque": 545,
+      "fuelType": "ELECTRIC",
+      "fuelEconomy": null,
+      "transmission": "Single speed automatic",
+      "drivetrain": "RWD",
+      "seats": 5,
+      "bootCapacity": 543,
+      "startingPrice": 59990
+    }
+  },
+  {
+    "brand": "Volkswagen",
+    "model": "Touareg",
+    "specs": {
+      "engineSize": 3.0,
+      "power": 170,
+      "torque": 500,
+      "fuelType": "DIESEL",
+      "fuelEconomy": 7.7,
+      "transmission": "8-speed automatic",
+      "drivetrain": "AWD",
+      "seats": 5,
+      "bootCapacity": 810,
+      "startingPrice": 96790
+    }
+  },
+  {
+    "brand": "Cupra",
+    "model": "Formentor",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 140,
+      "torque": 320,
+      "fuelType": "PETROL",
+      "fuelEconomy": 7.0,
+      "transmission": "7-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 420,
+      "startingPrice": 47490
+    }
+  },
+  {
+    "brand": "Cupra",
+    "model": "Leon",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 180,
+      "torque": 370,
+      "fuelType": "PETROL",
+      "fuelEconomy": 7.0,
+      "transmission": "7-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 380,
+      "startingPrice": 49990
+    }
+  },
+  {
+    "brand": "Cupra",
+    "model": "Born",
+    "specs": {
+      "engineSize": null,
+      "power": 170,
+      "torque": 310,
+      "fuelType": "ELECTRIC",
+      "fuelEconomy": null,
+      "transmission": "Single speed automatic",
+      "drivetrain": "RWD",
+      "seats": 5,
+      "bootCapacity": 385,
+      "startingPrice": 59990
+    }
+  },
+  {
+    "brand": "Mini",
+    "model": "Hatch",
+    "specs": {
+      "engineSize": 1.5,
+      "power": 100,
+      "torque": 220,
+      "fuelType": "PETROL",
+      "fuelEconomy": 5.5,
+      "transmission": "7-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 4,
+      "bootCapacity": 211,
+      "startingPrice": 47990
+    }
+  },
+  {
+    "brand": "Mini",
+    "model": "Countryman",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 150,
+      "torque": 300,
+      "fuelType": "PETROL",
+      "fuelEconomy": 6.7,
+      "transmission": "7-speed automatic",
+      "drivetrain": "AWD",
+      "seats": 5,
+      "bootCapacity": 460,
+      "startingPrice": 59990
+    }
+  },
+  {
+    "brand": "Mini",
+    "model": "Convertible",
+    "specs": {
+      "engineSize": 1.5,
+      "power": 100,
+      "torque": 220,
+      "fuelType": "PETROL",
+      "fuelEconomy": 5.7,
+      "transmission": "7-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 4,
+      "bootCapacity": 215,
+      "startingPrice": 56990
+    }
+  },
+  {
+    "brand": "Jeep",
+    "model": "Wrangler",
+    "specs": {
+      "engineSize": 2.0,
+      "power": 200,
+      "torque": 400,
+      "fuelType": "PETROL",
+      "fuelEconomy": 9.7,
+      "transmission": "8-speed automatic",
+      "drivetrain": "FOUR_WD",
+      "seats": 5,
+      "bootCapacity": 533,
+      "startingPrice": 81450
+    }
+  },
+  {
+    "brand": "Jeep",
+    "model": "Grand Cherokee",
+    "specs": {
+      "engineSize": 3.6,
+      "power": 213,
+      "torque": 344,
+      "fuelType": "PETROL",
+      "fuelEconomy": 10.7,
+      "transmission": "8-speed automatic",
+      "drivetrain": "AWD",
+      "seats": 5,
+      "bootCapacity": 533,
+      "startingPrice": 82450
+    }
+  },
+  {
+    "brand": "Jeep",
+    "model": "Compass",
+    "specs": {
+      "engineSize": 2.4,
+      "power": 129,
+      "torque": 229,
+      "fuelType": "PETROL",
+      "fuelEconomy": 7.4,
+      "transmission": "9-speed automatic",
+      "drivetrain": "FWD",
+      "seats": 5,
+      "bootCapacity": 438,
+      "startingPrice": 39950
+    }
+  },
+  {
+    "brand": "RAM",
+    "model": "1500",
+    "specs": {
+      "engineSize": 5.7,
+      "power": 291,
+      "torque": 556,
+      "fuelType": "PETROL",
+      "fuelEconomy": 12.2,
+      "transmission": "8-speed automatic",
+      "drivetrain": "FOUR_WD",
+      "seats": 5,
+      "bootCapacity": 1700,
+      "startingPrice": 119950
+    }
+  },
+  {
+    "brand": "Land Rover",
+    "model": "Defender",
+    "specs": {
+      "engineSize": 3.0,
+      "power": 221,
+      "torque": 500,
+      "fuelType": "DIESEL",
+      "fuelEconomy": 8.9,
+      "transmission": "8-speed automatic",
+      "drivetrain": "FOUR_WD",
+      "seats": 5,
+      "bootCapacity": 786,
+      "startingPrice": 96050
+    }
+  },
+  {
+    "brand": "Land Rover",
+    "model": "Discovery",
+    "specs": {
+      "engineSize": 3.0,
+      "power": 221,
+      "torque": 650,
+      "fuelType": "DIESEL",
+      "fuelEconomy": 8.4,
+      "transmission": "8-speed automatic",
+      "drivetrain": "AWD",
+      "seats": 7,
+      "bootCapacity": 1137,
+      "startingPrice": 100050
+    }
+  },
+  {
+    "brand": "Land Rover",
+    "model": "Range Rover Sport",
+    "specs": {
+      "engineSize": 3.0,
+      "power": 221,
+      "torque": 650,
+      "fuelType": "DIESEL",
+      "fuelEconomy": 8.0,
+      "transmission": "8-speed automatic",
+      "drivetrain": "AWD",
+      "seats": 5,
+      "bootCapacity": 647,
+      "startingPrice": 153925
+    }
+  }
+]

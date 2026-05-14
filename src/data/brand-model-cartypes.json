@@ -1,0 +1,857 @@
+[
+  {
+    "brand": "Alfa Romeo",
+    "models": [
+      { "name": "147", "carType": "HATCHBACK" },
+      { "name": "156", "carType": "SEDAN" },
+      { "name": "159", "carType": "SEDAN" },
+      { "name": "166", "carType": "SEDAN" },
+      { "name": "4C", "carType": "COUPE" },
+      { "name": "Brera", "carType": "COUPE" },
+      { "name": "Giulia", "carType": "SEDAN" },
+      { "name": "Giulietta", "carType": "HATCHBACK" },
+      { "name": "GT", "carType": "COUPE" },
+      { "name": "GTV", "carType": "COUPE" },
+      { "name": "MiTo", "carType": "HATCHBACK" },
+      { "name": "Spider", "carType": "CONVERTIBLE" },
+      { "name": "Stelvio", "carType": "SUV" },
+      { "name": "Tonale", "carType": "SUV" }
+    ]
+  },
+  {
+    "brand": "Aston Martin",
+    "models": [
+      { "name": "DB7", "carType": "COUPE" },
+      { "name": "DB9", "carType": "COUPE" },
+      { "name": "DB11", "carType": "COUPE" },
+      { "name": "DBS", "carType": "COUPE" },
+      { "name": "Rapide", "carType": "SEDAN" },
+      { "name": "Vantage", "carType": "COUPE" },
+      { "name": "Vanquish", "carType": "COUPE" },
+      { "name": "Virage", "carType": "COUPE" },
+      { "name": "DBX", "carType": "SUV" }
+    ]
+  },
+  {
+    "brand": "Audi",
+    "models": [
+      { "name": "A1", "carType": "HATCHBACK" },
+      { "name": "A3", "carType": "HATCHBACK" },
+      { "name": "A4", "carType": "SEDAN" },
+      { "name": "A5", "carType": "COUPE" },
+      { "name": "A6", "carType": "SEDAN" },
+      { "name": "A7", "carType": "SEDAN" },
+      { "name": "A8", "carType": "SEDAN" },
+      { "name": "Q2", "carType": "SUV" },
+      { "name": "Q3", "carType": "SUV" },
+      { "name": "Q5", "carType": "SUV" },
+      { "name": "Q7", "carType": "SUV" },
+      { "name": "Q8", "carType": "SUV" },
+      { "name": "R8", "carType": "COUPE" },
+      { "name": "RS3", "carType": "HATCHBACK" },
+      { "name": "RS4", "carType": "WAGON" },
+      { "name": "RS5", "carType": "COUPE" },
+      { "name": "RS6", "carType": "WAGON" },
+      { "name": "RS7", "carType": "SEDAN" },
+      { "name": "S3", "carType": "HATCHBACK" },
+      { "name": "S4", "carType": "SEDAN" },
+      { "name": "S5", "carType": "COUPE" },
+      { "name": "S6", "carType": "SEDAN" },
+      { "name": "S7", "carType": "SEDAN" },
+      { "name": "S8", "carType": "SEDAN" },
+      { "name": "SQ5", "carType": "SUV" },
+      { "name": "SQ7", "carType": "SUV" },
+      { "name": "TT", "carType": "COUPE" },
+      { "name": "TT RS", "carType": "COUPE" },
+      { "name": "TTS", "carType": "COUPE" },
+      { "name": "e-tron", "carType": "SUV" },
+      { "name": "Q4 e-tron", "carType": "SUV" },
+      { "name": "Q8 e-tron", "carType": "SUV" }
+    ]
+  },
+  {
+    "brand": "Bentley",
+    "models": [
+      { "name": "Bentayga", "carType": "SUV" },
+      { "name": "Continental GT", "carType": "COUPE" },
+      { "name": "Continental GTC", "carType": "CONVERTIBLE" },
+      { "name": "Flying Spur", "carType": "SEDAN" },
+      { "name": "Mulsanne", "carType": "SEDAN" }
+    ]
+  },
+  {
+    "brand": "BMW",
+    "models": [
+      { "name": "1 Series", "carType": "HATCHBACK" },
+      { "name": "2 Series", "carType": "COUPE" },
+      { "name": "3 Series", "carType": "SEDAN" },
+      { "name": "4 Series", "carType": "COUPE" },
+      { "name": "5 Series", "carType": "SEDAN" },
+      { "name": "6 Series", "carType": "COUPE" },
+      { "name": "7 Series", "carType": "SEDAN" },
+      { "name": "8 Series", "carType": "COUPE" },
+      { "name": "X1", "carType": "SUV" },
+      { "name": "X2", "carType": "SUV" },
+      { "name": "X3", "carType": "SUV" },
+      { "name": "X4", "carType": "SUV" },
+      { "name": "X5", "carType": "SUV" },
+      { "name": "X6", "carType": "SUV" },
+      { "name": "X7", "carType": "SUV" },
+      { "name": "Z4", "carType": "CONVERTIBLE" },
+      { "name": "i3", "carType": "HATCHBACK" },
+      { "name": "i4", "carType": "SEDAN" },
+      { "name": "i5", "carType": "SEDAN" },
+      { "name": "i7", "carType": "SEDAN" },
+      { "name": "iX", "carType": "SUV" },
+      { "name": "iX1", "carType": "SUV" },
+      { "name": "iX3", "carType": "SUV" },
+      { "name": "M2", "carType": "COUPE" },
+      { "name": "M3", "carType": "SEDAN" },
+      { "name": "M4", "carType": "COUPE" },
+      { "name": "M5", "carType": "SEDAN" },
+      { "name": "M8", "carType": "COUPE" },
+      { "name": "XM", "carType": "SUV" }
+    ]
+  },
+  {
+    "brand": "BYD",
+    "models": [
+      { "name": "Atto 3", "carType": "SUV" },
+      { "name": "Dolphin", "carType": "HATCHBACK" },
+      { "name": "Seal", "carType": "SEDAN" },
+      { "name": "Sealion 6", "carType": "SUV" },
+      { "name": "Sealion 7", "carType": "SUV" },
+      { "name": "Shark 6", "carType": "UTE" },
+      { "name": "Tan", "carType": "SUV" },
+      { "name": "Han", "carType": "SEDAN" }
+    ]
+  },
+  {
+    "brand": "Chery",
+    "models": [
+      { "name": "Omoda 5", "carType": "SUV" },
+      { "name": "Omoda E5", "carType": "SUV" },
+      { "name": "Tiggo 4 Pro", "carType": "SUV" },
+      { "name": "Tiggo 7 Pro", "carType": "SUV" },
+      { "name": "Tiggo 8 Pro", "carType": "SUV" }
+    ]
+  },
+  {
+    "brand": "Citroen",
+    "models": [
+      { "name": "C3", "carType": "HATCHBACK" },
+      { "name": "C3 Aircross", "carType": "SUV" },
+      { "name": "C4", "carType": "HATCHBACK" },
+      { "name": "C4 Cactus", "carType": "SUV" },
+      { "name": "C5 Aircross", "carType": "SUV" },
+      { "name": "C5 X", "carType": "SEDAN" },
+      { "name": "Berlingo", "carType": "VAN" },
+      { "name": "SpaceTourer", "carType": "PEOPLE_MOVER" }
+    ]
+  },
+  {
+    "brand": "Cupra",
+    "models": [
+      { "name": "Ateca", "carType": "SUV" },
+      { "name": "Born", "carType": "HATCHBACK" },
+      { "name": "Formentor", "carType": "SUV" },
+      { "name": "Leon", "carType": "HATCHBACK" },
+      { "name": "Tavascan", "carType": "SUV" },
+      { "name": "Terramar", "carType": "SUV" }
+    ]
+  },
+  {
+    "brand": "Deepal",
+    "models": [
+      { "name": "S07", "carType": "SUV" },
+      { "name": "E07", "carType": "UTE" }
+    ]
+  },
+  {
+    "brand": "Ferrari",
+    "models": [
+      { "name": "296 GTB", "carType": "COUPE" },
+      { "name": "456", "carType": "COUPE" },
+      { "name": "458 Italia", "carType": "COUPE" },
+      { "name": "488 GTB", "carType": "COUPE" },
+      { "name": "488 Spider", "carType": "CONVERTIBLE" },
+      { "name": "California", "carType": "CONVERTIBLE" },
+      { "name": "F8 Tributo", "carType": "COUPE" },
+      { "name": "GTC4Lusso", "carType": "COUPE" },
+      { "name": "Portofino", "carType": "CONVERTIBLE" },
+      { "name": "Roma", "carType": "COUPE" },
+      { "name": "SF90 Stradale", "carType": "COUPE" }
+    ]
+  },
+  {
+    "brand": "Foton",
+    "models": [
+      { "name": "Tunland G7", "carType": "UTE" },
+      { "name": "Sauvana", "carType": "SUV" }
+    ]
+  },
+  {
+    "brand": "Ford",
+    "models": [
+      { "name": "Bronco", "carType": "SUV" },
+      { "name": "EcoSport", "carType": "SUV" },
+      { "name": "Edge", "carType": "SUV" },
+      { "name": "Endura", "carType": "SUV" },
+      { "name": "Escape", "carType": "SUV" },
+      { "name": "Everest", "carType": "SUV" },
+      { "name": "Explorer", "carType": "SUV" },
+      { "name": "F-150", "carType": "UTE" },
+      { "name": "Fiesta", "carType": "HATCHBACK" },
+      { "name": "Focus", "carType": "HATCHBACK" },
+      { "name": "Fusion", "carType": "SEDAN" },
+      { "name": "Galaxy", "carType": "PEOPLE_MOVER" },
+      { "name": "Kuga", "carType": "SUV" },
+      { "name": "Mondeo", "carType": "SEDAN" },
+      { "name": "Mustang", "carType": "COUPE" },
+      { "name": "Mustang Mach-E", "carType": "SUV" },
+      { "name": "Puma", "carType": "SUV" },
+      { "name": "Ranger", "carType": "UTE" },
+      { "name": "Territory", "carType": "SUV" },
+      { "name": "Tourneo", "carType": "PEOPLE_MOVER" },
+      { "name": "Transit", "carType": "VAN" },
+      { "name": "Transit Custom", "carType": "VAN" }
+    ]
+  },
+  {
+    "brand": "Geely",
+    "models": [
+      { "name": "EX5", "carType": "SUV" },
+      { "name": "Starray", "carType": "SUV" }
+    ]
+  },
+  {
+    "brand": "Genesis",
+    "models": [
+      { "name": "G70", "carType": "SEDAN" },
+      { "name": "G80", "carType": "SEDAN" },
+      { "name": "G90", "carType": "SEDAN" },
+      { "name": "GV70", "carType": "SUV" },
+      { "name": "GV80", "carType": "SUV" },
+      { "name": "GV60", "carType": "SUV" }
+    ]
+  },
+  {
+    "brand": "GMC",
+    "models": [
+      { "name": "Yukon", "carType": "SUV" }
+    ]
+  },
+  {
+    "brand": "GWM",
+    "models": [
+      { "name": "Cannon", "carType": "UTE" },
+      { "name": "Cannon Alpha", "carType": "UTE" },
+      { "name": "Ute", "carType": "UTE" },
+      { "name": "Ora", "carType": "HATCHBACK" },
+      { "name": "Tank 300", "carType": "SUV" },
+      { "name": "Tank 500", "carType": "SUV" }
+    ]
+  },
+  {
+    "brand": "Haval",
+    "models": [
+      { "name": "H2", "carType": "SUV" },
+      { "name": "H6", "carType": "SUV" },
+      { "name": "H9", "carType": "SUV" },
+      { "name": "Jolion", "carType": "SUV" },
+      { "name": "Dargo", "carType": "SUV" }
+    ]
+  },
+  {
+    "brand": "Holden",
+    "models": [
+      { "name": "Acadia", "carType": "SUV" },
+      { "name": "Astra", "carType": "HATCHBACK" },
+      { "name": "Barina", "carType": "HATCHBACK" },
+      { "name": "Calais", "carType": "SEDAN" },
+      { "name": "Captiva", "carType": "SUV" },
+      { "name": "Colorado", "carType": "UTE" },
+      { "name": "Colorado 7", "carType": "SUV" },
+      { "name": "Commodore", "carType": "SEDAN" },
+      { "name": "Cruze", "carType": "HATCHBACK" },
+      { "name": "Epica", "carType": "SEDAN" },
+      { "name": "Equinox", "carType": "SUV" },
+      { "name": "Jackaroo", "carType": "SUV" },
+      { "name": "Malibu", "carType": "SEDAN" },
+      { "name": "Monaro", "carType": "COUPE" },
+      { "name": "Rodeo", "carType": "UTE" },
+      { "name": "Trailblazer", "carType": "SUV" },
+      { "name": "Trax", "carType": "SUV" },
+      { "name": "Ute", "carType": "UTE" },
+      { "name": "Vectra", "carType": "SEDAN" },
+      { "name": "Volt", "carType": "HATCHBACK" }
+    ]
+  },
+  {
+    "brand": "Honda",
+    "models": [
+      { "name": "Accord", "carType": "SEDAN" },
+      { "name": "Civic", "carType": "HATCHBACK" },
+      { "name": "City", "carType": "SEDAN" },
+      { "name": "CR-V", "carType": "SUV" },
+      { "name": "HR-V", "carType": "SUV" },
+      { "name": "Jazz", "carType": "HATCHBACK" },
+      { "name": "Legend", "carType": "SEDAN" },
+      { "name": "Odyssey", "carType": "PEOPLE_MOVER" },
+      { "name": "Passport", "carType": "SUV" },
+      { "name": "Pilot", "carType": "SUV" },
+      { "name": "Prelude", "carType": "COUPE" },
+      { "name": "S2000", "carType": "CONVERTIBLE" },
+      { "name": "ZR-V", "carType": "SUV" },
+      { "name": "e:NS1", "carType": "SUV" }
+    ]
+  },
+  {
+    "brand": "Hyundai",
+    "models": [
+      { "name": "Accent", "carType": "HATCHBACK" },
+      { "name": "Elantra", "carType": "SEDAN" },
+      { "name": "Getz", "carType": "HATCHBACK" },
+      { "name": "i20", "carType": "HATCHBACK" },
+      { "name": "i30", "carType": "HATCHBACK" },
+      { "name": "i40", "carType": "SEDAN" },
+      { "name": "i45", "carType": "SEDAN" },
+      { "name": "iLoad", "carType": "VAN" },
+      { "name": "iMax", "carType": "PEOPLE_MOVER" },
+      { "name": "IONIQ", "carType": "HATCHBACK" },
+      { "name": "IONIQ 5", "carType": "SUV" },
+      { "name": "IONIQ 6", "carType": "SEDAN" },
+      { "name": "Kona", "carType": "SUV" },
+      { "name": "Santa Cruz", "carType": "UTE" },
+      { "name": "Santa Fe", "carType": "SUV" },
+      { "name": "Sonata", "carType": "SEDAN" },
+      { "name": "Staria", "carType": "PEOPLE_MOVER" },
+      { "name": "Terracan", "carType": "SUV" },
+      { "name": "Tucson", "carType": "SUV" },
+      { "name": "Venue", "carType": "SUV" },
+      { "name": "Veloster", "carType": "HATCHBACK" }
+    ]
+  },
+  {
+    "brand": "Infiniti",
+    "models": [
+      { "name": "FX35", "carType": "SUV" },
+      { "name": "FX50", "carType": "SUV" },
+      { "name": "G37", "carType": "COUPE" },
+      { "name": "Q50", "carType": "SEDAN" },
+      { "name": "Q60", "carType": "COUPE" },
+      { "name": "QX50", "carType": "SUV" },
+      { "name": "QX60", "carType": "SUV" },
+      { "name": "QX70", "carType": "SUV" },
+      { "name": "QX80", "carType": "SUV" }
+    ]
+  },
+  {
+    "brand": "Isuzu",
+    "models": [
+      { "name": "D-Max", "carType": "UTE" },
+      { "name": "MU-X", "carType": "SUV" }
+    ]
+  },
+  {
+    "brand": "JAC",
+    "models": [
+      { "name": "T9", "carType": "UTE" }
+    ]
+  },
+  {
+    "brand": "Jaguar",
+    "models": [
+      { "name": "E-Pace", "carType": "SUV" },
+      { "name": "F-Pace", "carType": "SUV" },
+      { "name": "F-Type", "carType": "COUPE" },
+      { "name": "I-Pace", "carType": "SUV" },
+      { "name": "S-Type", "carType": "SEDAN" },
+      { "name": "XE", "carType": "SEDAN" },
+      { "name": "XF", "carType": "SEDAN" },
+      { "name": "XJ", "carType": "SEDAN" },
+      { "name": "XK", "carType": "COUPE" }
+    ]
+  },
+  {
+    "brand": "Jeep",
+    "models": [
+      { "name": "Cherokee", "carType": "SUV" },
+      { "name": "Commander", "carType": "SUV" },
+      { "name": "Compass", "carType": "SUV" },
+      { "name": "Gladiator", "carType": "UTE" },
+      { "name": "Grand Cherokee", "carType": "SUV" },
+      { "name": "Renegade", "carType": "SUV" },
+      { "name": "Wrangler", "carType": "SUV" }
+    ]
+  },
+  {
+    "brand": "Kia",
+    "models": [
+      { "name": "Carnival", "carType": "PEOPLE_MOVER" },
+      { "name": "Cerato", "carType": "SEDAN" },
+      { "name": "EV3", "carType": "SUV" },
+      { "name": "EV6", "carType": "SUV" },
+      { "name": "EV9", "carType": "SUV" },
+      { "name": "Niro", "carType": "SUV" },
+      { "name": "Picanto", "carType": "HATCHBACK" },
+      { "name": "ProCeed", "carType": "WAGON" },
+      { "name": "Rio", "carType": "HATCHBACK" },
+      { "name": "Seltos", "carType": "SUV" },
+      { "name": "Sorento", "carType": "SUV" },
+      { "name": "Soul", "carType": "SUV" },
+      { "name": "Sportage", "carType": "SUV" },
+      { "name": "Stinger", "carType": "SEDAN" },
+      { "name": "Tasman", "carType": "UTE" },
+      { "name": "Stonic", "carType": "SUV" }
+    ]
+  },
+  {
+    "brand": "Lamborghini",
+    "models": [
+      { "name": "Aventador", "carType": "COUPE" },
+      { "name": "Huracan", "carType": "COUPE" },
+      { "name": "Urus", "carType": "SUV" },
+      { "name": "Revuelto", "carType": "COUPE" }
+    ]
+  },
+  {
+    "brand": "Land Rover",
+    "models": [
+      { "name": "Defender", "carType": "SUV" },
+      { "name": "Discovery", "carType": "SUV" },
+      { "name": "Discovery Sport", "carType": "SUV" },
+      { "name": "Freelander", "carType": "SUV" },
+      { "name": "Range Rover", "carType": "SUV" },
+      { "name": "Range Rover Evoque", "carType": "SUV" },
+      { "name": "Range Rover Sport", "carType": "SUV" },
+      { "name": "Range Rover Velar", "carType": "SUV" }
+    ]
+  },
+  {
+    "brand": "LDV",
+    "models": [
+      { "name": "D90", "carType": "SUV" },
+      { "name": "Deliver 9", "carType": "VAN" },
+      { "name": "G10", "carType": "VAN" },
+      { "name": "Mifa 9", "carType": "PEOPLE_MOVER" },
+      { "name": "T60", "carType": "UTE" },
+      { "name": "T60 Max", "carType": "UTE" },
+      { "name": "V80", "carType": "VAN" }
+    ]
+  },
+  {
+    "brand": "Leapmotor",
+    "models": [
+      { "name": "C10", "carType": "SUV" },
+      { "name": "T03", "carType": "HATCHBACK" }
+    ]
+  },
+  {
+    "brand": "Lexus",
+    "models": [
+      { "name": "CT", "carType": "HATCHBACK" },
+      { "name": "ES", "carType": "SEDAN" },
+      { "name": "GS", "carType": "SEDAN" },
+      { "name": "GX", "carType": "SUV" },
+      { "name": "IS", "carType": "SEDAN" },
+      { "name": "LC", "carType": "COUPE" },
+      { "name": "LM", "carType": "PEOPLE_MOVER" },
+      { "name": "LS", "carType": "SEDAN" },
+      { "name": "LX", "carType": "SUV" },
+      { "name": "LBX", "carType": "SUV" },
+      { "name": "NX", "carType": "SUV" },
+      { "name": "RC", "carType": "COUPE" },
+      { "name": "RX", "carType": "SUV" },
+      { "name": "RZ", "carType": "SUV" },
+      { "name": "UX", "carType": "SUV" }
+    ]
+  },
+  {
+    "brand": "Lotus",
+    "models": [
+      { "name": "Elise", "carType": "CONVERTIBLE" },
+      { "name": "Emira", "carType": "COUPE" },
+      { "name": "Evija", "carType": "COUPE" },
+      { "name": "Evora", "carType": "COUPE" },
+      { "name": "Exige", "carType": "COUPE" }
+    ]
+  },
+  {
+    "brand": "Mahindra",
+    "models": [
+      { "name": "Pik Up", "carType": "UTE" },
+      { "name": "Scorpio", "carType": "SUV" },
+      { "name": "XUV300", "carType": "SUV" },
+      { "name": "XUV700", "carType": "SUV" }
+    ]
+  },
+  {
+    "brand": "Maserati",
+    "models": [
+      { "name": "Ghibli", "carType": "SEDAN" },
+      { "name": "GranTurismo", "carType": "COUPE" },
+      { "name": "Grecale", "carType": "SUV" },
+      { "name": "Levante", "carType": "SUV" },
+      { "name": "MC20", "carType": "COUPE" },
+      { "name": "Quattroporte", "carType": "SEDAN" }
+    ]
+  },
+  {
+    "brand": "Mazda",
+    "models": [
+      { "name": "BT-50", "carType": "UTE" },
+      { "name": "CX-3", "carType": "SUV" },
+      { "name": "CX-30", "carType": "SUV" },
+      { "name": "CX-5", "carType": "SUV" },
+      { "name": "CX-60", "carType": "SUV" },
+      { "name": "CX-7", "carType": "SUV" },
+      { "name": "CX-8", "carType": "SUV" },
+      { "name": "CX-9", "carType": "SUV" },
+      { "name": "CX-90", "carType": "SUV" },
+      { "name": "Mazda2", "carType": "HATCHBACK" },
+      { "name": "Mazda3", "carType": "HATCHBACK" },
+      { "name": "Mazda6", "carType": "SEDAN" },
+      { "name": "MX-30", "carType": "SUV" },
+      { "name": "MX-5", "carType": "CONVERTIBLE" },
+      { "name": "RX-7", "carType": "COUPE" },
+      { "name": "RX-8", "carType": "COUPE" }
+    ]
+  },
+  {
+    "brand": "McLaren",
+    "models": [
+      { "name": "540C", "carType": "COUPE" },
+      { "name": "570S", "carType": "COUPE" },
+      { "name": "600LT", "carType": "COUPE" },
+      { "name": "620R", "carType": "COUPE" },
+      { "name": "650S", "carType": "COUPE" },
+      { "name": "675LT", "carType": "COUPE" },
+      { "name": "720S", "carType": "COUPE" },
+      { "name": "750S", "carType": "COUPE" },
+      { "name": "765LT", "carType": "COUPE" },
+      { "name": "Artura", "carType": "COUPE" },
+      { "name": "GT", "carType": "COUPE" },
+      { "name": "P1", "carType": "COUPE" }
+    ]
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "models": [
+      { "name": "A-Class", "carType": "HATCHBACK" },
+      { "name": "B-Class", "carType": "HATCHBACK" },
+      { "name": "C-Class", "carType": "SEDAN" },
+      { "name": "CLA", "carType": "SEDAN" },
+      { "name": "CLE", "carType": "COUPE" },
+      { "name": "CLS", "carType": "SEDAN" },
+      { "name": "E-Class", "carType": "SEDAN" },
+      { "name": "EQA", "carType": "SUV" },
+      { "name": "EQB", "carType": "SUV" },
+      { "name": "EQC", "carType": "SUV" },
+      { "name": "EQE", "carType": "SEDAN" },
+      { "name": "EQS", "carType": "SEDAN" },
+      { "name": "G-Class", "carType": "SUV" },
+      { "name": "GLA", "carType": "SUV" },
+      { "name": "GLB", "carType": "SUV" },
+      { "name": "GLC", "carType": "SUV" },
+      { "name": "GLE", "carType": "SUV" },
+      { "name": "GLS", "carType": "SUV" },
+      { "name": "S-Class", "carType": "SEDAN" },
+      { "name": "SL", "carType": "CONVERTIBLE" },
+      { "name": "AMG GT", "carType": "COUPE" },
+      { "name": "V-Class", "carType": "PEOPLE_MOVER" },
+      { "name": "Vito", "carType": "VAN" }
+    ]
+  },
+  {
+    "brand": "MG",
+    "models": [
+      { "name": "3", "carType": "HATCHBACK" },
+      { "name": "4", "carType": "HATCHBACK" },
+      { "name": "5", "carType": "SEDAN" },
+      { "name": "6", "carType": "HATCHBACK" },
+      { "name": "HS", "carType": "SUV" },
+      { "name": "RX5", "carType": "SUV" },
+      { "name": "ZS", "carType": "SUV" },
+      { "name": "ZST", "carType": "SUV" },
+      { "name": "Marvel R", "carType": "SUV" },
+      { "name": "Cyberster", "carType": "CONVERTIBLE" }
+    ]
+  },
+  {
+    "brand": "MINI",
+    "models": [
+      { "name": "Aceman", "carType": "SUV" },
+      { "name": "Clubman", "carType": "WAGON" },
+      { "name": "Convertible", "carType": "CONVERTIBLE" },
+      { "name": "Countryman", "carType": "SUV" },
+      { "name": "Hatch", "carType": "HATCHBACK" },
+      { "name": "Paceman", "carType": "SUV" }
+    ]
+  },
+  {
+    "brand": "Mitsubishi",
+    "models": [
+      { "name": "3000GT", "carType": "COUPE" },
+      { "name": "ASX", "carType": "SUV" },
+      { "name": "Colt", "carType": "HATCHBACK" },
+      { "name": "Eclipse Cross", "carType": "SUV" },
+      { "name": "Express", "carType": "VAN" },
+      { "name": "Galant", "carType": "SEDAN" },
+      { "name": "Lancer", "carType": "SEDAN" },
+      { "name": "Magna", "carType": "SEDAN" },
+      { "name": "Mirage", "carType": "HATCHBACK" },
+      { "name": "Outlander", "carType": "SUV" },
+      { "name": "Pajero", "carType": "SUV" },
+      { "name": "Pajero Sport", "carType": "SUV" },
+      { "name": "Triton", "carType": "UTE" }
+    ]
+  },
+  {
+    "brand": "Nissan",
+    "models": [
+      { "name": "370Z", "carType": "COUPE" },
+      { "name": "GT-R", "carType": "COUPE" },
+      { "name": "Juke", "carType": "SUV" },
+      { "name": "Leaf", "carType": "HATCHBACK" },
+      { "name": "Micra", "carType": "HATCHBACK" },
+      { "name": "Murano", "carType": "SUV" },
+      { "name": "Navara", "carType": "UTE" },
+      { "name": "Note", "carType": "HATCHBACK" },
+      { "name": "Pathfinder", "carType": "SUV" },
+      { "name": "Patrol", "carType": "SUV" },
+      { "name": "Pulsar", "carType": "HATCHBACK" },
+      { "name": "Qashqai", "carType": "SUV" },
+      { "name": "Skyline", "carType": "SEDAN" },
+      { "name": "Tiida", "carType": "HATCHBACK" },
+      { "name": "X-Trail", "carType": "SUV" }
+    ]
+  },
+  {
+    "brand": "Omoda",
+    "models": [
+      { "name": "Omoda 9", "carType": "SUV" }
+    ]
+  },
+  {
+    "brand": "Peugeot",
+    "models": [
+      { "name": "2008", "carType": "SUV" },
+      { "name": "208", "carType": "HATCHBACK" },
+      { "name": "3008", "carType": "SUV" },
+      { "name": "308", "carType": "HATCHBACK" },
+      { "name": "408", "carType": "SEDAN" },
+      { "name": "5008", "carType": "SUV" },
+      { "name": "508", "carType": "SEDAN" },
+      { "name": "Partner", "carType": "VAN" },
+      { "name": "Rifter", "carType": "VAN" },
+      { "name": "Traveller", "carType": "PEOPLE_MOVER" }
+    ]
+  },
+  {
+    "brand": "Polestar",
+    "models": [
+      { "name": "Polestar 2", "carType": "SEDAN" },
+      { "name": "Polestar 3", "carType": "SUV" },
+      { "name": "Polestar 4", "carType": "SUV" }
+    ]
+  },
+  {
+    "brand": "Porsche",
+    "models": [
+      { "name": "718 Boxster", "carType": "CONVERTIBLE" },
+      { "name": "718 Cayman", "carType": "COUPE" },
+      { "name": "911", "carType": "COUPE" },
+      { "name": "Cayenne", "carType": "SUV" },
+      { "name": "Macan", "carType": "SUV" },
+      { "name": "Panamera", "carType": "SEDAN" },
+      { "name": "Taycan", "carType": "SEDAN" }
+    ]
+  },
+  {
+    "brand": "RAM",
+    "models": [
+      { "name": "1500", "carType": "UTE" },
+      { "name": "2500", "carType": "UTE" },
+      { "name": "3500", "carType": "UTE" }
+    ]
+  },
+  {
+    "brand": "Renault",
+    "models": [
+      { "name": "Arkana", "carType": "SUV" },
+      { "name": "Captur", "carType": "SUV" },
+      { "name": "Clio", "carType": "HATCHBACK" },
+      { "name": "Kangoo", "carType": "VAN" },
+      { "name": "Koleos", "carType": "SUV" },
+      { "name": "Megane", "carType": "HATCHBACK" },
+      { "name": "Megane E-Tech", "carType": "SUV" },
+      { "name": "Trafic", "carType": "VAN" },
+      { "name": "Zoe", "carType": "HATCHBACK" }
+    ]
+  },
+  {
+    "brand": "Rolls-Royce",
+    "models": [
+      { "name": "Cullinan", "carType": "SUV" },
+      { "name": "Dawn", "carType": "CONVERTIBLE" },
+      { "name": "Ghost", "carType": "SEDAN" },
+      { "name": "Phantom", "carType": "SEDAN" },
+      { "name": "Spectre", "carType": "COUPE" },
+      { "name": "Wraith", "carType": "COUPE" }
+    ]
+  },
+  {
+    "brand": "Skoda",
+    "models": [
+      { "name": "Fabia", "carType": "HATCHBACK" },
+      { "name": "Kamiq", "carType": "SUV" },
+      { "name": "Karoq", "carType": "SUV" },
+      { "name": "Kodiaq", "carType": "SUV" },
+      { "name": "Octavia", "carType": "SEDAN" },
+      { "name": "Scala", "carType": "HATCHBACK" },
+      { "name": "Superb", "carType": "SEDAN" }
+    ]
+  },
+  {
+    "brand": "Subaru",
+    "models": [
+      { "name": "BRZ", "carType": "COUPE" },
+      { "name": "Crosstrek", "carType": "SUV" },
+      { "name": "Forester", "carType": "SUV" },
+      { "name": "Impreza", "carType": "HATCHBACK" },
+      { "name": "Legacy", "carType": "SEDAN" },
+      { "name": "Levorg", "carType": "WAGON" },
+      { "name": "Liberty", "carType": "SEDAN" },
+      { "name": "Outback", "carType": "WAGON" },
+      { "name": "Solterra", "carType": "SUV" },
+      { "name": "WRX", "carType": "SEDAN" },
+      { "name": "XV", "carType": "SUV" }
+    ]
+  },
+  {
+    "brand": "Suzuki",
+    "models": [
+      { "name": "Alto", "carType": "HATCHBACK" },
+      { "name": "Baleno", "carType": "HATCHBACK" },
+      { "name": "Celerio", "carType": "HATCHBACK" },
+      { "name": "Fronx", "carType": "SUV" },
+      { "name": "Grand Vitara", "carType": "SUV" },
+      { "name": "Ignis", "carType": "HATCHBACK" },
+      { "name": "Jimny", "carType": "SUV" },
+      { "name": "S-Cross", "carType": "SUV" },
+      { "name": "Swift", "carType": "HATCHBACK" },
+      { "name": "Vitara", "carType": "SUV" }
+    ]
+  },
+  {
+    "brand": "Tank",
+    "models": [
+      { "name": "300", "carType": "SUV" },
+      { "name": "500", "carType": "SUV" }
+    ]
+  },
+  {
+    "brand": "Tesla",
+    "models": [
+      { "name": "Cybertruck", "carType": "UTE" },
+      { "name": "Model 3", "carType": "SEDAN" },
+      { "name": "Model S", "carType": "SEDAN" },
+      { "name": "Model X", "carType": "SUV" },
+      { "name": "Model Y", "carType": "SUV" }
+    ]
+  },
+  {
+    "brand": "Toyota",
+    "models": [
+      { "name": "86", "carType": "COUPE" },
+      { "name": "Aurion", "carType": "SEDAN" },
+      { "name": "bZ4X", "carType": "SUV" },
+      { "name": "C-HR", "carType": "SUV" },
+      { "name": "Camry", "carType": "SEDAN" },
+      { "name": "Coaster", "carType": "VAN" },
+      { "name": "Corolla", "carType": "HATCHBACK" },
+      { "name": "Corolla Cross", "carType": "SUV" },
+      { "name": "Corolla GR", "carType": "HATCHBACK" },
+      { "name": "FJ Cruiser", "carType": "SUV" },
+      { "name": "Fortuner", "carType": "SUV" },
+      { "name": "GR86", "carType": "COUPE" },
+      { "name": "GR Supra", "carType": "COUPE" },
+      { "name": "GR Yaris", "carType": "HATCHBACK" },
+      { "name": "HiAce", "carType": "VAN" },
+      { "name": "HiLux", "carType": "UTE" },
+      { "name": "Kluger", "carType": "SUV" },
+      { "name": "Land Cruiser", "carType": "SUV" },
+      { "name": "Land Cruiser 70", "carType": "SUV" },
+      { "name": "LandCruiser Prado", "carType": "SUV" },
+      { "name": "MR2", "carType": "COUPE" },
+      { "name": "Prius", "carType": "HATCHBACK" },
+      { "name": "Prius C", "carType": "HATCHBACK" },
+      { "name": "Prius V", "carType": "WAGON" },
+      { "name": "RAV4", "carType": "SUV" },
+      { "name": "Raize", "carType": "SUV" },
+      { "name": "Rush", "carType": "SUV" },
+      { "name": "Supra", "carType": "COUPE" },
+      { "name": "Tarago", "carType": "PEOPLE_MOVER" },
+      { "name": "Veloz", "carType": "PEOPLE_MOVER" },
+      { "name": "Yaris", "carType": "HATCHBACK" },
+      { "name": "Yaris Cross", "carType": "SUV" }
+    ]
+  },
+  {
+    "brand": "Volkswagen",
+    "models": [
+      { "name": "Amarok", "carType": "UTE" },
+      { "name": "Arteon", "carType": "SEDAN" },
+      { "name": "Caddy", "carType": "VAN" },
+      { "name": "Golf", "carType": "HATCHBACK" },
+      { "name": "Golf GTI", "carType": "HATCHBACK" },
+      { "name": "Golf R", "carType": "HATCHBACK" },
+      { "name": "ID.3", "carType": "HATCHBACK" },
+      { "name": "ID.4", "carType": "SUV" },
+      { "name": "ID.5", "carType": "SUV" },
+      { "name": "Multivan", "carType": "PEOPLE_MOVER" },
+      { "name": "Passat", "carType": "SEDAN" },
+      { "name": "Polo", "carType": "HATCHBACK" },
+      { "name": "T-Cross", "carType": "SUV" },
+      { "name": "T-Roc", "carType": "SUV" },
+      { "name": "Tiguan", "carType": "SUV" },
+      { "name": "Touareg", "carType": "SUV" },
+      { "name": "Touareg R", "carType": "SUV" },
+      { "name": "Transporter", "carType": "VAN" },
+      { "name": "Up", "carType": "HATCHBACK" }
+    ]
+  },
+  {
+    "brand": "Volvo",
+    "models": [
+      { "name": "C40", "carType": "SUV" },
+      { "name": "EX30", "carType": "SUV" },
+      { "name": "EX40", "carType": "SUV" },
+      { "name": "EX90", "carType": "SUV" },
+      { "name": "S60", "carType": "SEDAN" },
+      { "name": "S90", "carType": "SEDAN" },
+      { "name": "V60", "carType": "WAGON" },
+      { "name": "V90", "carType": "WAGON" },
+      { "name": "XC40", "carType": "SUV" },
+      { "name": "XC60", "carType": "SUV" },
+      { "name": "XC90", "carType": "SUV" }
+    ]
+  },
+  {
+    "brand": "XPeng",
+    "models": [
+      { "name": "G6", "carType": "SUV" },
+      { "name": "G9", "carType": "SUV" },
+      { "name": "X9", "carType": "PEOPLE_MOVER" }
+    ]
+  },
+  {
+    "brand": "Zeekr",
+    "models": [
+      { "name": "001", "carType": "WAGON" },
+      { "name": "009", "carType": "PEOPLE_MOVER" },
+      { "name": "X", "carType": "SUV" }
+    ]
+  }
+]
