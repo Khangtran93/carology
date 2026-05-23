@@ -2,23 +2,42 @@ import Link from "next/link";
 import CarModelImage from "./car-model-image";
 import { getCarModel } from "@/app/lib/data";
 
-export default async function CarModel({ brandSlug, brandModelSlug, carModelSlug } : {brandSlug: string, brandModelSlug: string, carModelSlug: string} ) {
+import CategoryTab from "./CategoryTab";
 
-  //Fetching car model year object with all complaints
+export default async function CarModel({ brandSlug, brandModelSlug, carModelSlug } : {brandSlug: string, brandModelSlug: string, carModelSlug: string} ) {
+  // await new Promise(resolve => setTimeout(resolve, 2000))
   const carYearModel = await getCarModel(brandSlug, brandModelSlug, carModelSlug)
-  // TODO: replace with car-model-not-found UI
+  if (!carYearModel) return null
+  const sum = carYearModel.complaints.reduce((acc, c) => acc + (c.severity ?? 0), 0)
+  const avgSeverity = (sum / carYearModel.complaints.length).toFixed(1)
+  console.log("carModel ", carYearModel)
   if (!carYearModel) {
     return <div>Year Model not found</div>;
   }
 
   return (
-    <>
-      <h1 className='text-2xl md:text-5xl font-bold md:mb-4 text-center'>{carYearModel.brandModel.brand.name} {carYearModel?.name} {carYearModel.year}</h1>
-      <h3 className='text-lg md:text-2xl font-semibold mb-4 text-center'>
-        All complaints reported for {carYearModel.brandModel.brand.name} {carYearModel?.name} {carYearModel.year}, 
-        including issue details and user-reported experiences</h3>
-        
+    <div className="flex flex-col md:flex-row w-full">
+      <div className='flex flex-1 flex-col bg-navy px-4 py-8 md:px-16 md:py-8 font-bebas-neue'>
+        <h3 className='text-sm text-red-500 md:text-xl'>{carYearModel.brandModel.brand.name} {carYearModel?.name} {carYearModel.year}</h3>
+        <h1 className="text-2xl md:text-4xl text-white">COMPLAINTS</h1>
+        <h1 className="text-gray-500 mb-2 md:mb-4 font-dm-mono">{carYearModel._count.complaints} reported {carYearModel._count.complaints > 1 ? 'issues' : 'issue'}</h1>
         <CarModelImage carYearModel={carYearModel}/>
+        <div>
+          <div className="flex flex-row justify-between text-gray-300 py-2 border-b border-gray-300">
+            <h2>Total</h2>
+            <h2>{carYearModel._count.complaints}</h2>
+          </div>
+          <div className="flex flex-row justify-between text-gray-300 py-2 border-b border-gray-300">
+            <h2>Severity</h2>
+            <h2>{avgSeverity}</h2>
+          </div>
+          <div className="flex flex-row justify-between text-gray-300 py-2 border-b border-gray-300">
+            <h2>Total</h2>
+            <h2>{carYearModel._count.complaints}</h2>
+          </div>
+        </div>
+      </div>
+      
        
       {carYearModel.complaints.length == 0 ?
       <div>
@@ -26,23 +45,8 @@ export default async function CarModel({ brandSlug, brandModelSlug, carModelSlug
         <span className='underline hover:opacity-70'><Link href={`/${brandSlug}/${brandModelSlug}/${carModelSlug}/complaint`}> Add your complaint here.</Link></span></h3>
       </div>
        : 
-       <div>
-       <ul className='mb-6 md:mb-12'>
-      {carYearModel.complaints.map((complaint, index) => (
-        <li key={index} className='shadow-2xl p-2 m-2 rounded-xl'>
-          <h2 className='text-lg md:text-xl font-bold'>{complaint.user.name} - {complaint.createdAt.toDateString()}</h2>
-          <h3 className='text-md md:text-lg font-semibold'>{complaint.title}</h3>
-          <h4 className='text-sm md:text-md'>{complaint.content}</h4>
-        </li> 
-      ))}
-      </ul>
-      
-        <Link href={`/${brandSlug}/${brandModelSlug}/${carModelSlug}/complaint`}
-              className='bg-black text-white p-2 max-w-max rounded-lg ml-2 mb-6 inline-block hover:opacity-80'>
-         Add Complaint
-        </Link>
-      </div>
+        <CategoryTab carYearModel={carYearModel}/>
       }
-    </>
+    </div>
   )
 }

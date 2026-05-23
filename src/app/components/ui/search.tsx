@@ -3,6 +3,7 @@ import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
 import { useState, useRef, useEffect } from "react"
 import { searchAll } from "@/app/lib/data"
 import Link from "next/link"
+import { dmSans } from '@/app/fonts/fonts';
 
 type SearchResults = Awaited<ReturnType<typeof searchAll>>
 
@@ -53,20 +54,15 @@ export default function SearchBar() {
 
   return (
     <div ref={containerRef} 
-    className="relative mx-auto p-6 pb-12 border border-gray-200 max-w-[1300px] mb-6 md:mb-6 bg-[linear-gradient(261.74deg,_#0b193f_-7.56%,_#1e47a2_106.91%)] rounded-2xl">
-       <div className='mb-8'>
-         <h1 className='text-white text-xl'>Find out what people say about your car!</h1>
-         <p className='text-gray-50 text-sm'>Thousands of reviews for various car models</p>
-       </div>
-      <div className="relative flex flex-1 flex-shrink-0 mx-auto mt-2 justify-center">
+    className="relative w-full md:w-[50%]">
         <label htmlFor="search" className="sr-only">
           Search
         </label>
         <input
-          className="w-full bg-white peer block rounded-md py-[9px] pl-8 md:pl-10 text-sm placeholder:text-gray-500 rounded-lg"
+          className={`w-full bg-white peer block rounded-md py-[9px] pl-8 md:pl-10 text-sm placeholder:text-gray-500 rounded-lg ${dmSans.className}`}
           type='text'
           value={query}
-          placeholder="Search brands, models, complaints..."
+          placeholder="Search brands, models, complaints"
           onChange={handleChange}
         />
       {loading && (
@@ -132,11 +128,6 @@ export default function SearchBar() {
 
         </div>
       )}
-      </div>
-
-      
-
-     
     </div>
   )
 }

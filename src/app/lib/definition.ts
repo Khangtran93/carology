@@ -1,5 +1,6 @@
 import { z } from 'zod'
-import { Prisma } from '../../generated/prisma'
+import { IssueCategory, Prisma } from '../../generated/prisma'
+import { getCarModel } from './data';
 
 export const SignupFormSchema = z.object({
   name: z.string()
@@ -30,7 +31,9 @@ export const ComplaintSchema = z.object({
   title: z.string().min(6, {message: "Please create a more meaningful title"}),
   content: z.string().min(10, {message: "Please provide more details"}),
   userId: z.string(),
-  carModelId: z.string()
+  carModelId: z.string(),
+  category: z.nativeEnum(IssueCategory),
+  severity: z.coerce.number().int().min(1).max(10)
 })
 
  
@@ -65,7 +68,8 @@ export type ComplaintState = {
     title?: string[]  | undefined,
     content?: string[] | undefined,
     userId?: string[] | undefined,
-    carModelId?: string[] | undefined
+    carModelId?: string[] | undefined,
+    category?: string[] | undefined
   }
   message?: string | null
 }
@@ -86,6 +90,13 @@ export type CarModelsIncludeComplaints = Prisma.BrandModelGetPayload<{
   }
 }>
 
+export type ComplaintsWithUser = Prisma.ComplaintGetPayload<{
+  include: {
+    user: true
+  }
+}>
+
+export type CarModelData = NonNullable<Awaited<ReturnType<typeof getCarModel>>>
 
 export type Article = {
   uuid: string
@@ -102,4 +113,6 @@ export type ArticleSummary = {
   publisher: string
 
 }
+
+export const CAR_TYPE_ORDER = ['SEDAN', 'HATCHBACK', 'SUV', 'COUPE', 'CONVERTIBLE', 'WAGON', 'UTE', 'VAN', 'TRUCK', 'OTHER']
 

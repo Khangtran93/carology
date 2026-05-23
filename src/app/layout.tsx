@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import {inter} from '@/app/fonts/fonts'
+import { bebasNeue, dmMono, dmSans } from '@/app/fonts/fonts'
 import "./globals.css";
 import NavBar from "./components/navbar/NavBar";
 import Footer from "./components/footer/Footer";
@@ -18,11 +18,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} antialiased flex flex-col min-h-screen`}
+        className={`${bebasNeue.variable} ${dmMono.variable} ${dmSans.variable} antialiased flex flex-col min-h-screen`}
       >
         <NextTopLoader showSpinner={false} />
         <NavBar/>
-        <div className="flex-1 pt-6 md:pt-12 px-6">
+        <div className="bg-cream">
           {children}
         </div>
       <Footer/>

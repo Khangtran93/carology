@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --ss: #fefcf7;
 }
 
 @theme inline {
@@ -12,11 +13,35 @@
   --font-mono: var(--font-geist-mono);
 }
 
+@theme {
+  --color-cream: #fefcf7;
+  --color-cream-dark: #ede9e0;
+  --color-navy: #1e2535;
+  --color-navy-light: #2a3347;
+  --color-red-bg: #e630301A;
+  --color-orange-bg: #f59e0b1A;
+  --color-green-bg: #22c55e1A;
+  --color-border: #e2ddd6;
+  --font-dm-sans: var(--font-dm-sans);
+  --font-dm-mono: var(--font-dm-mono);
+  --font-bebas-neue: var(--font-bebas-neue);
+}
+
+@layer utilities {
+  .bg-hero-glow {
+    background: radial-gradient(ellipse at 70% 60%, rgba(230,48,48,0.08), transparent 60%);
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+}
+
+html {
+  scrollbar-gutter: stable;
 }
 
 body {

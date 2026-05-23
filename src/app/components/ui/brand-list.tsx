@@ -4,8 +4,8 @@ import { Brand } from "@/generated/prisma"
 import Link from "next/link"
 import { useState } from "react"
 
-const listClass = 'md:mt-4 border border-gray-400 rounded-2xl p-4 md:p-6 w-full gap-x-4 md:gap-x-8 '
-const itemClass = 'flex flex-row mt-2 md:mt-4 text-lg font-bold items-center gap-x-2 pl-4 sm:pl-18 md:pl-8 lg:pl-12 basis-1/2 hover:text-blue-400 hover:opacity-90 text-ellipsis truncate' 
+const listClass = 'w-full md:w-[1200px] py-2 md:mt-4 rounded-2xl md:bg-white md:shadow-xl md:border md:border-gray-200 px-2 md:px-2 gap-x-2 gap-y-2 md:gap-x-0 md:gap-y-0'
+const itemClass = 'relative group flex flex-row text-lg p-2 font-bold items-center gap-x-2 basis-1/2 hover:text-blue-400 hover:opacity-90 bg-white border border-border md:border-none md:bg-white bg-cream hover:bg-cream rounded-xl text-ellipsis truncate' 
 
 function BrandItems({ brands }: { brands: Brand[] }) {
   return <>
@@ -22,7 +22,8 @@ function BrandItems({ brands }: { brands: Brand[] }) {
             e.currentTarget.src = "/images/truck-wheel.png"
           }}
         />
-        <Link href={`/${brand.slug}`} className='truncate'>{brand.name}</Link>
+        <Link href={`/${brand.slug}`} className='truncate font-dm-sans'>{brand.name}</Link>
+        <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-red-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-200 origin-left" />
       </li>
     ))}
   </>

@@ -14,10 +14,10 @@ export default async function CarModelImage({ carYearModel }: { carYearModel: Ca
     const res = await fetch(`https://carimagesapi.com/api/v1/signed-url?${params}`)
     const data = await res.json()
     return (
-      <div className="mb-6 max-w-[800px] aspect-[8/5] mx-auto">
+      <div className="mb-6 w-full max-w-[400px] aspect-[8/5] mx-auto">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          className=' mx-auto bg-gray-100 rounded-xl'
+          className='w-full h-full object-cover mx-auto bg-gray-200 rounded-xl max-w-full'
           src={data.url}
           alt={`${carYearModel.brandModel.brand.name} ${carYearModel.brandModel.name}`}
         />

@@ -1,0 +1,6 @@
+-- CreateEnum
+CREATE TYPE "IssueCategory" AS ENUM ('ENGINE', 'TRANSMISSION', 'BRAKES', 'SUSPENSION', 'STEERING', 'ELECTRICAL', 'INFOTAINMENT', 'BATTERY', 'BODY', 'RUST', 'AIR_CONDITIONING', 'SAFETY', 'NOISE', 'FUEL_SYSTEM', 'COOLING', 'OTHER');
+
+-- AlterTable
+ALTER TABLE "Complaint" ADD COLUMN     "category" "IssueCategory",
+ADD COLUMN     "severity" INTEGER;
