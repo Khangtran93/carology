@@ -110,6 +110,8 @@ model Complaint {
   id String @id @default(uuid())
   title String
   content String
+  severity Int?
+  category IssueCategory?
   userId String
   user User @relation(fields: [userId], references: [id])
   carModelId String
@@ -151,6 +153,15 @@ model ModelImage {
   @@index([carModelId])
 }
 
+// model BrandModelImage {
+//   id String @id @default(ulid())
+//   url String
+//   alt String
+//   brandModelId String
+//   brandModel BrandModel @relation(fields: [brandModelId], references: [id], onDelete: Cascade)
+//   createdAt DateTime @default(now())
+// }
+
 model Specs {
   id            String   @id @default(uuid())
   brandModelId    String   @unique
@@ -190,16 +201,35 @@ enum Drivetrain {
   FWD
   RWD
   AWD
-  FOUR_WD  // "4WD" can't start with a number in Prisma enums
+  FOUR_WD 
 }
 enum CarType {
   SEDAN
-  COUPE
-  HATCHBACK
   SUV
+  HATCHBACK
+  COUPE
+  CONVERTIBLE
+  WAGON
   UTE
   VAN
   PEOPLE_MOVER
-  CONVERTIBLE
-  WAGON
+}
+
+enum IssueCategory {
+  ENGINE
+  TRANSMISSION
+  BRAKES
+  SUSPENSION
+  STEERING
+  ELECTRICAL
+  INFOTAINMENT
+  BATTERY
+  BODY
+  RUST
+  AIR_CONDITIONING
+  SAFETY
+  NOISE
+  FUEL_SYSTEM
+  COOLING
+  OTHER
 }

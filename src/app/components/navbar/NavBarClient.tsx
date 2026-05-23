@@ -9,14 +9,12 @@ export default function NavbarClient({ isLoggedIn }: { isLoggedIn: boolean }) {
   const [open, setOpen] = useState(false)
 
   return (
-    <div className={`sticky top-0 z-50 w-full bg-slate-950/80 backdrop-blur-md border-b border-slate-700/50 text-white ${logoFont.className}`}>
+    <div className={`sticky top-0 z-50 w-full bg-navy/90 backdrop-blur-md border-b border-slate-700/50 text-white ${logoFont.className}`}>
       <div className="flex justify-between items-center px-6 md:px-20 lg:px-40 py-4">
         <Link href="/" className="text-3xl">
-          CAROLOGY
+          CAR<span className='text-red-500'>O</span>LOGY
         </Link>
         <div  className="hidden md:flex items-center gap-x-6 text-2xl">
-          {/* <Link href="/">Home</Link> */}
-          {/* <Link href="/about">About</Link> */}
           {isLoggedIn ? (
             <>
               <Link href="/profile">Profile</Link>
@@ -47,7 +45,7 @@ export default function NavbarClient({ isLoggedIn }: { isLoggedIn: boolean }) {
             {isLoggedIn ? (
               <>
                 <Link href="/profile">Profile</Link>
-                <button onClick={() => { signOutAction(); setOpen(false) }}>Sign Out</button>
+                <button onClick={async () => { await signOutAction(); setOpen(false) }}>Sign Out</button>
               </>
             ) : (
               <Link href="/login" onClick={() => setOpen(false)}>Login</Link>

@@ -44,16 +44,31 @@ export async function getBrandModelsByBrandSlug(brandSlug:string | undefined) {
   cacheTag('_brandModels')
   if (brandSlug) {
     try {
-      const brandModels = await prisma.brand.findUnique({
-        where: {
-          slug: brandSlug,
-        },
+      const brandModelsByBrand = await prisma.brand.findUnique({
+        where: {slug: brandSlug},
         include: {
-          brandModels: true, 
+          brandModels: {
+            include: {
+              carModels: {
+                include: {
+                  complaints: {
+                    select: {
+                      severity: true
+                    }
+                  },
+                  _count: true
+                },
+              }
+            },
+            orderBy: {
+              carType: 'asc'
+            }
+          }, 
+          _count: true
         },
       })
+      return brandModelsByBrand
 
-      return brandModels
     } catch (error) {
       console.log(error)
     }
@@ -84,8 +99,9 @@ export async function getCarModel(brandSlug: string, brandModelSlug: string, car
         complaints: {
           include: {
             user: true
-          }
-        }
+          },
+        },
+        _count: true
       }
     })
     return carModel
@@ -94,6 +110,26 @@ export async function getCarModel(brandSlug: string, brandModelSlug: string, car
     throw new Error("Failed to fetch car model")
   }
 }
+
+// export async function getCarModelWithRelations(brandSlug: string, brandModelSlug: string, carModelSlug: string) {
+//   try {
+//     const carModel = await prisma.carModel.findFirst({
+//       where: {
+//         slug: carModelSlug,
+//         brandModel: {
+//           slug: brandModelSlug,
+//           brand: {
+//             slug: brandSlug
+//           }
+//         }
+//       },
+//       include: {
+//         complaints: true
+//       }
+
+//     })
+//   }
+// }
 
 // get all car models with year using brandModelId
 export async function getCarModels(brandModelId:string) {

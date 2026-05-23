@@ -11,8 +11,10 @@ export async function createComplaint(prevState: ComplaintState, formData: FormD
   const validatedFields = ComplaintSchema.safeParse({
     title: formData.get('title'),
     content: formData.get('complaint'),
+    category: formData.get('issueCategory'),
+    severity: formData.get('severity'),
     userId: formData.get('userId'),
-    carModelId: formData.get('carModelId')
+    carModelId: formData.get('carModelId'),
   })
 
   if (!validatedFields.success) {
@@ -23,15 +25,17 @@ export async function createComplaint(prevState: ComplaintState, formData: FormD
       message: 'Missing Fields. Failed to Create Complaint.',
     };
   }
-  const {title, content, userId, carModelId} = validatedFields.data
+  const {title, content, category, severity, userId, carModelId, } = validatedFields.data
   try {
     console.log("trying to create complaint")
     complaint = await prisma.complaint.create({
       data: {
         title: title,
         content: content,
+        category: category,
+        severity: severity,
         userId: userId,
-        carModelId: carModelId
+        carModelId: carModelId,
       },
       include: {
         carModel: {
@@ -49,6 +53,6 @@ export async function createComplaint(prevState: ComplaintState, formData: FormD
     console.error(error)
     return { message: 'Failed to create complaint.', errors: {} }
   }
-  revalidatePath(`/brand/${complaint.carModel.brandModel.brand.slug}/${complaint.carModel.brandModel.slug}/${complaint.carModel.slug}`)
-  redirect(`/brand/${complaint.carModel.brandModel.brand.slug}/${complaint.carModel.brandModel.slug}/${complaint.carModel.slug}`);
+  revalidatePath(`/${complaint.carModel.brandModel.brand.slug}/${complaint.carModel.brandModel.slug}/${complaint.carModel.slug}`)
+  redirect(`/${complaint.carModel.brandModel.brand.slug}/${complaint.carModel.brandModel.slug}/${complaint.carModel.slug}`);
 }

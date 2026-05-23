@@ -1,13 +1,11 @@
-import React, { Suspense } from 'react'
+import React from 'react'
 import {LoginForm} from '../components/forms/LoginForm'
 
-export default function Page() {
+export default async function Page() {
+  // await new Promise(resolve => setTimeout(resolve, 2000))
   return (
     <div>
-      <Suspense>
-        <LoginForm/>
-      </Suspense>
-      
+      <LoginForm/>
     </div>
   )
 }

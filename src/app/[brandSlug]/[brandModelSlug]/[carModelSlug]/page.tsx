@@ -6,7 +6,7 @@ async function Page({params}: {params: Promise<{brandSlug: string, brandModelSlu
   const {brandSlug, brandModelSlug, carModelSlug} = await params
 
   return (
-    <div className='max-w-[1300px] mx-auto'>
+    <div>
     <Suspense fallback={<CarModelSkeleton/>}>
       <CarModel brandSlug={brandSlug} brandModelSlug={brandModelSlug} carModelSlug={carModelSlug}/>
     </Suspense>

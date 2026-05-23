@@ -16,7 +16,7 @@ export function LoginForm () {
   const callbackUrl = searchParams.get('callbackUrl') || '/'
   const [errorMessage, formAction, isPending] = useActionState(authenticate, undefined)
   return (
-    <div className='max-w-[1300px] mx-auto mb-12 md:mb-24'>
+    <div className='max-w-[1300px] mx-auto mb-6 md:mb-12'>
       <div className='max-w-[350px] mx-auto rounded-xl shadow-2xl px-12 py-8'>
       <form action={formAction} className='flex flex-col gap-y-4'>
         <h1 className='text-xl font-bold text-center'>Login</h1>

@@ -3,6 +3,7 @@ import { getCarModel, getBrandModels, getAllBrands, getCarModels } from "@/app/l
 import { BrandModel } from "@/generated/prisma"
 import { auth } from "../../../../../../auth"
 import { Suspense } from "react"
+import { ComplaintFormSkeleton } from "@/app/components/ui/skeletons"
 
 export default async function Page({params} : {params: Promise<{brandSlug: string, brandModelSlug: string, carModelSlug: string}>}) {
   const {brandSlug, brandModelSlug, carModelSlug} = await params
@@ -12,11 +13,11 @@ export default async function Page({params} : {params: Promise<{brandSlug: strin
   const carModel = await getCarModel(brandSlug, brandModelSlug, carModelSlug)
   if (!carModel) return <div>Not found</div>
   brandModels = await getBrandModels(carModel.brandModel.brand.id) ?? []
-
   const carModels = await getCarModels(carModel?.brandModel.id)
+  
   return (
-    <Suspense>
-      <CreateComplaintForm userId={session?.user?.id}  brands={brands} brandModels={brandModels} carModels={carModels} carModel={carModel} />
+    <Suspense fallback={<ComplaintFormSkeleton/>}>
+      <CreateComplaintForm userId={session?.user?.id} brands={brands} brandModels={brandModels} carModels={carModels} carModel={carModel} />
     </Suspense>
   )
 }
