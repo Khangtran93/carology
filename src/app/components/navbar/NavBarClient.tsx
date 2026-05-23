@@ -41,7 +41,7 @@ export default function NavbarClient({ isLoggedIn }: { isLoggedIn: boolean }) {
           />
     
           {/* Dropdown */}
-          <div className="z-50 absolute top-full right-0 md:hidden flex flex-col gap-4 pt-4 px-6 pb-6 text-xl bg-slate-900/80 backdrop-blur-md border-b border-slate-700/50 rounded-bl-lg shadow-xl">
+          <div className="z-50 absolute top-full right-0 md:hidden flex flex-col gap-4 pt-4 px-6 pb-6 text-xl bg-navy/90 backdrop-blur-md border-b border-slate-700/50 rounded-bl-lg shadow-xl">
             {isLoggedIn ? (
               <>
                 <Link href="/profile">Profile</Link>

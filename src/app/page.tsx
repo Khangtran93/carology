@@ -1,6 +1,5 @@
 import Search from "./components/ui/search";
 import { Suspense } from "react";
-// import NewsCarouselServer from "./components/ui/news-carousel-server";
 import { BrandListSkeleton, NewsCarouselSkeleton } from "./components/ui/skeletons";
 import BrandListServer from "./components/ui/brand-list-server";
 import NewsCarouselServer from "./components/ui/news-carousel-server";
@@ -27,10 +26,12 @@ export default async function Page() {
         <Search/>       
       </div>
       
-      
-      <Suspense fallback={<NewsCarouselSkeleton/>}>
-        <NewsCarouselServer/>
-      </Suspense>
+      <div className='md:max-w-[1300px] px-6 mx-auto mt-4 md:mt-8'>
+        <h1 className="text-xl md:text-3xl md:pl-12 text-black font-bebas-neue">Latest news</h1>
+        <Suspense fallback={<NewsCarouselSkeleton/>}>
+          <NewsCarouselServer/>
+        </Suspense>
+      </div>
 
       <div className='max-w-[1300px] px-6 mx-auto flex flex-col justify-between mt-6 md:mt-4 mb-4'>
         <div className='md:pl-12'>

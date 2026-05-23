@@ -17,7 +17,7 @@ export function LoginForm () {
   const [errorMessage, formAction, isPending] = useActionState(authenticate, undefined)
   return (
     <div className='max-w-[1300px] mx-auto mb-6 md:mb-12'>
-      <div className='max-w-[350px] mx-auto rounded-xl shadow-2xl px-12 py-8'>
+      <div className='max-w-[350px] mx-auto rounded-xl shadow-2xl mt-8 px-12 py-8'>
       <form action={formAction} className='flex flex-col gap-y-4'>
         <h1 className='text-xl font-bold text-center'>Login</h1>
         <div className='flex flex-col gap-2'>

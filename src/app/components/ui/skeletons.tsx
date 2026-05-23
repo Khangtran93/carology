@@ -59,21 +59,21 @@ export function BrandModelListSkeleton() {
 
 export function CarModelChartSkeleton() {
   return (
-    <div className="w-full flex flex-start">
-      <div className="flex flex-1 flex-col bg-navy px-8 py-4 py-8 px-16 gap-y-2">
-        <div className="w-[80px] md:w-[80px] md:h-7 bg-gray-200 animate-pulse"></div>
-        <div className="w-[150px] h-[28px] md:w-[200px] md:h-10 bg-gray-200 animate-pulse"></div>
-        <div className="w-[160px] md:w-[120px] md:h-6 bg-gray-200 animate-pulse"></div>
-        <div className="grid grid-cols-3 md:grid-cols-1 mx-2">
-            <div className="md:w-[150px] md:h-[40px] bg-gray-200 animate-pulse mb-2 p-2"></div>
-            <div className="md:w-[50px] md:h-[24px] bg-gray-200 animate-pulse mb-2 p-2"></div>
-            <div className="md:w-[30px] md:h-[40px] bg-gray-200 animate-pulse mb-2 p-2"></div>
-            <div className="md:w-[50px] md:h-[24px] bg-gray-200 animate-pulse mb-2 p-2"></div>
-            <div className="md:w-[40px] md:h-[40px] bg-gray-200 animate-pulse mb-2 p-2"></div>
-            <div className="md:w-[50px] md:h-[24px] bg-gray-200 animate-pulse mb-2 p-2"></div>
+    <div className="w-full flex flex-col md:flex-row flex-start ">
+      <div className="flex flex-1 flex-col bg-navy px-8 py-4 md:py-8 md:px-16 gap-y-2">
+        <div className="w-[80px] md:w-[80px] h-[20px] bg-gray-200 animate-pulse"></div>
+        <div className="w-[150px] md:w-[200px] h-[32px]  md:h-10 bg-gray-200 animate-pulse"></div>
+        <div className="w-[160px] md:w-[120px] h-[20px] bg-gray-200 animate-pulse"></div>
+        <div className="grid grid-cols-3 md:grid-cols-1 gap-2 mx-2">
+            <div className="md:w-[150px] md:h-[40px] h-[24px] bg-gray-200 animate-pulse"></div>
+            <div className="md:w-[50px] md:h-[24px] h-[24px] bg-gray-200 animate-pulse"></div>
+            <div className="md:w-[30px] md:h-[40px] h-[24px] bg-gray-200 animate-pulse"></div>
+            <div className="md:w-[50px] md:h-[24px] h-[24px] bg-gray-200 animate-pulse"></div>
+            <div className="md:w-[40px] md:h-[40px] h-[24px] bg-gray-200 animate-pulse"></div>
+            <div className="md:w-[50px] md:h-[24px] h-[24px] bg-gray-200 animate-pulse"></div>
         </div>
       </div>
-      <div className="md:flex-3 min-w-[1000px] px-4 md:px-24">
+      <div className="w-full md:flex-3 md:min-w-[1000px] mx-auto px-4 md:px-24">
         <div className="flex w-full items-center gap-2">
           <div className="md:w-[32px]"></div>
           <ul className='flex flex-3 flex-col md:flex-row
@@ -89,7 +89,7 @@ export function CarModelChartSkeleton() {
                 const randomDimension = Math.floor(Math.random() * 60) + 20
                 return (
                   <li className='flex flex-row md:flex-col md:justify-end items-center gap-x-2 md:gap-x-4 gap-y-2 w-full' key={i}>
-                    <div className='text-lg md:text-xl md:order-last w-[40px] md:w-[0px] h-[25px] bg-gray-200 animate-pulse'/>
+                    <div className='text-lg md:text-xl md:order-last w-[40px] md:w-[0px] h-[24px] bg-gray-200 animate-pulse'/>
                     <div 
                     style={{ '--count': randomDimension } as React.CSSProperties}
                     className=" bar-skeleton bg-gray-200 animate-pulse"/>
@@ -194,29 +194,29 @@ export function BrandListSkeleton() {
 }
  export function LoginFormSkeleton() {
   return (
-    <div className='flex flex-col gap-y-4 border border-gray-200 rounded-xl px-12 py-8 mb-6 md:mb-12 shadow-xl' aria-hidden="true">
-  <div className='h-7 w-20 self-center bg-gray-200 animate-pulse rounded-sm' />
+    <div className='flex flex-col max-w-[350px] mx-auto gap-y-4 border border-gray-200 rounded-xl mt-8 px-12 py-8 mb-6 md:mb-12 shadow-xl' aria-hidden="true">
+      <div className='h-7 w-20 self-center bg-gray-200 animate-pulse rounded-sm' />
 
-  <div className='flex flex-col gap-2'>
-    <div className='h-6 w-16 bg-gray-200 animate-pulse rounded-sm' />
-    <div className='h-8 bg-gray-200 animate-pulse rounded-sm' />
-  </div>
+      <div className='flex flex-col gap-2'>
+        <div className='h-6 w-16 bg-gray-200 animate-pulse rounded-sm' />
+        <div className='h-8 bg-gray-200 animate-pulse rounded-sm' />
+      </div>
 
-  <div className='flex flex-col gap-2'>
-    <div className='h-6 w-20 bg-gray-200 animate-pulse rounded-sm' />
-    <div className='h-8 bg-gray-200 animate-pulse rounded-sm' />
-  </div>
+      <div className='flex flex-col gap-2'>
+        <div className='h-6 w-20 bg-gray-200 animate-pulse rounded-sm' />
+        <div className='h-8 bg-gray-200 animate-pulse rounded-sm' />
+      </div>
 
-  <div className='w-full h-10 bg-gray-200 animate-pulse mt-2' />
+      <div className='w-full h-10 bg-gray-200 animate-pulse mt-2' />
 
-  <div className='flex items-center'>
-    <div className='flex-1 h-px bg-gray-300' />
-    <span className='text-xs text-gray-500'>or</span>
-    <div className='flex-1 h-px bg-gray-300' />
-  </div>
+      <div className='flex items-center'>
+        <div className='flex-1 h-px bg-gray-300' />
+        <span className='text-xs text-gray-500'>or</span>
+        <div className='flex-1 h-px bg-gray-300' />
+      </div>
 
-  <div className='w-full h-10 bg-gray-200 animate-pulse mt-2' />
-</div>
+      <div className='w-full h-10 bg-gray-200 animate-pulse mt-2' />
+    </div>
   )
  }
 

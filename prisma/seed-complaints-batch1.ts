@@ -551,7 +551,7 @@ async function main() {
   console.log(`\n📊 Known issues done — ${totalCreated} created so far\n`)
 
   // ── 2. Minor issues spread across random OLDER car models ───────────────
-  const TARGET_TOTAL = 5000
+  const TARGET_TOTAL = 2000
   const remaining = TARGET_TOTAL - totalCreated
   console.log(`🌱 Generating ${remaining} more minor/spread complaints (older models)...\n`)
 

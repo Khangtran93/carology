@@ -15,10 +15,7 @@ export default function NewsCarousel({newsArticles}: {newsArticles: Article[] | 
   const goToNext = () => emblaApi?.scrollNext()
 
   return (
-    <div className='md:max-w-[1300px] px-6 mx-auto'>
-    <div className='w-[100%] border-1 border-gray-200 my-4 md:mt-8
-                    md:border-0'></div>
-    <h1 className="text-xl md:text-3xl md:pl-12 text-black font-bebas-neue">Latest news</h1>
+    <>
       <div className="relative embla max-w-[1300px] mx-auto mt-4 mb-4">
         <div className="embla__viewport" ref={emblaRef}>
           <div className="embla__container gap-x-2" id={carouselId}>
@@ -50,6 +47,6 @@ export default function NewsCarousel({newsArticles}: {newsArticles: Article[] | 
         <div className='w-[100%] border-1 border-gray-200 my-4 md:mt-8
                     md:border-0'></div>
       </div>
-    </div>
+    </>
   )
 }

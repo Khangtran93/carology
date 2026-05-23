@@ -1,5 +1,5 @@
 'use client';
-import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
+import { ArrowUpRightIcon, MagnifyingGlassIcon } from '@heroicons/react/24/outline';
 import { useState, useRef, useEffect } from "react"
 import { searchAll } from "@/app/lib/data"
 import Link from "next/link"
@@ -76,18 +76,18 @@ export default function SearchBar() {
         <div className="w-full top-full absolute z-50 mt-1 peer block mx-auto rounded-lg border border-gray-200 bg-white shadow-lg">
           
           {!hasResults && (
-            <div className="px-4 py-3 text-sm text-gray-500">No results found</div>
+            <div className="px-4 py-2 text-sm text-gray-500">No results found</div>
           )}
 
           { (results?.brands && results?.brands.length > 0) && (
-            <div>
-              <div className="px-4 py-2 text-xs font-semibold text-gray-400 uppercase">Brands</div>
+            <div className='text-left'>
+              <div className="px-4 text-xs font-semibold text-gray-400 uppercase">Brands</div>
               {results?.brands.map((brand) => (
                 <Link
                   key={brand.id}
                   href={`/${brand.slug}`}
                   onClick={() => setIsOpen(false)}
-                  className="block px-4 py-2 text-sm hover:bg-gray-50"
+                  className="block px-4 font-semibold mb-2 text-sm hover:bg-gray-50"
                 >
                   {brand.name}
                 </Link>
@@ -95,32 +95,32 @@ export default function SearchBar() {
             </div>
           )}
           {(results?.carModels && results?.carModels.length > 0) && (
-            <div>
-              <div className="px-4 py-2 text-xs font-semibold text-gray-400 uppercase">Models</div>
+            <div className='text-left'>
+              <div className="px-4 text-xs font-semibold text-gray-400 uppercase">Models</div>
               {results?.carModels.map((model) => (
                 <Link
                   key={model.id}
                   href={`/${model.brandModel.brand.slug}/${model.brandModel.slug}/${model.slug}`}
                   onClick={() => setIsOpen(false)}
-                  className="block px-4 py-2 text-sm hover:bg-gray-50"
+                  className="block px-4 font-semibold mb-2 text-sm hover:bg-gray-50"
                 >
-                  {model.brandModel.brand.name} {model.name} {model.year}
+                  {model.brandModel.brand.name} {model.name} {model.year} <span><ArrowUpRightIcon className='text-white w-5 h-5 font-bold'/></span>
                 </Link>
               ))}
             </div>
           )}
 
           {(results?.complaints && results?.complaints.length > 0) && (
-            <div>
-              <div className="px-4 py-2 text-xs font-semibold text-gray-400 uppercase">Complaints</div>
+            <div className='text-left'>
+              <div className="px-4 text-xs font-semibold text-gray-400 uppercase">Complaints</div>
               {results?.complaints.map((complaint) => (
                 <Link
                   key={complaint.id}
                   href={`/${complaint.carModel.brandModel.brand.slug}/${complaint.carModel.brandModel.slug}/${complaint.carModel.slug}`}
                   onClick={() => setIsOpen(false)}
-                  className="block px-4 py-2 text-sm hover:bg-gray-50"
+                  className="flex items-center gap-x-2 font-semibold px-4 mb-2 text-sm hover:bg-gray-50"
                 >
-                  {complaint.title}
+                  <span className='truncate'>{complaint.title}</span> <ArrowUpRightIcon className='text-blue-400 w-4 h-4 font-bold shrink-0'/>
                 </Link>
               ))}
             </div>
