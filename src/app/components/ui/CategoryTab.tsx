@@ -36,9 +36,21 @@ export default function CategoryTab({carYearModel} : {carYearModel: CarModelData
                   <h3 className="text-xs font-dm-mono">{complaint.createdAt.toDateString()}</h3>
                 </div>
               </div>
-              <div className={` p-2 rounded-lg font-dm-mono text-xs ${complaint.severity < 3 ? "bg-green-bg text-green-500" : (complaint.severity > 33 && complaint.severity < 6) ? "bg-orange-bg text-orange-500" : "bg-red-bg text-red-500" }`}>
-                <span className="hidden md:inline">Severity: </span>{complaint.severity < 3 ? "LOW" : (complaint.severity > 33 && complaint.severity < 6) ? "MEDIUM" : "HIGH" }
-              </div>
+                {(() => {
+                const sev = complaint.severity ?? 0
+                const label = sev < 3 ? "LOW" : sev < 6 ? "MEDIUM" : "HIGH"
+                const colour = sev < 3 ? "bg-green-bg text-green-500"
+                  : sev < 6 ? "bg-orange-bg text-orange-500"
+                  : "bg-red-bg text-red-500"
+                return (
+                  <div className={`p-2 rounded-lg font-dm-mono text-xs ${colour}`}>
+                    <span className="hidden md:inline">Severity: </span>{label}
+                  </div>
+                )
+              })()}
+              {/* <div className={` p-2 rounded-lg font-dm-mono text-xs ${complaint?.severity < 3 ? "bg-green-bg text-green-500" : (complaint?.severity > 33 && complaint?.severity < 6) ? "bg-orange-bg text-orange-500" : "bg-red-bg text-red-500" }`}>
+                <span className="hidden md:inline">Severity: </span>{complaint?.severity < 3 ? "LOW" : (complaint?.severity > 3 && complaint?.severity < 6) ? "MEDIUM" : "HIGH" }
+              </div> */}
             </div>
             <div className="w-px bg-gray-300 -my-4 mx-4 md:hidden mt-4" />
               <h3 className='text-sm md:text-md font-semibold font-dm-sans'>{complaint.title}</h3>
