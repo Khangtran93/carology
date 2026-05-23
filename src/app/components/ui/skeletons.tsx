@@ -64,7 +64,7 @@ export function CarModelChartSkeleton() {
         <div className="w-[80px] md:w-[80px] h-[20px] bg-gray-200 animate-pulse"></div>
         <div className="w-[150px] md:w-[200px] h-[32px]  md:h-10 bg-gray-200 animate-pulse"></div>
         <div className="w-[160px] md:w-[120px] h-[20px] bg-gray-200 animate-pulse"></div>
-        <div className="grid grid-cols-3 md:grid-cols-1 gap-2 mx-2">
+        <div className="grid grid-cols-3 md:grid-cols-1 gap-x-8 gap-y-2 mx-2">
             <div className="md:w-[150px] md:h-[40px] h-[24px] bg-gray-200 animate-pulse"></div>
             <div className="md:w-[50px] md:h-[24px] h-[24px] bg-gray-200 animate-pulse"></div>
             <div className="md:w-[30px] md:h-[40px] h-[24px] bg-gray-200 animate-pulse"></div>
@@ -170,7 +170,7 @@ export function CarModelSkeleton() {
 export function NewsCarouselSkeleton() {
   return (
     <div className="embla__viewport mx-auto">
-      <div className='embla_slide grid grid-cols-1 mx-auto md:grid-cols-2 gap-y-2 md:gap-y-0 md:gap-x-8 md:px-12 md:py-4'>
+      <div className='embla_slide grid grid-cols-1 mx-auto mt-4 md:grid-cols-2 gap-y-2 md:gap-y-0 md:gap-x-8 md:px-12 md:py-4'>
         <div className="h-[200px] md:h-[400px] bg-gray-200 animate-pulse rounded-md mb-4" />
         <div className="h-[200px] md:h-[400px] bg-gray-200 animate-pulse rounded-md mb-4" />
       </div>
