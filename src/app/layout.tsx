@@ -4,6 +4,7 @@ import "./globals.css";
 import NavBar from "./components/navbar/NavBar";
 import Footer from "./components/footer/Footer";
 import NextTopLoader from 'nextjs-toploader';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata: Metadata = {
   title: "Carology",
@@ -21,6 +22,7 @@ export default function RootLayout({
         className={`${bebasNeue.variable} ${dmMono.variable} ${dmSans.variable} antialiased flex flex-col min-h-screen`}
       >
         <NextTopLoader showSpinner={false} />
+        <SpeedInsights />
         <NavBar/>
         <div className="bg-cream">
           {children}
