@@ -17,7 +17,7 @@ export default async function CarModel({ brandSlug, brandModelSlug, carModelSlug
 
   return (
     <div className="w-full grid lg:grid-cols-4">
-      <div className='flex flex-col lg:col-span-1 bg-navy px-8 py-8 font-bebas-neue'>
+      <div className='flex flex-col w-full lg:col-span-1 bg-navy px-8 py-8 font-bebas-neue overflow-x-hidden'>
         <h3 className='text-md md:text-lg lg:text-xl xl:text-2xl text-red-500 '>VEHICLE YEAR MODEL</h3>
         <h1 className="text-3xl md:text-2xl lg:text-3xl xl:text-4xl text-white">{carYearModel.brandModel.brand.name} {carYearModel?.name} {carYearModel.year}</h1>
         <h1 className="text-md md:text-lg lg:text-xl xl:text-2xl text-gray-500 mb-2 md:mb-4 font-bebas-neue">{carYearModel._count.complaints} reported {carYearModel._count.complaints > 1 ? 'complaints' : 'complaint'}</h1>
