@@ -21,14 +21,14 @@ export default async function CarModel({ brandSlug, brandModelSlug, carModelSlug
         <h3 className='text-md md:text-lg lg:text-xl xl:text-2xl text-red-500 '>VEHICLE YEAR MODEL</h3>
         <h1 className="text-3xl md:text-2xl lg:text-3xl xl:text-4xl text-white">{carYearModel.brandModel.brand.name} {carYearModel?.name} {carYearModel.year}</h1>
         <h1 className="text-md md:text-lg lg:text-xl xl:text-2xl text-gray-500 mb-2 md:mb-4 font-bebas-neue">{carYearModel._count.complaints} reported {carYearModel._count.complaints > 1 ? 'complaints' : 'complaint'}</h1>
-        <div className="grid px-4 md:grid-cols-2 md:gap-x-4 md:px-12 lg:grid-cols-1 lg:px-0 ">
+        <div className="grid md:grid-cols-2 md:gap-x-4 md:px-12 lg:grid-cols-1 lg:px-0 ">
           <CarModelImage carYearModel={carYearModel}/>
           <div className="col-span-1 md:px-4 lg:px-0">
             <div className="flex flex-row justify-between text-gray-300 py-2 border-b border-gray-300">
               <h2>Total Complaints</h2>
               <h2>{carYearModel._count.complaints}</h2>
             </div>
-            <div className="flex flex-row justify-between text-gray-300 py-2 border-b border-gray-300">
+            <div className="flex flex-row justify-between text-gray-300 py-2">
               <h2>Average Severity</h2>
               <h2>{avgSeverity}</h2>
             </div>
