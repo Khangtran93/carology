@@ -40,10 +40,10 @@ export default function NewsCarousel({newsArticles}: {newsArticles: Article[] | 
         </div>
 
    
-        <ChevronLeftIcon className='absolute left-0 top-[50%] w-8 h-8 embla__prev border-opacity hidden sm:block' onClick={goToPrev}/>
+        <ChevronLeftIcon className='absolute left-0 top-[50%] w-8 h-8 embla__prev border-opacity hidden md:block' onClick={goToPrev}/>
 
 
-        <ChevronRightIcon className='absolute right-0 top-[50%] w-8 h-8 embla__next border-opacity hidden sm:block' onClick={goToNext}/>
+        <ChevronRightIcon className='absolute right-0 top-[50%] w-8 h-8 embla__next border-opacity hidden md:block' onClick={goToNext}/>
         <div className='w-[100%] border-1 border-gray-200 my-4 md:mt-8
                     md:border-0'></div>
       </div>

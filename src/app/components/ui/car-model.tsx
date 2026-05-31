@@ -16,26 +16,29 @@ export default async function CarModel({ brandSlug, brandModelSlug, carModelSlug
   }
 
   return (
-    <div className="flex flex-col md:flex-row w-full">
-      <div className='flex flex-1 flex-col bg-navy px-4 py-8 md:px-16 md:py-8 font-bebas-neue'>
-        <h3 className='text-sm text-red-500 md:text-xl'>{carYearModel.brandModel.brand.name} {carYearModel?.name} {carYearModel.year}</h3>
-        <h1 className="text-2xl md:text-4xl text-white">COMPLAINTS</h1>
-        <h1 className="text-gray-500 mb-2 md:mb-4 font-dm-mono">{carYearModel._count.complaints} reported {carYearModel._count.complaints > 1 ? 'issues' : 'issue'}</h1>
-        <CarModelImage carYearModel={carYearModel}/>
-        <div>
-          <div className="flex flex-row justify-between text-gray-300 py-2 border-b border-gray-300">
-            <h2>Total</h2>
-            <h2>{carYearModel._count.complaints}</h2>
-          </div>
-          <div className="flex flex-row justify-between text-gray-300 py-2 border-b border-gray-300">
-            <h2>Severity</h2>
-            <h2>{avgSeverity}</h2>
-          </div>
-          <div className="flex flex-row justify-between text-gray-300 py-2 border-b border-gray-300">
-            <h2>Total</h2>
-            <h2>{carYearModel._count.complaints}</h2>
+    <div className="w-full grid lg:grid-cols-4">
+      <div className='flex flex-col lg:col-span-1 bg-navy px-8 py-8 font-bebas-neue'>
+        <h3 className='text-md md:text-lg lg:text-xl xl:text-2xl text-red-500 '>VEHICLE YEAR MODEL</h3>
+        <h1 className="text-3xl md:text-2xl lg:text-3xl xl:text-4xl text-white">{carYearModel.brandModel.brand.name} {carYearModel?.name} {carYearModel.year}</h1>
+        <h1 className="text-md md:text-lg lg:text-xl xl:text-2xl text-gray-500 mb-2 md:mb-4 font-bebas-neue">{carYearModel._count.complaints} reported {carYearModel._count.complaints > 1 ? 'complaints' : 'complaint'}</h1>
+        <div className="grid px-4 md:grid-cols-2 md:gap-x-4 md:px-12 lg:grid-cols-1 lg:px-0 ">
+          <CarModelImage carYearModel={carYearModel}/>
+          <div className="col-span-1 md:px-4 lg:px-0">
+            <div className="flex flex-row justify-between text-gray-300 py-2 border-b border-gray-300">
+              <h2>Total Complaints</h2>
+              <h2>{carYearModel._count.complaints}</h2>
+            </div>
+            <div className="flex flex-row justify-between text-gray-300 py-2 border-b border-gray-300">
+              <h2>Average Severity</h2>
+              <h2>{avgSeverity}</h2>
+            </div>
+            {/* <div className="flex flex-row justify-between text-gray-300 py-2 border-b border-gray-300">
+              <h2>Total</h2>
+              <h2>{carYearModel._count.complaints}</h2>
+            </div> */}
           </div>
         </div>
+       
       </div>
       
        
