@@ -54,7 +54,7 @@ export default function SearchBar() {
 
   return (
     <div ref={containerRef} 
-    className="relative w-full md:w-[50%]">
+    className="relative w-full">
         <label htmlFor="search" className="sr-only">
           Search
         </label>

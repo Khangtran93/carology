@@ -57,7 +57,7 @@ body {
 
 .bar-skeleton {
   width: calc(var(--count) * 1%);
-  height: 25px;
+  height: 18px;
 }
 
 @media (min-width: 768px) {
@@ -102,5 +102,15 @@ body {
 @media (min-width: 768px) {
   .embla__slide {
     flex: 0 0 100%; /* Each slide is 70% of the viewport width */
+  }
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+@layer utilities {
+  .animate-shimmer {
+    animation: shimmer 1.5s infinite;
   }
 }

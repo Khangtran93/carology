@@ -9,7 +9,7 @@ const SignUpForm = () => {
   const initialState: FormState = { message: null, errors: {} };
   const [state, formAction] = useActionState(createUser, initialState)
   return (
-    <div className='max-w-[1300px] mx-auto mb-24'>
+    <div className='max-w-[1300px] mx-auto m-12'>
       
       <form action={formAction} className='flex flex-col max-w-[350px] mx-auto  px-12 py-8 gap-6 rounded-xl shadow-2xl'>
         <h1 className='text-center text-xl font-bold'>Sign up </h1>

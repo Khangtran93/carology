@@ -38,27 +38,27 @@ export const CarModelChartClient = ({ carModels} : {carModels: CarModelsIncludeC
   }, [carModels])
 
   return (
-    <div className="flex flex-col md:flex-row w-full">
-      <div className='flex md:flex-1 flex-col bg-navy px-8 py-4 md:px-16 md:py-8 font-bebas-neue'>
-        <h3 className='text-md md:text-xl text-red-500 w-max-w'>{carModels?.brand.name} {carModels?.name}</h3>
-        <h1 className='text-3xl md:text-4xl text-white font-bebas-neue'>YEAR COMPARISON</h1>
-        <h2 className="text-gray-500">COMPLAINTS BY MODEL YEAR</h2>
+    <div className="w-full grid md:grid-cols-4">
+      <div className='bg-navy flex flex-col font-bebas-neue text-white px-8 py-8 md:col-span-1'>
+        <h3 className='text-red-500 text-md md:text-lg lg:text-xl xl:text-2xl'>YEAR COMPARISON</h3>
+        <h1 className='font-bebas-neue text-3xl md:text-2xl lg:text-3xl xl:text-4xl'>{carModels?.brand.name} {carModels?.name}</h1>
+        <h2 className="text-gray-500 text-md md:text-lg lg:text-xl xl:text-2xl">COMPLAINTS BY MODEL YEAR</h2>
         <div className="mx-2 grid grid-cols-3 md:grid-cols-1">
           <div className="border-b-gray-500 p-2">
-            <h1 className="text-xl md:text-4xl text-white font-bebas-neue">{minYear}-{maxYear}</h1>
-            <h2 className="text-gray-500">YEAR RANGE</h2>
+            <h1 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bebas-neue">{minYear}-{maxYear}</h1>
+            <h2 className="text-gray-500 text-md md:text-lg lg:text-xl xl:text-2xl">YEAR RANGE</h2>
           </div>
           <div className="border-b-gray-500 p-2">
-            <h1 className="text-xl md:text-4xl text-white font-bebas-neue">{totalComplaint}</h1>
-            <h2 className="text-gray-500">COMPLAINTS</h2>
+            <h1 className="text-xl md:text-2xl text-white font-bebas-neue">{totalComplaint}</h1>
+            <h2 className="text-gray-500 text-md md:text-lg lg:text-xl xl:text-2xl">COMPLAINTS</h2>
           </div>
           <div className={`p-2 md:p-2 ${totalComplaint === 0 ? "text-center md:text-left" : "text-left"}`}>
-            <h1 className={`text-xl md:text-4xl text-red-500 font-bebas-neue `}>{totalComplaint === 0 ? "-" : highestComplaint?.year}</h1>
-            <h2 className="text-gray-500">WORST MODEL</h2>
+            <h1 className={`text-xl md:text-2xl text-red-500 font-bebas-neue `}>{totalComplaint === 0 ? "-" : highestComplaint?.year}</h1>
+            <h2 className="text-gray-500 text-md md:text-lg lg:text-xl xl:text-2xl">WORST MODEL</h2>
           </div>
         </div>
       </div>
-      <div className="md:flex-3 relative md:mx-auto md:min-w-[1000px] px-4 md:px-24 ">
+      <div className="md:col-span-3 p-4 prelative md:mx-auto md:w-full">
         <div className="flex w-full items-center gap-2">
           {overflow ? (
             <ChevronLeftIcon
@@ -75,9 +75,9 @@ export const CarModelChartClient = ({ carModels} : {carModels: CarModelsIncludeC
                   relative
                   flex flex-col max-h-max
                   w-full
-                  m-4 border-2 border-gray-100 shadow-xl rounded-xl p-4 md:p-8
+                  border-2 border-gray-100 shadow-xl rounded-xl p-4
                   overflow-y-auto
-                  md:flex-row md:m-12 md:min-h-[400px] md:max-w-[1000px] md:overflow-x-auto
+                  md:flex-row md:m-4 lg:m-8 md:min-h-[400px] md:max-w-[1000px] md:overflow-x-auto
                   ${overflow ? 'md:justify-start' : 'md:justify-center'} 
                   whitespace-nowrap scroll-smooth
                   bg-white

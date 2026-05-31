@@ -10,7 +10,7 @@ export default async function Page() {
   // await new Promise(resolve => setTimeout(resolve, 2000))
   return (
     <>
-      <div className='relative flex flex-col w-full bg-navy px-8 md:px-48 py-24 items-center text-center'>
+      <div className='relative flex flex-col w-full bg-navy px-12 md:px-48 py-24 items-center text-center'>
         <div className='absolute inset-0 bg-hero-glow'/>
         <Image
           src="/images/car-dashboard.jpg"

@@ -12,13 +12,13 @@ export default function CategoryTab({carYearModel} : {carYearModel: CarModelData
     console.log("activeTab ", activeTab)
   },[activeTab, setActiveTab])
   return (
-    <div className='flex-3 md:mx-auto md:min-w-[1000px] md:max-w-[1200px] bg-cream px-4 md:px-24'>
-      <div className={`flex px-4 gap-x-2 m-4 max-w-max border-b border-gray-200 text-gray-400 font-bebas-neue`}>
-        <div onClick={() => setActiveTab('All Issues')} className={`cursor-pointer ${activeTab === "All Issues" && "border-b border-red-500 text-red-500" }`}>All Issue</div>
+    <div className='lg:col-span-3 md:mx-auto md:max-w-[1200px] bg-cream px-4 md:px-24 min-w-0'>
+      <div className={`w-full mx-auto flex px-4 gap-x-2 m-4 overflow-x-auto no-scrollbar border-b border-gray-200 text-gray-400 font-bebas-neue`}>
+        <div onClick={() => setActiveTab('All Issues')} className={`cursor-pointer whitespace-nowrap ${activeTab === "All Issues" && "border-b border-red-500 text-red-500" }`}>All Issue</div>
         {carYearModel.complaints
         .filter((c, index, arr) => arr.findIndex((x) => x.category === c.category) === index)
         .map((complaint, index) => (
-          <div onClick={() => setActiveTab(complaint.category ?? "")} className={`cursor-pointer ${activeTab === complaint.category && "border-b border-red-500 text-red-500" }`} key={index}>{CATEGORY_LABELS[complaint.category as IssueCategory]}</div>
+          <div onClick={() => setActiveTab(complaint.category ?? "")} className={`cursor-pointer whitespace-nowrap ${activeTab === complaint.category && "border-b border-red-500 text-red-500" }`} key={index}>{CATEGORY_LABELS[complaint.category as IssueCategory]}</div>
         )
         )}
       </div>
